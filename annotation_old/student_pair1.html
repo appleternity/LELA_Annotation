@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://tingyaohsu.github.io/Cloze_test/html/mturk.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+    </head>
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1 class="jumbotron-heading">Create A Cloze Quiz</h1>
+            <ol>
+                <li style="text-align: left; font-size: 14pt;">You will see a list of "cloze sentences", where each sentence has a removed word. In this HIT, the removed word is either "postpone" or "delay" (or their other forms such as "postpones" or "delayed".)</li>
+                <li style="text-align: left; font-size: 14pt;">Please select the cloze sentences that <strong>you feel confident about the answers</strong> and drag-and-drop them to the corresponding word box.</li>
+                <li style="text-align: left; font-size: 14pt;">When you click "Next Step", we will randomly draw 5 questions from your selected sentences to create a quiz <strong>for you</strong>. You need to finish the quiz in order to submit the HIT.</li>
+                <li style="text-align: left; font-size: 14pt;">Your goal is to <strong>reach the highest score possible</strong> in the quiz. So you might want to only select the cloze sentences that you're strongly confident.</li>
+                <!-- <li style="text-align: left; font-size: 14pt;">Please try to finish this HIT within <strong>2 minutes</strong>.</li> -->
+            </ol>
+        </div>
+    </section>
+    <div class="container">
+        <form id="mturk_form" name="mturk_form">
+            <!-------------------- Staget 1 ---------------------->
+            <div class="row" id="Stage1">
+                <div class="col-8">
+                    <h5>Sentence Candidates</h5>
+                    <div id="WordSelect" class="shuffledv style-4">
+                        <div id="sent1"  class="drag_item" draggable="true" ondragstart="drag(event)">Because of the bad weather, the match was <span word="postpone">____</span> for a week.</div>
+                        <div id="sent2"  class="drag_item" draggable="true" ondragstart="drag(event)">The crew did not know that the invasion had been <span word="postpone">____</span>.</div>
+                        <div id="sent3"  class="drag_item" draggable="true" ondragstart="drag(event)">Obama’s Tacoma appearance was originally scheduled for Feb. 8 but was <span word="postpone">____</span> due to a snowstorm.</div>
+                        <div id="sent4"  class="drag_item" draggable="true" ondragstart="drag(event)">This is the second time that Sater’s appearance before the committee was <span word="postpone">____</span>.</div>
+                        <div id="sent5"  class="drag_item" draggable="true" ondragstart="drag(event)">A vote on the ordinance was <span word="postpone">____</span> late last week for further discussion.</div>
+                        <div id="sent6"  class="drag_item" draggable="true" ondragstart="drag(event)">The catch, however, was that the upcoming election would be postponedand the government reshuffled<span word="postpone">____</span></div>
+                        <div id="sent7"  class="drag_item" draggable="true" ondragstart="drag(event)">The game, against the Minnesota Whitecaps in St. Paul, scheduled for last Sunday, was <span word="postpone">____</span>.</div>
+                        <div id="sent8"  class="drag_item" draggable="true" ondragstart="drag(event)">The country’s High Court, however, unexpectedly <span word="postpone">____</span>, until May 24th, its ruling on whether to strike down a nearly century-old law.</div>
+                        <div id="sent9"  class="drag_item" draggable="true" ondragstart="drag(event)">The launch was “<span word="postpone">____</span> because of ‘two issues’ found during testing.</div>
+                        <div id="sent10" class="drag_item" draggable="true" ondragstart="drag(event)">Their return flight was <span word="postpone">____</span> indefinitely, after a Russian rocket fail in October 2018.</div>
+                        <div id="sent11" class="drag_item" draggable="true" ondragstart="drag(event)">The departure of the flight was briefly <span word="delay">____</span>.</div>
+                        <div id="sent12" class="drag_item" draggable="true" ondragstart="drag(event)">The government <span word="delay">____</span> granting passports to them until a week before their departure.</div>
+                        <div id="sent13" class="drag_item" draggable="true" ondragstart="drag(event)">Try and  persuade them to <span word="delay">____</span> some of the changes.</div>
+                        <div id="sent14" class="drag_item" draggable="true" ondragstart="drag(event)">The coach was <span word="delay">____</span> for about five hours.</div>
+                        <div id="sent15" class="drag_item" draggable="true" ondragstart="drag(event)">The flight has been <span word="delay">____</span> one hour, due to weather conditions.</div>
+                        <div id="sent16" class="drag_item" draggable="true" ondragstart="drag(event)">Their original trial date was Nov. 14, and then it was <span word="delay">____</span> to Tuesday.</div>
+                        <div id="sent17" class="drag_item" draggable="true" ondragstart="drag(event)">She said other options would lead to <span word="delay">____</span>, to uncertainty and risked never delivering Brexit.</div>
+                        <div id="sent18" class="drag_item" draggable="true" ondragstart="drag(event)">Traffic was being detoured around the crash scene, causing travel <span word="delay">____</span> in the area.</div>
+                        <div id="sent19" class="drag_item" draggable="true" ondragstart="drag(event)">With reports of irregularities increasing, the <span word="delay">____</span> made election monitors nervous.</div>
+                        <div id="sent20" class="drag_item" draggable="true" ondragstart="drag(event)">Now that first flight — a test mission without any astronauts on board — is going to be <span word="delay">____</span> to at least August, according to two officials with knowledge of the situation.</div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h5 class="first_word">postpone (0)</h5>
+                    <div class="des_box style-4" id="Word1Box">
+                        <div class="des1 drag_here text-center" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5px; font-weight: bold;">Drop Here !!!</div>
+                    </div>
+                    <h5 class="second_word">delay (0)</h5>
+                    <div class="des_box style-4" id="Word2Box">
+                        <div class="des2 drag_here text-center" ondrop="drop(event)" ondragover="allowDrop(event)" style="margin-bottom: 5px; font-weight: bold;">Drop Here !!!</div>
+                    </div>
+                </div>      
+                <div class="col text-center sub-btn-stage1" style="margin-top: 10px;">
+                    <button type="button" class="btn btn btn-outline-primary btn-block" id="submitBtn">Next Step</button>
+                </div> 
+                <input type="hidden" name="stage_1_answer" id="stage_1_answer">
+            </div>
+
+            <!-------------------- Staget 2 -------------------->
+            <div class="row" id="Stage2">
+                <ol id="answer_box" class="col-12"></ol>
+                <div class="col text-center sub-btn-stage2">
+                    <button type="button" class="btn btn btn-outline-primary btn-block" id="stage_2_btn">Submit</button>
+                </div>
+                <input type="hidden" name="stage_2_answer" id="stage_2_answer">
+            </div>
+        </form>
+    </div>    
+</html>  
+<script>
+$(document).ready(function(){  
+    //console.log("hey")   
+    function shuffled(){
+        //console.log("love")   
+        $(".shuffledv").each(function(){
+            //console.log("okay")
+            var divs = $(this).find('div');
+            for(var i = 0; i < divs.length; i++) $(divs[i]).remove();            
+            //the fisher yates algorithm, from http://stackoverflow.com/questions/2450954/how-to-randomize-a-javascript-array
+            var i = divs.length;
+            if ( i == 0 ) return false;
+            while ( --i ) {
+               var j = Math.floor( Math.random() * ( i + 1 ) );
+               var tempi = divs[i];
+               var tempj = divs[j];
+               divs[i] = tempj;
+               divs[j] = tempi;
+             }
+            for(var i = 0; i < divs.length; i++) $(divs[i]).appendTo(this);
+        });                    
+    }
+    shuffled();
+});
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+var target_element = null;
+function drag(ev) {
+    target_element = $(ev.target);
+    console.log(target_element);
+}
+
+function check_contain(target_id) {
+    return $(".des_box").children().toArray().find(function(element){
+        return $(element).attr("ori_id") == target_id;
+    }) === undefined; 
+}
+
+function drop(ev) {
+  ev.preventDefault();
+
+  console.log(ev.target);
+  console.log(target_element);
+  if ($(ev.target).hasClass("des1")){
+    if(check_contain(target_element.attr("id"))) {
+        var temp = $('<div></div>').attr("ori_id",target_element.attr("id"))
+                                   .addClass("row")
+                                   .addClass("my_row")
+                                   .insertAfter(($(ev.target)));
+
+        $('<div></div>').text(target_element.text())
+                        .addClass("col-11")
+                        .addClass("icon_div")
+                        .addClass("my_div")
+                        .attr("word", target_element.children("span").attr("word"))
+                        .appendTo(temp);
+
+        $("<div></div>").attr("id", target_element.attr("id")+"_button")
+                        .addClass("col-1")
+                        .addClass("my_div")
+                        .addClass("text-right")
+                        .append('<a><i class="fas icon_div fa-trash-alt fa-lg"></i></a>')
+                        .appendTo(temp);
+
+        $("#"+target_element.attr("id")).addClass("afterdrag1");
+        var count  = $('#Word1Box').children().toArray().length-1;
+        $('.first_word').text("postpone ("+count+")");
+    }
+  }
+  else if ($(ev.target).hasClass("des2")){
+    if(check_contain(target_element.attr("id"))) {
+        var temp = $('<div></div>').attr("ori_id",target_element.attr("id"))
+                                   .addClass("row")
+                                   .addClass("my_row")
+                                   .insertAfter(($(ev.target)));
+
+        $('<div></div>').text(target_element.text())
+                        .addClass("col-11")
+                        .addClass("icon_div")
+                        .addClass("my_div")
+                        .attr("word", target_element.children("span").attr("word"))
+                        .appendTo(temp);
+
+        $("<div></div>").attr("id", target_element.attr("id")+"_button")
+                        .addClass("col-1")
+                        .addClass("my_div")
+                        .addClass("text-right")
+                        .append('<a><i class="fas icon_div fa-trash-alt fa-lg"></i></a>')
+                        .appendTo(temp);
+
+        $("#"+target_element.attr("id")).addClass("afterdrag2");
+        var count  = $('#Word2Box').children().toArray().length-1;
+        console.log(count);
+        $('.second_word').text("delay ("+count+")");
+    }
+  }
+  target_element = null;
+}
+$(document).ready(function(){
+    $(document).on('click', 'div.col-1', function() {
+        var name = $(this).parent().attr('ori_id');
+        var t1 = $("#"+name).removeClass("afterdrag1").removeClass("afterdrag2");
+        $(this).parent().remove();
+        var count  = $('#Word1Box').children().toArray().length-1;
+        $('.first_word').text("postpone ("+count+")");
+        var count  = $('#Word2Box').children().toArray().length-1;
+        $('.second_word').text("delay ("+count+")");
+    });
+
+    $('#Stage2').hide();
+    function shuffle(array) {
+        array.sort(() => Math.random() - 0.5);
+    }
+    $("#submitBtn").click(function(){ 
+        var checkword1 = $('#Word1Box').find(".my_row");
+        var checkword2 = $('#Word2Box').find(".my_row");
+        w1_c = 0;
+        w2_c = 0;
+        if (checkword1.length>=5 && checkword2.length>=5) {
+            $('#Stage2').show();   
+            $('#Stage1').hide();
+            question = $('.des_box').find(".my_row");
+            var list = new Array();
+            shuffle(question);
+            console.log(question);
+            for (var i = 0; i < question.length; i++) {    
+                if(question.attr("word")=="postpone"){
+                    w1_c = w1_c+1;
+                    //$('.first_word').text("111");
+                    console.log("postpone")
+                }
+                else if(question.attr("word")=="delay"){
+                    w2_c = w2_c+1;
+                    // $('.first_word').text("222");
+                    console.log("delay")
+                }
+                // check length
+                if (list.length < 5) {
+                    list.push(question[i]);
+                } else {
+                    if (w1_c == 0 || w2_c == 0) {
+                        continue;
+                    }
+                    else {
+                        list.push(question[i]);
+                        break;
+                    }
+                }
+            }
+            // race condition - all w1/all w2
+            if (list.length == 4) {
+                list.push(question[4]);
+            }
+
+            // get stage 1 answer
+            var answer = {
+                "word_1": $.map($("#Word1Box .my_row"), function(e) {return [$(e).attr("ori_id"), $(e).text()];}),
+                "word_2": $.map($("#Word2Box .my_row"), function(e) {return [$(e).attr("ori_id"), $(e).text()];}),
+            };
+            $("#stage_1_answer").val(JSON.stringify(answer));
+
+            // create questions for stage 2
+            for (var count = 0; count < 5; count++) {
+                    text = $(list[count]).children().text();
+                    word = $(list[count]).children().attr("word");
+                    name = $(list[count]).attr("ori_id")+'_drag'
+                    console.log(name);                 
+                    var answer = $('<li></li>').attr("id","answer"+(count+1))
+                                                 .attr("class",name)
+                                                 .attr("word",word)
+                                                 .text(text)
+                                                 .appendTo($("#answer_box"));
+                    $('<div class="form-check"><label><input type="radio" name="Q'+(count+1)+'"><span class="label-text">&nbsp;postpone</span></label></div><div class="form-check"><label><input type="radio" name="Q'+(count+1)+'"> <span class="label-text">&nbsp;delay</span></label></div>').appendTo(
+                        answer
+                    ); 
+            }
+        } else {
+            if (checkword1.length < 5 && checkword2.length < 5) {
+                $("#erro").remove();
+                $("<div></div>").text("Please select at least 5 sentences for postpone and delay.")
+                        .css("color","red")
+                        .css("margin-bottom","10px")
+                        .attr("id","erro")
+                        .prependTo($(".sub-btn-stage1"));
+            } else if (checkword1.length < 5) {
+                $("#erro").remove();
+                $("<div></div>").text("Please select at least 5 sentences for postpone.")
+                        .css("color","red")
+                        .css("margin-bottom","10px")
+                        .attr("id","erro")
+                        .prependTo($(".sub-btn-stage1"));
+            } else if (checkword2.length < 5) {
+                $("#erro").remove();
+                $("<div></div>").text("Please select at least 5 sentences for delay.")
+                        .css("color","red")
+                        .css("margin-bottom","10px")
+                        .attr("id","erro")
+                        .prependTo($(".sub-btn-stage1"))
+            }
+        };
+    });
+
+	// stage 2
+	$("#stage_2_btn").click(function() {
+        console.log("stage_2_click");
+        var answers = $("#Stage2 input:checked");
+        if (answers.length == 5) {
+            var questions = $("#Stage2 li");
+            $.map(questions, function(q) {return $(q).text();}); 
+            final_answers = [];
+            // re = //gi;
+            for (var i = 0; i < 5; i++) {
+                //console.log($(questions[i].firstChild).text());
+                //console.log($(answers[i].parentNode).text());
+                final_answers.push({
+                    "question": $(questions[i].firstChild).text(),
+                    "correct_answer": $(questions[i]).attr("word"),
+                    "answer": $(answers[i].parentNode).text().trim(),
+                })
+            }
+            var all_text = $("#stage_2_answer").val(JSON.stringify(final_answers));
+            $(".form-check input").attr("disabled","disabled");
+            $("#mturk_form").submit();
+        }
+        else {
+            $("#erro").remove();
+            $("<div></div>").text("Please answer all questions !!!")
+                        .css("color","red")
+                        .css("margin-bottom","10px")
+                        .attr("id","erro")
+                        .prependTo($(".sub-btn-stage2"))
+            // setTimeout(function() { $("#erro").remove(); }, 3000);
+        }
+    });
+});
+</script>
+<style>
+body {
+    margin-bottom: 20px;
+}
+
+/*
+ *  STYLE 4
+ */
+
+.style-4::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.style-4::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.style-4::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+label{
+    position: relative;
+    cursor: pointer;
+    color: #666;
+    font-size: 20px;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    position: absolute;
+    right: 9000px;
+}
+
+/*Radio box*/
+input[type="radio"] + .label-text:before{
+    content: "_";
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing:antialiased;
+    width: 1em;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+input[type="radio"]:checked + .label-text:before{
+    content: "v";
+    text-decoration: underline;
+    color: #8e44ad;
+    animation: effect 250ms ease-in;
+}
+
+input[type="radio"]:disabled + .label-text{
+    color: #aaa;
+}
+
+input[type="radio"]:disabled + .label-text:before{
+    content: "\f111";
+    color: #ccc;
+}
+
+@keyframes effect{
+    0%{transform: scale(0);}
+    25%{transform: scale(1.3);}
+    75%{transform: scale(1.4);}
+    100%{transform: scale(1);}
+}
+.drag_here{
+    border: 2px dotted black;
+    padding: 5px; 
+}
+.my_row{
+    margin: 0px;
+    border: 1px solid black;
+    font-size: 12pt;
+}
+
+.icon_div{
+    cursor: pointer !important;
+    z-index: 999;
+}
+
+.my_div{
+    padding: 3px;
+    background: white;
+}
+.afterdrag1{
+    background-color:#B5F5F7;
+    /*border: 2px solid #d3d3d3;*/
+    padding: 5px;
+}
+.afterdrag2{
+    background-color:#FFF992;
+    /*border: 2px solid #d3d3d3;*/
+    padding: 5px;
+}
+#WordSelect {
+    border: 2px solid #000000;
+    height: 680px;
+    max-height:680px;
+    overflow-y: scroll;
+}
+
+.drag_item {
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 12pt;
+}
+
+#Word1Box {
+    background-color:#B5F5F7;
+    height: 330px;
+    max-height:330px;
+    border: 2px solid #000000;
+    overflow-y: scroll;
+    padding:5px;
+}
+#Word2Box {
+    background-color:#FFF992;
+    height: 330px;
+    max-height:330px;
+    border: 2px solid #000000;
+    overflow-y:scroll;
+    padding:5px;
+}
+</style>                                             

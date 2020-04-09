@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <lnik rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">Destroy</strong> and <strong class="highlighted">Spoil</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">Destroy</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">Spoil</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Destroy</th>
+                                <th>Spoil</th>
+                            </tr>
+                        </thead>
+                        <tr><td>Several apartment buildings were <span class="blank">_______</span> by the bomb.</td><td><input type="radio" name="971c7716-fbe4-4aa9-9e98-1feb989efafe" value="destroy" class="form-radio" /></td><td><input type="radio" name="971c7716-fbe4-4aa9-9e98-1feb989efafe" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>Food <span class="blank">_______</span> during transport, at the grocery store or in our homes.</td><td><input type="radio" name="c54f2961-9306-40f1-81d1-37ad3bc0c14b" value="destroy" class="form-radio" /></td><td><input type="radio" name="c54f2961-9306-40f1-81d1-37ad3bc0c14b" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>More than a dozen major hotels on the three islands were also damaged or <span class="blank">_______</span>.</td><td><input type="radio" name="da495cd9-facd-4c30-af82-0a84c21de357" value="destroy" class="form-radio" /></td><td><input type="radio" name="da495cd9-facd-4c30-af82-0a84c21de357" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>Human activities <span class="blank">_______</span> natural flood protection and put more people in harm’s way.</td><td><input type="radio" name="87e229e7-acb4-4e41-a17e-0b505eaf9ff8" value="destroy" class="form-radio" /></td><td><input type="radio" name="87e229e7-acb4-4e41-a17e-0b505eaf9ff8" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>Go and welcome your guest. I hope I've not <span class="blank">_______</span> things.</td><td><input type="radio" name="f78a4a56-2798-4baa-b0c5-9422535c65ef" value="destroy" class="form-radio" /></td><td><input type="radio" name="f78a4a56-2798-4baa-b0c5-9422535c65ef" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>Several grim demises later, it <span class="blank">_______</span> nothing to say that she's a changed person.</td><td><input type="radio" name="4cb4ff83-9e58-49b4-8cf8-b6285b07692e" value="destroy" class="form-radio" /></td><td><input type="radio" name="4cb4ff83-9e58-49b4-8cf8-b6285b07692e" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>She believes the building will <span class="blank">_______</span> the feeling of “a huge, undisturbed landscape”.</td><td><input type="radio" name="1e5090c0-6a74-4c3a-8082-886cd43bddcc" value="destroy" class="form-radio" /></td><td><input type="radio" name="1e5090c0-6a74-4c3a-8082-886cd43bddcc" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>That office burned down Friday morning, <span class="blank">_______</span> several decades of archives.</td><td><input type="radio" name="65416ccc-2d9c-4d9b-ba37-a8d4210d614d" value="destroy" class="form-radio" /></td><td><input type="radio" name="65416ccc-2d9c-4d9b-ba37-a8d4210d614d" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>One of the challenges in talking about the movie is trying not to <span class="blank">_______</span> its many surprises.</td><td><input type="radio" name="4af788a2-5419-4af5-b5f0-508c8f357e6e" value="destroy" class="form-radio" /></td><td><input type="radio" name="4af788a2-5419-4af5-b5f0-508c8f357e6e" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>They <span class="blank">_______</span> conventional nets and are fished with cages.</td><td><input type="radio" name="c0e5a63a-7758-4c8b-9e88-1cdb8fe82cf6" value="destroy" class="form-radio" /></td><td><input type="radio" name="c0e5a63a-7758-4c8b-9e88-1cdb8fe82cf6" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>I <span class="blank">_______</span> the letter as soon as I had read it.</td><td><input type="radio" name="d1fda498-0f1d-4930-9425-6331e5eda618" value="destroy" class="form-radio" /></td><td><input type="radio" name="d1fda498-0f1d-4930-9425-6331e5eda618" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>Officials said a sandwich shop and homes at four addresses were <span class="blank">_______</span>.</td><td><input type="radio" name="c25f2f3c-b025-4488-ac4a-8cad9e1719a9" value="destroy" class="form-radio" /></td><td><input type="radio" name="c25f2f3c-b025-4488-ac4a-8cad9e1719a9" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>The player <span class="blank">_______</span> the universe with the same sense of remoteness involved in ordering a sweater online.</td><td><input type="radio" name="8b1cf268-6a63-4ae5-b3ca-1c5ee3c5acbb" value="destroy" class="form-radio" /></td><td><input type="radio" name="8b1cf268-6a63-4ae5-b3ca-1c5ee3c5acbb" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>“We try not to <span class="blank">_______</span> the music which we perform by our own thoughts or feelings,” Mr. Gerhaher said.</td><td><input type="radio" name="dc05e40f-b64c-428a-b645-fb32b7a7c443" value="destroy" class="form-radio" /></td><td><input type="radio" name="dc05e40f-b64c-428a-b645-fb32b7a7c443" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>I don’t want to <span class="blank">_______</span> too much, but one of the rats is played by postmodern YouTube star Poppy.</td><td><input type="radio" name="ecc16dd9-00d7-422d-942a-2b4c76f1059e" value="destroy" class="form-radio" /></td><td><input type="radio" name="ecc16dd9-00d7-422d-942a-2b4c76f1059e" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>This unpleasant man with his endless complaints <span class="blank">_______</span> my journey.</td><td><input type="radio" name="436e7747-6484-456e-b9c1-d44402d6eb69" value="destroy" class="form-radio" /></td><td><input type="radio" name="436e7747-6484-456e-b9c1-d44402d6eb69" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>The evening had been <span class="blank">_______</span> by Charles Boon and Mrs Zapp.</td><td><input type="radio" name="8d64d3bb-912e-442e-bc2c-02b18261e37e" value="destroy" class="form-radio" /></td><td><input type="radio" name="8d64d3bb-912e-442e-bc2c-02b18261e37e" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>“The whole place is <span class="blank">_______</span> . . . we can’t afford to rebuild our houses,” he said.</td><td><input type="radio" name="d65dae1d-53eb-4845-aa73-3738517f1ec8" value="destroy" class="form-radio" /></td><td><input type="radio" name="d65dae1d-53eb-4845-aa73-3738517f1ec8" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>It’s a bummer when the working poor <span class="blank">_______</span> your holiday plans.</td><td><input type="radio" name="c2d8750a-9d88-4a74-9dea-013c7e1efcdd" value="destroy" class="form-radio" /></td><td><input type="radio" name="c2d8750a-9d88-4a74-9dea-013c7e1efcdd" value="spoil" class="form-radio" /></td></tr>
+                        <tr><td>“It’s people that <span class="blank">_______</span> everything nice in the whole world!” she cried.</td><td><input type="radio" name="19293aa8-5896-4a40-89b4-21b98c4da4a0" value="destroy" class="form-radio" /></td><td><input type="radio" name="19293aa8-5896-4a40-89b4-21b98c4da4a0" value="spoil" class="form-radio" /></td></tr>  
+                    </table>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">Destroy</strong> and <strong class="highlighted">Spoil</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li>
+                            <li>Please select at least 3 sentences for <strong class="highlighted">Word 1</strong> and 3 sentences for <strong class="highlighted">Word 2</strong>.
+                        </ul>
+                    </div>
+
+                    <div class="col-6 sentence_panel" id="sentence_panel_1">
+                        <div class="word">Word 1 - <span class="num">( 0 )</span></div>
+                        <div class="not_selected sentence" id="971c7716-fbe4-4aa9-9e98-1feb989efafe">Several apartment buildings were <span class="blank">_______</span> by the bomb.</div>
+                        <div class="not_selected sentence" id="d1fda498-0f1d-4930-9425-6331e5eda618">I <span class="blank">_______</span> the letter as soon as I had read it.</div>
+                        <div class="not_selected sentence" id="65416ccc-2d9c-4d9b-ba37-a8d4210d614d">That office burned down Friday morning, <span class="blank">_______</span> several decades of archives.</div>
+                        <div class="not_selected sentence" id="d65dae1d-53eb-4845-aa73-3738517f1ec8">“The whole place is <span class="blank">_______</span> . . . we can’t afford to rebuild our houses,” he said.</div>
+                        <div class="not_selected sentence" id="1e5090c0-6a74-4c3a-8082-886cd43bddcc">She believes the building will <span class="blank">_______</span> the feeling of “a huge, undisturbed landscape”.</div>
+                        <div class="not_selected sentence" id="87e229e7-acb4-4e41-a17e-0b505eaf9ff8">Human activities <span class="blank">_______</span> natural flood protection and put more people in harm’s way.</div>
+                        <div class="not_selected sentence" id="8b1cf268-6a63-4ae5-b3ca-1c5ee3c5acbb">The player <span class="blank">_______</span> the universe with the same sense of remoteness involved in ordering a sweater online.</div>
+                        <div class="not_selected sentence" id="da495cd9-facd-4c30-af82-0a84c21de357">More than a dozen major hotels on the three islands were also damaged or <span class="blank">_______</span>.</div>
+                        <div class="not_selected sentence" id="c0e5a63a-7758-4c8b-9e88-1cdb8fe82cf6">They <span class="blank">_______</span> conventional nets and are fished with cages.</div>
+                        <div class="not_selected sentence" id="c25f2f3c-b025-4488-ac4a-8cad9e1719a9">Officials said a sandwich shop and homes at four addresses were <span class="blank">_______</span>.</div>
+                    </div>
+                    <div class="col-6 sentence_panel" id="sentence_panel_2">
+                        <div class="word">Word 2 - <span class="num">( 0 )</span> </div>
+                        <div class="not_selected sentence" id="f78a4a56-2798-4baa-b0c5-9422535c65ef">Go and welcome your guest. I hope I've not <span class="blank">_______</span> things.</div>
+                        <div class="not_selected sentence" id="8d64d3bb-912e-442e-bc2c-02b18261e37e">The evening had been <span class="blank">_______</span> by Charles Boon and Mrs Zapp.</div>
+                        <div class="not_selected sentence" id="436e7747-6484-456e-b9c1-d44402d6eb69">This unpleasant man with his endless complaints <span class="blank">_______</span> my journey.</div>
+                        <div class="not_selected sentence" id="4af788a2-5419-4af5-b5f0-508c8f357e6e">One of the challenges in talking about the movie is trying not to <span class="blank">_______</span> its many surprises.</div>
+                        <div class="not_selected sentence" id="19293aa8-5896-4a40-89b4-21b98c4da4a0">“It’s people that <span class="blank">_______</span> everything nice in the whole world!” she cried.</div>
+                        <div class="not_selected sentence" id="4cb4ff83-9e58-49b4-8cf8-b6285b07692e">Several grim demises later, it <span class="blank">_______</span> nothing to say that she's a changed person.</div>
+                        <div class="not_selected sentence" id="ecc16dd9-00d7-422d-942a-2b4c76f1059e">I don’t want to <span class="blank">_______</span> too much, but one of the rats is played by postmodern YouTube star Poppy.</div>
+                        <div class="not_selected sentence" id="c2d8750a-9d88-4a74-9dea-013c7e1efcdd">It’s a bummer when the working poor <span class="blank">_______</span> your holiday plans.</div>
+                        <div class="not_selected sentence" id="dc05e40f-b64c-428a-b645-fb32b7a7c443">“We try not to <span class="blank">_______</span> the music which we perform by our own thoughts or feelings,” Mr. Gerhaher said.</div>
+                        <div class="not_selected sentence" id="c54f2961-9306-40f1-81d1-37ad3bc0c14b">Food <span class="blank">_______</span> during transport, at the grocery store or in our homes.</div>
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-info" id="next_btn">Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn">Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

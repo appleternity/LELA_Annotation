@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <lnik rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">Realize</strong> and <strong class="highlighted">Understand</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">Realize</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">Understand</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Realize</th>
+                                <th>Understand</th>
+                            </tr>
+                        </thead>
+                        <tr><td>When did you first <span class="blank">_______</span> that mathematics fascinated you?</td><td><input type="radio" name="7703808b-84d6-4bcb-8242-32e53daa9bb1" value="realize" class="form-radio" /></td><td><input type="radio" name="7703808b-84d6-4bcb-8242-32e53daa9bb1" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>She <span class="blank">_______</span> that she could not reach the shore.</td><td><input type="radio" name="7dfe8318-70d3-4c29-8b03-f97202d1d0f5" value="realize" class="form-radio" /></td><td><input type="radio" name="7dfe8318-70d3-4c29-8b03-f97202d1d0f5" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>“That’s when I <span class="blank">_______</span> that I loved you so much because you are fearless.”</td><td><input type="radio" name="9ac566f3-0de7-494e-abed-bfffffec6bce" value="realize" class="form-radio" /></td><td><input type="radio" name="9ac566f3-0de7-494e-abed-bfffffec6bce" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>There was no definite evidence, I <span class="blank">_______</span>, which could be brought against her.</td><td><input type="radio" name="f3e9cf74-723b-4e1c-a2be-ca9f3d18f79a" value="realize" class="form-radio" /></td><td><input type="radio" name="f3e9cf74-723b-4e1c-a2be-ca9f3d18f79a" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>I <span class="blank">_______</span> that this man wasn't going to hurt me.</td><td><input type="radio" name="2c6083ba-282b-4358-b0a2-cab781973e45" value="realize" class="form-radio" /></td><td><input type="radio" name="2c6083ba-282b-4358-b0a2-cab781973e45" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>“We are collecting pieces of a puzzle and need more pieces to <span class="blank">_______</span> better what is going on.”</td><td><input type="radio" name="596f418d-734a-40e0-8e63-9035b316c842" value="realize" class="form-radio" /></td><td><input type="radio" name="596f418d-734a-40e0-8e63-9035b316c842" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>I found the lecture hard to <span class="blank">_______</span>.</td><td><input type="radio" name="66d3a734-8629-482e-9195-7b0e7c828d1c" value="realize" class="form-radio" /></td><td><input type="radio" name="66d3a734-8629-482e-9195-7b0e7c828d1c" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>It was a huge betrayal. He was my friend. I don't <span class="blank">_______</span> how you do that to someone that you've been a friend to.</td><td><input type="radio" name="bccb10b0-5401-49ca-ac2a-67df2182323c" value="realize" class="form-radio" /></td><td><input type="radio" name="bccb10b0-5401-49ca-ac2a-67df2182323c" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>His lecture was confusing; no one could <span class="blank">_______</span> the terminology.</td><td><input type="radio" name="b2ff0ff4-e1f2-47f4-960b-8c0bc256de20" value="realize" class="form-radio" /></td><td><input type="radio" name="b2ff0ff4-e1f2-47f4-960b-8c0bc256de20" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>“But for me, it was like: ‘Okay, I <span class="blank">_______</span> they’re building a team there.</td><td><input type="radio" name="71167cba-5378-4763-bf49-c735e247b3fe" value="realize" class="form-radio" /></td><td><input type="radio" name="71167cba-5378-4763-bf49-c735e247b3fe" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>A few years ago, I <span class="blank">_______</span> that I needed to be able to look like a normal person but perform like a professional athlete.</td><td><input type="radio" name="bd25551f-e091-4df3-807e-8cfc14c82358" value="realize" class="form-radio" /></td><td><input type="radio" name="bd25551f-e091-4df3-807e-8cfc14c82358" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>“The city was losing the ability to manage, design, and <span class="blank">_______</span> what was happening in the public realm,” she says.</td><td><input type="radio" name="d465b20a-36fa-4790-996c-e897fdb94792" value="realize" class="form-radio" /></td><td><input type="radio" name="d465b20a-36fa-4790-996c-e897fdb94792" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>He didn’t seem to <span class="blank">_______</span> that doing so in front of the wall made the case for the wall.</td><td><input type="radio" name="f9579ebe-1598-4e92-a3c0-0239d8438f39" value="realize" class="form-radio" /></td><td><input type="radio" name="f9579ebe-1598-4e92-a3c0-0239d8438f39" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>Until I saw the clock I hadn't <span class="blank">_______</span> how late it was.</td><td><input type="radio" name="212e061b-f788-4c2b-aa16-3fbca498f51b" value="realize" class="form-radio" /></td><td><input type="radio" name="212e061b-f788-4c2b-aa16-3fbca498f51b" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>On the plane home, I suddenly <span class="blank">_______</span> that I had left my coat at the hotel.</td><td><input type="radio" name="fd64a690-b64d-4bd1-9452-a1d2c62b84ac" value="realize" class="form-radio" /></td><td><input type="radio" name="fd64a690-b64d-4bd1-9452-a1d2c62b84ac" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>I <span class="blank">_______</span> he's had several wives.</td><td><input type="radio" name="5ac3065e-c7ff-4b0a-9f77-27aa8b7e3df2" value="realize" class="form-radio" /></td><td><input type="radio" name="5ac3065e-c7ff-4b0a-9f77-27aa8b7e3df2" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>I don’t tell people I was homeless, because they wouldn’t <span class="blank">_______</span>.</td><td><input type="radio" name="c4ffa36c-e28c-4658-884a-0b30a579952b" value="realize" class="form-radio" /></td><td><input type="radio" name="c4ffa36c-e28c-4658-884a-0b30a579952b" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>“I really want to help students <span class="blank">_______</span> their potential even if they can’t home-school,” Haley said.</td><td><input type="radio" name="7e0c0b9a-0f5d-4fbb-888d-d12464cf669a" value="realize" class="form-radio" /></td><td><input type="radio" name="7e0c0b9a-0f5d-4fbb-888d-d12464cf669a" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>I <span class="blank">_______</span> the tension in trying to reenter academia — the very system that let you down before — where disclosing details might circle back to harm you.</td><td><input type="radio" name="d4166733-6cd0-4025-b521-dd4077861775" value="realize" class="form-radio" /></td><td><input type="radio" name="d4166733-6cd0-4025-b521-dd4077861775" value="understand" class="form-radio" /></td></tr>
+                        <tr><td>As soon as I saw him, I <span class="blank">_______</span> that I'd seen him before.</td><td><input type="radio" name="5cf9586b-1742-4cc4-8029-42e0f0970d2a" value="realize" class="form-radio" /></td><td><input type="radio" name="5cf9586b-1742-4cc4-8029-42e0f0970d2a" value="understand" class="form-radio" /></td></tr>  
+                    </table>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">Realize</strong> and <strong class="highlighted">Understand</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li>
+                            <li>Please select at least 3 sentences for <strong class="highlighted">Word 1</strong> and 3 sentences for <strong class="highlighted">Word 2</strong>.
+                        </ul>
+                    </div>
+
+                    <div class="col-6 sentence_panel" id="sentence_panel_1">
+                        <div class="word">Word 1 - <span class="num">( 0 )</span></div>
+                        <div class="not_selected sentence" id="fd64a690-b64d-4bd1-9452-a1d2c62b84ac">On the plane home, I suddenly <span class="blank">_______</span> that I had left my coat at the hotel.</div>
+                        <div class="not_selected sentence" id="212e061b-f788-4c2b-aa16-3fbca498f51b">Until I saw the clock I hadn't <span class="blank">_______</span> how late it was.</div>
+                        <div class="not_selected sentence" id="2c6083ba-282b-4358-b0a2-cab781973e45">I <span class="blank">_______</span> that this man wasn't going to hurt me.</div>
+                        <div class="not_selected sentence" id="7dfe8318-70d3-4c29-8b03-f97202d1d0f5">She <span class="blank">_______</span> that she could not reach the shore.</div>
+                        <div class="not_selected sentence" id="5cf9586b-1742-4cc4-8029-42e0f0970d2a">As soon as I saw him, I <span class="blank">_______</span> that I'd seen him before.</div>
+                        <div class="not_selected sentence" id="9ac566f3-0de7-494e-abed-bfffffec6bce">“That’s when I <span class="blank">_______</span> that I loved you so much because you are fearless.”</div>
+                        <div class="not_selected sentence" id="bd25551f-e091-4df3-807e-8cfc14c82358">A few years ago, I <span class="blank">_______</span> that I needed to be able to look like a normal person but perform like a professional athlete.</div>
+                        <div class="not_selected sentence" id="7703808b-84d6-4bcb-8242-32e53daa9bb1">When did you first <span class="blank">_______</span> that mathematics fascinated you?</div>
+                        <div class="not_selected sentence" id="f9579ebe-1598-4e92-a3c0-0239d8438f39">He didn’t seem to <span class="blank">_______</span> that doing so in front of the wall made the case for the wall.</div>
+                        <div class="not_selected sentence" id="7e0c0b9a-0f5d-4fbb-888d-d12464cf669a">“I really want to help students <span class="blank">_______</span> their potential even if they can’t home-school,” Haley said.</div>
+                    </div>
+                    <div class="col-6 sentence_panel" id="sentence_panel_2">
+                        <div class="word">Word 2 - <span class="num">( 0 )</span> </div>
+                        <div class="not_selected sentence" id="66d3a734-8629-482e-9195-7b0e7c828d1c">I found the lecture hard to <span class="blank">_______</span>.</div>
+                        <div class="not_selected sentence" id="b2ff0ff4-e1f2-47f4-960b-8c0bc256de20">His lecture was confusing; no one could <span class="blank">_______</span> the terminology.</div>
+                        <div class="not_selected sentence" id="5ac3065e-c7ff-4b0a-9f77-27aa8b7e3df2">I <span class="blank">_______</span> he's had several wives.</div>
+                        <div class="not_selected sentence" id="f3e9cf74-723b-4e1c-a2be-ca9f3d18f79a">There was no definite evidence, I <span class="blank">_______</span>, which could be brought against her.</div>
+                        <div class="not_selected sentence" id="bccb10b0-5401-49ca-ac2a-67df2182323c">It was a huge betrayal. He was my friend. I don't <span class="blank">_______</span> how you do that to someone that you've been a friend to.</div>
+                        <div class="not_selected sentence" id="596f418d-734a-40e0-8e63-9035b316c842">“We are collecting pieces of a puzzle and need more pieces to <span class="blank">_______</span> better what is going on.”</div>
+                        <div class="not_selected sentence" id="c4ffa36c-e28c-4658-884a-0b30a579952b">I don’t tell people I was homeless, because they wouldn’t <span class="blank">_______</span>.</div>
+                        <div class="not_selected sentence" id="d465b20a-36fa-4790-996c-e897fdb94792">“The city was losing the ability to manage, design, and <span class="blank">_______</span> what was happening in the public realm,” she says.</div>
+                        <div class="not_selected sentence" id="71167cba-5378-4763-bf49-c735e247b3fe">“But for me, it was like: ‘Okay, I <span class="blank">_______</span> they’re building a team there.</div>
+                        <div class="not_selected sentence" id="d4166733-6cd0-4025-b521-dd4077861775">I <span class="blank">_______</span> the tension in trying to reenter academia — the very system that let you down before — where disclosing details might circle back to harm you.</div>
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-info" id="next_btn">Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn">Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

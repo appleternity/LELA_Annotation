@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <lnik rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">Skilled</strong> and <strong class="highlighted">Skillful</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">Skilled</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">Skillful</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Skilled</th>
+                                <th>Skillful</th>
+                            </tr>
+                        </thead>
+                        <tr><td>In Sampson’s <span class="blank">_______</span> hands, the play of light becomes not only an evocation of life inside the house, but also an entry into the historical setting.</td><td><input type="radio" name="90a14085-d380-4506-a876-59a75016b776" value="skilled" class="form-radio" /></td><td><input type="radio" name="90a14085-d380-4506-a876-59a75016b776" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>They trust each other, and then on top of it, they’ve got really <span class="blank">_______</span>, talented kids.</td><td><input type="radio" name="7b3a05b8-b5b9-4739-b896-227e750cffcc" value="skilled" class="form-radio" /></td><td><input type="radio" name="7b3a05b8-b5b9-4739-b896-227e750cffcc" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>After the break, Buffon showed that he’s still - at age 40 - one of the world’s most <span class="blank">_______</span> goalkeepers with a series of reflex saves.</td><td><input type="radio" name="572bf268-6fa5-4896-9464-ec889448a62a" value="skilled" class="form-radio" /></td><td><input type="radio" name="572bf268-6fa5-4896-9464-ec889448a62a" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>As an artist, he was very <span class="blank">_______</span> with a pencil.</td><td><input type="radio" name="50a3c93d-97a0-4e80-8590-5c6ac7398562" value="skilled" class="form-radio" /></td><td><input type="radio" name="50a3c93d-97a0-4e80-8590-5c6ac7398562" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>Skillfuling visual communication is the difference between a <span class="blank">_______</span> artist and a novice.</td><td><input type="radio" name="ebab6b9d-e174-4294-9553-5eb0a0f02dbc" value="skilled" class="form-radio" /></td><td><input type="radio" name="ebab6b9d-e174-4294-9553-5eb0a0f02dbc" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>She’s a <span class="blank">_______</span> rhetorician, gracefully navigating her way around partisan land mines by talking about babies and ancient Greece.</td><td><input type="radio" name="9456b648-0302-4a4a-b210-778541c4e345" value="skilled" class="form-radio" /></td><td><input type="radio" name="9456b648-0302-4a4a-b210-778541c4e345" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>He was only interested in highly-paid, <span class="blank">_______</span> work.</td><td><input type="radio" name="99fcc871-cd83-4366-8efc-18f5636bd29d" value="skilled" class="form-radio" /></td><td><input type="radio" name="99fcc871-cd83-4366-8efc-18f5636bd29d" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>"I think that I am a <span class="blank">_______</span> communicator," she said.</td><td><input type="radio" name="e51e254c-51c1-4218-ab6c-0204bc326d46" value="skilled" class="form-radio" /></td><td><input type="radio" name="e51e254c-51c1-4218-ab6c-0204bc326d46" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>It takes four years to train a <span class="blank">_______</span> engineer.</td><td><input type="radio" name="c5857dac-9b9d-453c-846c-75a6dd4589b6" value="skilled" class="form-radio" /></td><td><input type="radio" name="c5857dac-9b9d-453c-846c-75a6dd4589b6" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>She was not surprised that her daughter-in-law was the pilot credited with the <span class="blank">_______</span> landing.</td><td><input type="radio" name="504cb529-c73d-478d-87ab-30e11309ac02" value="skilled" class="form-radio" /></td><td><input type="radio" name="504cb529-c73d-478d-87ab-30e11309ac02" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>Weaving was a very <span class="blank">_______</span> job, requiring a five-year apprenticeship.</td><td><input type="radio" name="5441a580-ec4d-444c-9fc5-2364d9a36b54" value="skilled" class="form-radio" /></td><td><input type="radio" name="5441a580-ec4d-444c-9fc5-2364d9a36b54" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>She is enormously <span class="blank">_______</span> at appearing to share details about her personal life without actually divulging very much.</td><td><input type="radio" name="c950f6c0-6ca6-4630-9499-092b79d9a22e" value="skilled" class="form-radio" /></td><td><input type="radio" name="c950f6c0-6ca6-4630-9499-092b79d9a22e" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>This is not a profoundly <span class="blank">_______</span> or insightful question, but it stopped me in my tracks.</td><td><input type="radio" name="11c9a785-2a6e-49da-aee7-b5b9c7a66624" value="skilled" class="form-radio" /></td><td><input type="radio" name="11c9a785-2a6e-49da-aee7-b5b9c7a66624" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>He remains one of the most <span class="blank">_______</span> players around and a proven match-winner on his day.</td><td><input type="radio" name="a4ab3e6e-9997-4d01-b9f5-2fef314b4149" value="skilled" class="form-radio" /></td><td><input type="radio" name="a4ab3e6e-9997-4d01-b9f5-2fef314b4149" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>Needless to say, some <span class="blank">_______</span> negotiations took place.</td><td><input type="radio" name="1725e957-0bba-4d0c-b27f-7b85ea8740e9" value="skilled" class="form-radio" /></td><td><input type="radio" name="1725e957-0bba-4d0c-b27f-7b85ea8740e9" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>We need more <span class="blank">_______</span> workers in this country.</td><td><input type="radio" name="cc5db595-f206-4b06-ab60-9bc78f1ae401" value="skilled" class="form-radio" /></td><td><input type="radio" name="cc5db595-f206-4b06-ab60-9bc78f1ae401" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>They are a great team with a lot of <span class="blank">_______</span> players.</td><td><input type="radio" name="4482b434-e420-4d1c-8440-a14f10924f49" value="skilled" class="form-radio" /></td><td><input type="radio" name="4482b434-e420-4d1c-8440-a14f10924f49" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>For a high <span class="blank">_______</span> immigrant with an advanced degree, the fiscal surplus is nearly $1 million.</td><td><input type="radio" name="56a5be71-6d88-4051-ab0c-d385dd091f19" value="skilled" class="form-radio" /></td><td><input type="radio" name="56a5be71-6d88-4051-ab0c-d385dd091f19" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>It is also a <span class="blank">_______</span> and imaginative blurring of fact and fiction, albeit one that insistently calls the act of such blurring into question.</td><td><input type="radio" name="f0bf4b13-6b14-4f5a-a63b-419791adf5f6" value="skilled" class="form-radio" /></td><td><input type="radio" name="f0bf4b13-6b14-4f5a-a63b-419791adf5f6" value="skillful" class="form-radio" /></td></tr>
+                        <tr><td>He knows exactly how to touch me and where, he is very responsive to my body—he’s just really <span class="blank">_______</span>.</td><td><input type="radio" name="90a7be59-ff39-4c2c-a092-3f8067ab1952" value="skilled" class="form-radio" /></td><td><input type="radio" name="90a7be59-ff39-4c2c-a092-3f8067ab1952" value="skillful" class="form-radio" /></td></tr> 
+                    </table>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">Skilled</strong> and <strong class="highlighted">Skillful</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li>
+                            <li>Please select at least 3 sentences for <strong class="highlighted">Word 1</strong> and 3 sentences for <strong class="highlighted">Word 2</strong>.
+                        </ul>
+                    </div>
+
+                    <div class="col-6 sentence_panel" id="sentence_panel_1">
+                        <div class="word">Word 1 - <span class="num">( 0 )</span></div>
+                        <div class="not_selected sentence" id="c5857dac-9b9d-453c-846c-75a6dd4589b6">It takes four years to train a <span class="blank">_______</span> engineer.</div>
+                        <div class="not_selected sentence" id="cc5db595-f206-4b06-ab60-9bc78f1ae401">We need more <span class="blank">_______</span> workers in this country.</div>
+                        <div class="not_selected sentence" id="99fcc871-cd83-4366-8efc-18f5636bd29d">He was only interested in highly-paid, <span class="blank">_______</span> work.</div>
+                        <div class="not_selected sentence" id="5441a580-ec4d-444c-9fc5-2364d9a36b54">Weaving was a very <span class="blank">_______</span> job, requiring a five-year apprenticeship.</div>
+                        <div class="not_selected sentence" id="ebab6b9d-e174-4294-9553-5eb0a0f02dbc">Understanding visual communication is the difference between a <span class="blank">_______</span> artist and a novice.</div>
+                        <div class="not_selected sentence" id="56a5be71-6d88-4051-ab0c-d385dd091f19">For a high <span class="blank">_______</span> immigrant with an advanced degree, the fiscal surplus is nearly $1 million.</div>
+                        <div class="not_selected sentence" id="e51e254c-51c1-4218-ab6c-0204bc326d46">"I think that I am a <span class="blank">_______</span> communicator," she said.</div>
+                        <div class="not_selected sentence" id="90a7be59-ff39-4c2c-a092-3f8067ab1952">He knows exactly how to touch me and where, he is very responsive to my body—he’s just really <span class="blank">_______</span>.</div>
+                        <div class="not_selected sentence" id="7b3a05b8-b5b9-4739-b896-227e750cffcc">They trust each other, and then on top of it, they’ve got really <span class="blank">_______</span>, talented kids.</div>
+                        <div class="not_selected sentence" id="c950f6c0-6ca6-4630-9499-092b79d9a22e">She is enormously <span class="blank">_______</span> at appearing to share details about her personal life without actually divulging very much.</div>
+                    </div>
+                    <div class="col-6 sentence_panel" id="sentence_panel_2">
+                        <div class="word">Word 2 - <span class="num">( 0 )</span> </div>
+                        <div class="not_selected sentence" id="4482b434-e420-4d1c-8440-a14f10924f49">They are a great team with a lot of <span class="blank">_______</span> players.</div>
+                        <div class="not_selected sentence" id="50a3c93d-97a0-4e80-8590-5c6ac7398562">As an artist, he was very <span class="blank">_______</span> with a pencil.</div>
+                        <div class="not_selected sentence" id="572bf268-6fa5-4896-9464-ec889448a62a">After the break, Buffon showed that he’s still - at age 40 - one of the world’s most <span class="blank">_______</span> goalkeepers with a series of reflex saves.</div>
+                        <div class="not_selected sentence" id="a4ab3e6e-9997-4d01-b9f5-2fef314b4149">He remains one of the most <span class="blank">_______</span> players around and a proven match-winner on his day.</div>
+                        <div class="not_selected sentence" id="f0bf4b13-6b14-4f5a-a63b-419791adf5f6">It is also a <span class="blank">_______</span> and imaginative blurring of fact and fiction, albeit one that insistently calls the act of such blurring into question.</div>
+                        <div class="not_selected sentence" id="9456b648-0302-4a4a-b210-778541c4e345">She’s a <span class="blank">_______</span> rhetorician, gracefully navigating her way around partisan land mines by talking about babies and ancient Greece.</div>
+                        <div class="not_selected sentence" id="11c9a785-2a6e-49da-aee7-b5b9c7a66624">This is not a profoundly <span class="blank">_______</span> or insightful question, but it stopped me in my tracks.</div>
+                        <div class="not_selected sentence" id="1725e957-0bba-4d0c-b27f-7b85ea8740e9">Needless to say, some <span class="blank">_______</span> negotiations took place.</div>
+                        <div class="not_selected sentence" id="90a14085-d380-4506-a876-59a75016b776">In Sampson’s <span class="blank">_______</span> hands, the play of light becomes not only an evocation of life inside the house, but also an entry into the historical setting.</div>
+                        <div class="not_selected sentence" id="504cb529-c73d-478d-87ab-30e11309ac02">She was not surprised that her daughter-in-law was the pilot credited with the <span class="blank">_______</span> landing.</div>
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-info" id="next_btn">Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn">Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

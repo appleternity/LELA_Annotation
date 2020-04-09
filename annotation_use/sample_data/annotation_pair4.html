@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <lnik rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">Manage</strong> and <strong class="highlighted">Arrange</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">Manage</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">Arrange</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>Manage</th>
+                                <th>Arrange</th>
+                            </tr>
+                        </thead>
+                        <tr><td>How did you <span class="blank">_______</span> to do that?</td><td><input type="radio" name="25202ce0-c142-41ad-8ce2-c2bc9e5aa66f" value="manage" class="form-radio" /></td><td><input type="radio" name="25202ce0-c142-41ad-8ce2-c2bc9e5aa66f" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>Still, the designers <span class="blank">_______</span> to inject some whimsy.</td><td><input type="radio" name="0b2ebe07-a03d-4fb5-8fb7-2f92f20dde8e" value="manage" class="form-radio" /></td><td><input type="radio" name="0b2ebe07-a03d-4fb5-8fb7-2f92f20dde8e" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>I will <span class="blank">_______</span> for the magazine to be sent to you every month.</td><td><input type="radio" name="9880d816-5a4c-4911-8371-da402e6e8f70" value="manage" class="form-radio" /></td><td><input type="radio" name="9880d816-5a4c-4911-8371-da402e6e8f70" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>Manuelito <span class="blank">_______</span> to avoid capture.</td><td><input type="radio" name="253325d8-7044-44ed-a2c7-8b581f04a31b" value="manage" class="form-radio" /></td><td><input type="radio" name="253325d8-7044-44ed-a2c7-8b581f04a31b" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>“The House of Commons did not <span class="blank">_______</span> to find a majority again last night”, Barnier said.</td><td><input type="radio" name="af69c8f9-8478-416f-8535-82e13756ff3c" value="manage" class="form-radio" /></td><td><input type="radio" name="af69c8f9-8478-416f-8535-82e13756ff3c" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>“There are many things to <span class="blank">_______</span>,” Tía Cuca said, laying a hand on Naomi’s shoulder.</td><td><input type="radio" name="823b7c0c-3cb3-4845-90c5-f7b85d935ffe" value="manage" class="form-radio" /></td><td><input type="radio" name="823b7c0c-3cb3-4845-90c5-f7b85d935ffe" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>“If he would just shut up and let Lighthizer <span class="blank">_______</span> it, it would get through.”</td><td><input type="radio" name="a67afbce-1cd2-415f-b0d4-16fcbd7baa26" value="manage" class="form-radio" /></td><td><input type="radio" name="a67afbce-1cd2-415f-b0d4-16fcbd7baa26" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>Before it dies, a frog may <span class="blank">_______</span> to hop its way to a new stream or pond, spreading the fungus further.</td><td><input type="radio" name="45d2df3a-86d6-428c-aeb1-98fd5eed4ff0" value="manage" class="form-radio" /></td><td><input type="radio" name="45d2df3a-86d6-428c-aeb1-98fd5eed4ff0" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>I let my accountant <span class="blank">_______</span> all my financial affairs.</td><td><input type="radio" name="ddf884f9-9e65-4372-bd30-72fb36e88651" value="manage" class="form-radio" /></td><td><input type="radio" name="ddf884f9-9e65-4372-bd30-72fb36e88651" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>She then photographed herself in the same position, and <span class="blank">_______</span> the images so the two figures were looking at each other.</td><td><input type="radio" name="9ca2deec-ea8a-41f8-a70b-7a0a57119703" value="manage" class="form-radio" /></td><td><input type="radio" name="9ca2deec-ea8a-41f8-a70b-7a0a57119703" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>Later, she <span class="blank">_______</span> to meet a friend and put the date and time into her Gmail diary on her computer - but not the location.</td><td><input type="radio" name="60ccb880-9910-4779-ba49-e7c2708d33b4" value="manage" class="form-radio" /></td><td><input type="radio" name="60ccb880-9910-4779-ba49-e7c2708d33b4" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>The police will then <span class="blank">_______</span> for these weapons to be handed over, and eventually destroyed.</td><td><input type="radio" name="0a121215-1c99-4cb2-89fb-dc90ddca060e" value="manage" class="form-radio" /></td><td><input type="radio" name="0a121215-1c99-4cb2-89fb-dc90ddca060e" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>So, in December, he <span class="blank">_______</span> a phone call with Trump.</td><td><input type="radio" name="53390560-bf82-4696-96e2-80333d0fdb3e" value="manage" class="form-radio" /></td><td><input type="radio" name="53390560-bf82-4696-96e2-80333d0fdb3e" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>I had <span class="blank">_______</span> for a photographer to take pictures of the body.</td><td><input type="radio" name="cbbba1c5-6c6d-417f-baeb-18293064cbba" value="manage" class="form-radio" /></td><td><input type="radio" name="cbbba1c5-6c6d-417f-baeb-18293064cbba" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>I was told that you might <span class="blank">_______</span> to repair it.</td><td><input type="radio" name="ed10a1e2-c3ba-4d4d-be29-b6e8cbb19150" value="manage" class="form-radio" /></td><td><input type="radio" name="ed10a1e2-c3ba-4d4d-be29-b6e8cbb19150" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>The purpose was to <span class="blank">_______</span> cash payments to Romanian hackers.</td><td><input type="radio" name="853ad55a-850f-454e-9cb2-fff32db778af" value="manage" class="form-radio" /></td><td><input type="radio" name="853ad55a-850f-454e-9cb2-fff32db778af" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>He had <span class="blank">_______</span> for roadblocks to be erected.</td><td><input type="radio" name="2a2947eb-5b20-4a85-895b-5a68bad2ab66" value="manage" class="form-radio" /></td><td><input type="radio" name="2a2947eb-5b20-4a85-895b-5a68bad2ab66" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>"I'm also <span class="blank">_______</span> to meet the prime minister next week again on a one-to-one basis," he added.</td><td><input type="radio" name="2415c18d-c682-4246-8e5c-3fefe1365bd3" value="manage" class="form-radio" /></td><td><input type="radio" name="2415c18d-c682-4246-8e5c-3fefe1365bd3" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>He <span class="blank">_______</span> to run away and was taken to hospital.</td><td><input type="radio" name="16e92c6e-8541-47ca-80de-995ebbd867ae" value="manage" class="form-radio" /></td><td><input type="radio" name="16e92c6e-8541-47ca-80de-995ebbd867ae" value="arrange" class="form-radio" /></td></tr>
+                        <tr><td>My issue is how to <span class="blank">_______</span> my sadness at the office.</td><td><input type="radio" name="da369a0a-a5d4-4ac1-b1bc-6b1826e3c36b" value="manage" class="form-radio" /></td><td><input type="radio" name="da369a0a-a5d4-4ac1-b1bc-6b1826e3c36b" value="arrange" class="form-radio" /></td></tr>  
+                    </table>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">Manage</strong> and <strong class="highlighted">Arrange</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li>
+                            <li>Please select at least 3 sentences for <strong class="highlighted">Word 1</strong> and 3 sentences for <strong class="highlighted">Word 2</strong>.
+                        </ul>
+                    </div>
+
+                    <div class="col-6 sentence_panel" id="sentence_panel_1">
+                        <div class="word">Word 1 - <span class="num">( 0 )</span></div>
+                        <div class="not_selected sentence" id="253325d8-7044-44ed-a2c7-8b581f04a31b">Manuelito <span class="blank">_______</span> to avoid capture.</div>
+                        <div class="not_selected sentence" id="25202ce0-c142-41ad-8ce2-c2bc9e5aa66f">How did you <span class="blank">_______</span> to do that?</div>
+                        <div class="not_selected sentence" id="ddf884f9-9e65-4372-bd30-72fb36e88651">I let my accountant <span class="blank">_______</span> all my financial affairs.</div>
+                        <div class="not_selected sentence" id="ed10a1e2-c3ba-4d4d-be29-b6e8cbb19150">I was told that you might <span class="blank">_______</span> to repair it.</div>
+                        <div class="not_selected sentence" id="da369a0a-a5d4-4ac1-b1bc-6b1826e3c36b">My issue is how to <span class="blank">_______</span> my sadness at the office.</div>
+                        <div class="not_selected sentence" id="af69c8f9-8478-416f-8535-82e13756ff3c">“The House of Commons did not <span class="blank">_______</span> to find a majority again last night”, Barnier said.</div>
+                        <div class="not_selected sentence" id="45d2df3a-86d6-428c-aeb1-98fd5eed4ff0">Before it dies, a frog may <span class="blank">_______</span> to hop its way to a new stream or pond, spreading the fungus further.</div>
+                        <div class="not_selected sentence" id="16e92c6e-8541-47ca-80de-995ebbd867ae">He <span class="blank">_______</span> to run away and was taken to hospital.</div>
+                        <div class="not_selected sentence" id="0b2ebe07-a03d-4fb5-8fb7-2f92f20dde8e">Still, the designers <span class="blank">_______</span> to inject some whimsy.</div>
+                        <div class="not_selected sentence" id="a67afbce-1cd2-415f-b0d4-16fcbd7baa26">“If he would just shut up and let Lighthizer <span class="blank">_______</span> it, it would get through.”</div>
+                    </div>
+                    <div class="col-6 sentence_panel" id="sentence_panel_2">
+                        <div class="word">Word 2 - <span class="num">( 0 )</span> </div>
+                        <div class="not_selected sentence" id="2a2947eb-5b20-4a85-895b-5a68bad2ab66">He had <span class="blank">_______</span> for roadblocks to be erected.</div>
+                        <div class="not_selected sentence" id="cbbba1c5-6c6d-417f-baeb-18293064cbba">I had <span class="blank">_______</span> for a photographer to take pictures of the body.</div>
+                        <div class="not_selected sentence" id="9880d816-5a4c-4911-8371-da402e6e8f70">I will <span class="blank">_______</span> for the magazine to be sent to you every month.</div>
+                        <div class="not_selected sentence" id="853ad55a-850f-454e-9cb2-fff32db778af">The purpose was to <span class="blank">_______</span> cash payments to Romanian hackers.</div>
+                        <div class="not_selected sentence" id="9ca2deec-ea8a-41f8-a70b-7a0a57119703">She then photographed herself in the same position, and <span class="blank">_______</span> the images so the two figures were looking at each other.</div>
+                        <div class="not_selected sentence" id="53390560-bf82-4696-96e2-80333d0fdb3e">So, in December, he <span class="blank">_______</span> a phone call with Trump.</div>
+                        <div class="not_selected sentence" id="2415c18d-c682-4246-8e5c-3fefe1365bd3">"I'm also <span class="blank">_______</span> to meet the prime minister next week again on a one-to-one basis," he added.</div>
+                        <div class="not_selected sentence" id="823b7c0c-3cb3-4845-90c5-f7b85d935ffe">“There are many things to <span class="blank">_______</span>,” Tía Cuca said, laying a hand on Naomi’s shoulder.</div>
+                        <div class="not_selected sentence" id="0a121215-1c99-4cb2-89fb-dc90ddca060e">The police will then <span class="blank">_______</span> for these weapons to be handed over, and eventually destroyed.</div>
+                        <div class="not_selected sentence" id="60ccb880-9910-4779-ba49-e7c2708d33b4">Later, she <span class="blank">_______</span> to meet a friend and put the date and time into her Gmail diary on her computer - but not the location.</div>
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-info" id="next_btn">Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn">Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
