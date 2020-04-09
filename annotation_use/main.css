@@ -181,3 +181,7 @@
     font-weight: bold;
     margin-right: -10px;
 }
+.todo {
+    color: red;
+    font-weight: bold;
+}
