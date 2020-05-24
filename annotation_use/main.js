@@ -36,7 +36,7 @@ $(document).ready(function() {
     $(document).on("change", "#reason_table input[type='checkbox']", function(evt) {
         var target = $(evt.target);
         if (this.checked) {
-            target.parents("tr").find("button").removeClass("btn-danger btn-info").addClass("btn-secondary").attr("disabled", true).text("Select a Reason");
+            target.parents("tr").find("button").removeClass("btn-danger btn-info").addClass("btn-secondary").attr("disabled", true).text("Select a Condition");
             
             // Add information to the stage 3
             var sent_id = target.parents("tr").attr("sent_id");
@@ -73,6 +73,13 @@ $(document).ready(function() {
         $("#mturk_form").submit();
     });
 
+    $(document).on("click", "#go_guideline_btn", function(evt) {
+        $("#second_stage").hide();
+        $("#second_instruction").show();
+        $("#next_btn").attr("stage", "2");
+        $(document).scrollTop(0);
+    });
+
     $(document).on("click", "#next_btn", function(evt) {
         var stage = parseInt($(evt.target).attr("stage"));
         $("#warning").text("");
@@ -82,7 +89,7 @@ $(document).ready(function() {
             // check number of answers
             var answers = $("#question_table .form-radio:checked");
             if (answers.length != 20) {
-                $("#warning").text("Please finish all the questions! ( "+ (20 - answers.length) +" left)");
+                $("#warning").text("Please finish all the questions! ("+ (20 - answers.length) +" left)");
                 return;
             }
 
@@ -90,11 +97,20 @@ $(document).ready(function() {
             var text_answer = JSON.stringify($.map(answers, function(e) { e = $(e); return {"id":e.attr("name"), "ans":e.val()} }));
             $("#fib_answer").val(text_answer);
             $("#first_stage").hide();
-            $("#second_stage").show();
+            $("#second_instruction").show();
             $("#next_btn").attr("stage", "2");
+            $(document).scrollTop(0);
 
-        // Stage 2
+        // Stage 2 - instruction (guideline)
         } else if (stage == 2) {
+            // TODO: Time Lock?
+            $("#second_instruction").hide();
+            $("#second_stage").show();
+            $("#next_btn").attr("stage", "3");
+            $(document).scrollTop(0);
+
+        // Stage 2 (3)
+        } else if (stage == 3) {
             // check number of answers
             var id_list = $.map($("#reason_table tbody tr"), function(e, index) {return $(e).attr("sent_id");});
             var check_list = $.map($("#reason_table input[type='checkbox']"), function(e, index) {return e.checked;});
@@ -103,7 +119,7 @@ $(document).ready(function() {
 
             var answer = [];
             for (var i = 0; i < id_list.length; i++) {
-                if (check_list[i] == false && reason_list[i] == "Select a Reason") {
+                if (check_list[i] == false && reason_list[i] == "Select a Condition") {
                     $("#warning").text("Please finish all the questions!");
                     return;
                 }
@@ -120,6 +136,7 @@ $(document).ready(function() {
             $("#third_stage").css("display", "flex");
             $("#next_btn").hide();
             $("#submit_btn").show();
+            $(document).scrollTop(0);
         }
     });
 
