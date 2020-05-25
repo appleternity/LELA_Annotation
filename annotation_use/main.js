@@ -62,8 +62,8 @@ $(document).ready(function() {
         var w1_answers = $("#sentence_panel_1 .selected");
         var w2_answers = $("#sentence_panel_2 .selected");
 
-        if (w1_answers.length < 3 || w2_answers.length < 3) {
-            $("#warning").text("Please select at least 3 sentences.");
+        if (w1_answers.length != 3 || w2_answers.length != 3) {
+            $("#warning").text("Please select exactly 3 sentences for both words.");
             return false;
         }
 
