@@ -126,7 +126,7 @@
 }
 
 #second_stage, #third_stage, #second_instruction{
-    display: none;
+    /*display: none;*/
 }
 
 #submit_btn {
@@ -173,14 +173,14 @@
     width: 200px;
 }
 
-.accept:before {
+/*.accept:before {
     content: "o";
-    color: red;
+    color: green;
     left: -20px;
     position: relative;
     font-weight: bold;
     margin-right: -10px;
-}
+}*/
 .todo {
     color: red;
     font-weight: bold;
@@ -216,4 +216,92 @@
 }
 #instruction_2 {
     margin-bottom: 20px;
+}
+.accept::after {
+	display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #28a745;
+    color: #fff;
+    content: "Accept";
+}
+.suitability::after {
+	display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #dc3545;
+    color: #fff;
+    content: "Suitability";
+}
+.informative::after {
+	display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #dc3545;
+    color: #fff;
+    content: "Informative";
+}
+.diversity::after {
+	display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #dc3545;
+    color: #fff;
+    content: "Diversity";
+}
+.sentence_complexity::after {
+	display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #dc3545;
+    color: #fff;
+    content: "Sentence Complexity";
+}
+.lexical_complexity::after {
+	display: inline-block;
+    padding: .25em .4em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    background-color: #dc3545;
+    color: #fff;
+    content: "Lexical Complexity";
+}
+
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#instruction_2 table li {
+    margin-top: 3px;
+    margin-bottom: 3px;
 }

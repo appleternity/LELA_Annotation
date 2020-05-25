@@ -31,6 +31,10 @@ $(document).ready(function() {
         var target = $(evt.target);
         var button = target.parents(".btn-group").children("button").text(target.text());
         button.removeClass("btn-danger").addClass("btn-info");
+
+        // add badge
+        var sent_id = target.parents("tr").attr("sent_id");
+        $("#"+sent_id+" .badge").removeClass().addClass("badge").addClass(target.text().toLowerCase().replace(" ", "_"));
     });
 
     $(document).on("change", "#reason_table input[type='checkbox']", function(evt) {
@@ -40,14 +44,14 @@ $(document).ready(function() {
             
             // Add information to the stage 3
             var sent_id = target.parents("tr").attr("sent_id");
-            $("#"+sent_id).addClass("accept");
+            $("#"+sent_id+" .badge").addClass("accept");
 
         } else { 
             target.parents("tr").find("button").removeClass("btn-secondary").addClass("btn-danger").attr("disabled", false);
             
             // Add information to the stage 3
             var sent_id = target.parents("tr").attr("sent_id");
-            $("#"+sent_id).removeClass("accept");
+            $("#"+sent_id+" .badge").removeClass("accept");
         }
     });
 
