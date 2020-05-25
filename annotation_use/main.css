@@ -126,7 +126,7 @@
 }
 
 #second_stage, #third_stage, #second_instruction{
-    /*display: none;*/
+    display: none;
 }
 
 #submit_btn {
