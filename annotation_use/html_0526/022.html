@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">common</strong> and <strong class="highlighted">ordinary</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">common</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">ordinary</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>common</th>
+                                <th>ordinary</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>In "Pinafore", the captain's daughter, Josephine, loves and is loved by a <span class="blank"></span> sailor, but she dutifully tells him, "your proffered love I haughtily reject".</td>
+            <td><input type="radio" name="7f225bce-172a-4827-b087-0b49a7c4c1e6" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="7f225bce-172a-4827-b087-0b49a7c4c1e6" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Perch grow to around 50 cm and or more, but the most <span class="blank"></span> size caught are around 30 cm (1 ft)and or less, and anything over 40 cm and is considered a prize catch.</td>
+            <td><input type="radio" name="f8af1b10-7ebe-4a15-91a8-a4f5d605b30a" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="f8af1b10-7ebe-4a15-91a8-a4f5d605b30a" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The most <span class="blank"></span> types of ski injuries are those of the knee , head , neck and shoulder area , hands and back .</td>
+            <td><input type="radio" name="695c1f5d-39fe-483d-8031-d68cfaee35a3" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="695c1f5d-39fe-483d-8031-d68cfaee35a3" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The leaders of the three parties – respectively Charles Haughey, Garret FitzGerald and Frank Cluskey – agreed although there was little consultation with any of their parties' <span class="blank"></span> members.</td>
+            <td><input type="radio" name="3ca0f5df-f252-49b2-b99b-00f9bba5a3d1" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="3ca0f5df-f252-49b2-b99b-00f9bba5a3d1" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In the example cited, the rubbery chains absorb energy when the substance is hit, so it is much less brittle than <span class="blank"></span> polystyrene.</td>
+            <td><input type="radio" name="a9a0cff6-da19-437d-8fb7-e16d665f1a37" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="a9a0cff6-da19-437d-8fb7-e16d665f1a37" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Unicode supports polytonic orthography well enough for <span class="blank"></span> continuous text in modern and ancient Greek, and even many archaic forms for epigraphy.</td>
+            <td><input type="radio" name="c94fe5bf-584f-4bc7-afc4-1fb29c0f32dd" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="c94fe5bf-584f-4bc7-afc4-1fb29c0f32dd" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Chou was joined in the next show by his concubine, Lotus Blossom (Paddick) who is, in the words of her master, <span class="blank"></span> as muck.</td>
+            <td><input type="radio" name="d6464586-3852-4858-a6b9-3a1f5deb9dfb" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="d6464586-3852-4858-a6b9-3a1f5deb9dfb" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>It was quickly abbreviated to "métro", which became a <span class="blank"></span> word to designate all rapid transit systems in France and in many cities elsewhere "(a genericized trademark)".</td>
+            <td><input type="radio" name="303c4570-0648-4157-bef5-1abe5b8e5e46" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="303c4570-0648-4157-bef5-1abe5b8e5e46" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Initially, the canning process was slow and labour-intensive, as each large can had to be hand-made, and took up to six hours to cook, making canned food too expensive for <span class="blank"></span> people.</td>
+            <td><input type="radio" name="158717b0-d484-4d7d-b896-b3ed321e9ad4" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="158717b0-d484-4d7d-b896-b3ed321e9ad4" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Although most often produced in a factory, powdered sugar can also be made by processing <span class="blank"></span> granulated sugar in a coffee grinder, or by crushing it by hand in a mortar and pestle.</td>
+            <td><input type="radio" name="aeb06b5c-05ec-467c-91ed-ef0350244370" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="aeb06b5c-05ec-467c-91ed-ef0350244370" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Les Précieuses Ridicules was the first of Molière's many attempts to satirize certain societal mannerisms and affectations then <span class="blank"></span> in France.</td>
+            <td><input type="radio" name="643b98bf-d029-417d-b5d6-9bb8e86932d3" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="643b98bf-d029-417d-b5d6-9bb8e86932d3" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The Navy of the United Colonies of the 1775 era offered only a few different jobs above the <span class="blank"></span> level of seaman.</td>
+            <td><input type="radio" name="0281e333-75a5-43eb-939d-eba582011ffb" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="0281e333-75a5-43eb-939d-eba582011ffb" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Like the rest of the cluster, the island is of volcanic origin, with tuff, trachyte and obsidian among its <span class="blank"></span> rocks.</td>
+            <td><input type="radio" name="e8a09b91-1f54-48f1-934d-a14fc4b4215c" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="e8a09b91-1f54-48f1-934d-a14fc4b4215c" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Fletchings may also be cut in different ways, the two most <span class="blank"></span> being "parabolic" (i.e.</td>
+            <td><input type="radio" name="6831b9bf-962e-45a0-9412-dfaba77f8b1c" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="6831b9bf-962e-45a0-9412-dfaba77f8b1c" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>(Automatic watchmaking machinery was not developed until the 1860s and Dennison’s machine was probably a modification of an <span class="blank"></span> wheel cutting engine).</td>
+            <td><input type="radio" name="cc0b017f-8467-4bcb-86c6-c53bf5a28bd0" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="cc0b017f-8467-4bcb-86c6-c53bf5a28bd0" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The success of this full-length novel rests on its tripartite structure: each section is "short novel size, with counterpoint, motifs, and allusions making up for the lack of more <span class="blank"></span> means of continuity".</td>
+            <td><input type="radio" name="02e1d9bf-01a1-4458-aa8f-c53861f71935" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="02e1d9bf-01a1-4458-aa8f-c53861f71935" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Some <span class="blank"></span> applications of optimization techniques in electrical engineering include active filter design, stray field reduction in superconducting magnetic energy storage systems, space mapping design of microwave structures, handset antennas, electromagnetics-based design.</td>
+            <td><input type="radio" name="2646ece1-ecb9-431e-a985-ee3ea6672f4e" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="2646ece1-ecb9-431e-a985-ee3ea6672f4e" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>As a child, she had to deal with her birth name's ambiguous and unusual nature, which led to her being bullied and even to her pretending to have an <span class="blank"></span> name.</td>
+            <td><input type="radio" name="2ebefde2-170c-4d4b-bf6f-b5e1f2759471" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="2ebefde2-170c-4d4b-bf6f-b5e1f2759471" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Despite its <span class="blank"></span> usage to address people who call with no one answering the phone, the "here" here is semantically contradictory to one's absence.</td>
+            <td><input type="radio" name="d5b8f87a-78f5-4c3d-8f5e-8ce2880d1089" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="d5b8f87a-78f5-4c3d-8f5e-8ce2880d1089" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Year 1422 (MCDXXII) was a <span class="blank"></span> year starting on Thursday (link will display the full calendar) of the Julian calendar.</td>
+            <td><input type="radio" name="581b170a-3242-422c-83a7-b04e3d6584a3" value="common" class="form-radio" /></td>
+            <td><input type="radio" name="581b170a-3242-422c-83a7-b04e3d6584a3" value="ordinary" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">common</strong> and <strong class="highlighted">ordinary</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="303c4570-0648-4157-bef5-1abe5b8e5e46">
+            <td>It was quickly abbreviated to "métro", which became a <span class="highlighted">common</span> word to designate all rapid transit systems in France and in many cities elsewhere "(a genericized trademark)".</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="581b170a-3242-422c-83a7-b04e3d6584a3">
+            <td>Year 1422 (MCDXXII) was a <span class="highlighted">common</span> year starting on Thursday (link will display the full calendar) of the Julian calendar.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d6464586-3852-4858-a6b9-3a1f5deb9dfb">
+            <td>Chou was joined in the next show by his concubine, Lotus Blossom (Paddick) who is, in the words of her master, <span class="highlighted">common</span> as muck.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="7f225bce-172a-4827-b087-0b49a7c4c1e6">
+            <td>In "Pinafore", the captain's daughter, Josephine, loves and is loved by a <span class="highlighted">common</span> sailor, but she dutifully tells him, "your proffered love I haughtily reject".</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="6831b9bf-962e-45a0-9412-dfaba77f8b1c">
+            <td>Fletchings may also be cut in different ways, the two most <span class="highlighted">common</span> being "parabolic" (i.e.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="2646ece1-ecb9-431e-a985-ee3ea6672f4e">
+            <td>Some <span class="highlighted">common</span> applications of optimization techniques in electrical engineering include active filter design, stray field reduction in superconducting magnetic energy storage systems, space mapping design of microwave structures, handset antennas, electromagnetics-based design.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="643b98bf-d029-417d-b5d6-9bb8e86932d3">
+            <td>Les Précieuses Ridicules was the first of Molière's many attempts to satirize certain societal mannerisms and affectations then <span class="highlighted">common</span> in France.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d5b8f87a-78f5-4c3d-8f5e-8ce2880d1089">
+            <td>Despite its <span class="highlighted">common</span> usage to address people who call with no one answering the phone, the "here" here is semantically contradictory to one's absence.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f8af1b10-7ebe-4a15-91a8-a4f5d605b30a">
+            <td>Perch grow to around 50 cm and or more, but the most <span class="highlighted">common</span> size caught are around 30 cm (1 ft)and or less, and anything over 40 cm and is considered a prize catch.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="695c1f5d-39fe-483d-8031-d68cfaee35a3">
+            <td>The most <span class="highlighted">common</span> types of ski injuries are those of the knee , head , neck and shoulder area , hands and back .</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="02e1d9bf-01a1-4458-aa8f-c53861f71935">
+            <td>The success of this full-length novel rests on its tripartite structure: each section is "short novel size, with counterpoint, motifs, and allusions making up for the lack of more <span class="highlighted">ordinary</span> means of continuity".</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="cc0b017f-8467-4bcb-86c6-c53bf5a28bd0">
+            <td>(Automatic watchmaking machinery was not developed until the 1860s and Dennison’s machine was probably a modification of an <span class="highlighted">ordinary</span> wheel cutting engine).</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="aeb06b5c-05ec-467c-91ed-ef0350244370">
+            <td>Although most often produced in a factory, powdered sugar can also be made by processing <span class="highlighted">ordinary</span> granulated sugar in a coffee grinder, or by crushing it by hand in a mortar and pestle.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="0281e333-75a5-43eb-939d-eba582011ffb">
+            <td>The Navy of the United Colonies of the 1775 era offered only a few different jobs above the <span class="highlighted">ordinary</span> level of seaman.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c94fe5bf-584f-4bc7-afc4-1fb29c0f32dd">
+            <td>Unicode supports polytonic orthography well enough for <span class="highlighted">ordinary</span> continuous text in modern and ancient Greek, and even many archaic forms for epigraphy.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="158717b0-d484-4d7d-b896-b3ed321e9ad4">
+            <td>Initially, the canning process was slow and labour-intensive, as each large can had to be hand-made, and took up to six hours to cook, making canned food too expensive for <span class="highlighted">ordinary</span> people.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="3ca0f5df-f252-49b2-b99b-00f9bba5a3d1">
+            <td>The leaders of the three parties – respectively Charles Haughey, Garret FitzGerald and Frank Cluskey – agreed although there was little consultation with any of their parties' <span class="highlighted">ordinary</span> members.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="2ebefde2-170c-4d4b-bf6f-b5e1f2759471">
+            <td>As a child, she had to deal with her birth name's ambiguous and unusual nature, which led to her being bullied and even to her pretending to have an <span class="highlighted">ordinary</span> name.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="e8a09b91-1f54-48f1-934d-a14fc4b4215c">
+            <td>Like the rest of the cluster, the island is of volcanic origin, with tuff, trachyte and obsidian among its <span class="highlighted">ordinary</span> rocks.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="a9a0cff6-da19-437d-8fb7-e16d665f1a37">
+            <td>In the example cited, the rubbery chains absorb energy when the substance is hit, so it is much less brittle than <span class="highlighted">ordinary</span> polystyrene.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">common</strong> and <strong class="highlighted">ordinary</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">common</strong> and <strong class="highlighted">ordinary</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">common</strong> and 3 sentences for <strong class="highlighted">ordinary</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">common - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="303c4570-0648-4157-bef5-1abe5b8e5e46"><span class="badge"> </span> It was quickly abbreviated to "métro", which became a <span class="highlighted">common</span> word to designate all rapid transit systems in France and in many cities elsewhere "(a genericized trademark)". </div>
+    
+
+        <div class="not_selected sentence" id="581b170a-3242-422c-83a7-b04e3d6584a3"><span class="badge"> </span> Year 1422 (MCDXXII) was a <span class="highlighted">common</span> year starting on Thursday (link will display the full calendar) of the Julian calendar. </div>
+    
+
+        <div class="not_selected sentence" id="d6464586-3852-4858-a6b9-3a1f5deb9dfb"><span class="badge"> </span> Chou was joined in the next show by his concubine, Lotus Blossom (Paddick) who is, in the words of her master, <span class="highlighted">common</span> as muck. </div>
+    
+
+        <div class="not_selected sentence" id="7f225bce-172a-4827-b087-0b49a7c4c1e6"><span class="badge"> </span> In "Pinafore", the captain's daughter, Josephine, loves and is loved by a <span class="highlighted">common</span> sailor, but she dutifully tells him, "your proffered love I haughtily reject". </div>
+    
+
+        <div class="not_selected sentence" id="6831b9bf-962e-45a0-9412-dfaba77f8b1c"><span class="badge"> </span> Fletchings may also be cut in different ways, the two most <span class="highlighted">common</span> being "parabolic" (i.e. </div>
+    
+
+        <div class="not_selected sentence" id="2646ece1-ecb9-431e-a985-ee3ea6672f4e"><span class="badge"> </span> Some <span class="highlighted">common</span> applications of optimization techniques in electrical engineering include active filter design, stray field reduction in superconducting magnetic energy storage systems, space mapping design of microwave structures, handset antennas, electromagnetics-based design. </div>
+    
+
+        <div class="not_selected sentence" id="643b98bf-d029-417d-b5d6-9bb8e86932d3"><span class="badge"> </span> Les Précieuses Ridicules was the first of Molière's many attempts to satirize certain societal mannerisms and affectations then <span class="highlighted">common</span> in France. </div>
+    
+
+        <div class="not_selected sentence" id="d5b8f87a-78f5-4c3d-8f5e-8ce2880d1089"><span class="badge"> </span> Despite its <span class="highlighted">common</span> usage to address people who call with no one answering the phone, the "here" here is semantically contradictory to one's absence. </div>
+    
+
+        <div class="not_selected sentence" id="f8af1b10-7ebe-4a15-91a8-a4f5d605b30a"><span class="badge"> </span> Perch grow to around 50 cm and or more, but the most <span class="highlighted">common</span> size caught are around 30 cm (1 ft)and or less, and anything over 40 cm and is considered a prize catch. </div>
+    
+
+        <div class="not_selected sentence" id="695c1f5d-39fe-483d-8031-d68cfaee35a3"><span class="badge"> </span> The most <span class="highlighted">common</span> types of ski injuries are those of the knee , head , neck and shoulder area , hands and back . </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">ordinary  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="02e1d9bf-01a1-4458-aa8f-c53861f71935"><span class="badge"> </span> The success of this full-length novel rests on its tripartite structure: each section is "short novel size, with counterpoint, motifs, and allusions making up for the lack of more <span class="highlighted">ordinary</span> means of continuity". </div>
+    
+
+        <div class="not_selected sentence" id="cc0b017f-8467-4bcb-86c6-c53bf5a28bd0"><span class="badge"> </span> (Automatic watchmaking machinery was not developed until the 1860s and Dennison’s machine was probably a modification of an <span class="highlighted">ordinary</span> wheel cutting engine). </div>
+    
+
+        <div class="not_selected sentence" id="aeb06b5c-05ec-467c-91ed-ef0350244370"><span class="badge"> </span> Although most often produced in a factory, powdered sugar can also be made by processing <span class="highlighted">ordinary</span> granulated sugar in a coffee grinder, or by crushing it by hand in a mortar and pestle. </div>
+    
+
+        <div class="not_selected sentence" id="0281e333-75a5-43eb-939d-eba582011ffb"><span class="badge"> </span> The Navy of the United Colonies of the 1775 era offered only a few different jobs above the <span class="highlighted">ordinary</span> level of seaman. </div>
+    
+
+        <div class="not_selected sentence" id="c94fe5bf-584f-4bc7-afc4-1fb29c0f32dd"><span class="badge"> </span> Unicode supports polytonic orthography well enough for <span class="highlighted">ordinary</span> continuous text in modern and ancient Greek, and even many archaic forms for epigraphy. </div>
+    
+
+        <div class="not_selected sentence" id="158717b0-d484-4d7d-b896-b3ed321e9ad4"><span class="badge"> </span> Initially, the canning process was slow and labour-intensive, as each large can had to be hand-made, and took up to six hours to cook, making canned food too expensive for <span class="highlighted">ordinary</span> people. </div>
+    
+
+        <div class="not_selected sentence" id="3ca0f5df-f252-49b2-b99b-00f9bba5a3d1"><span class="badge"> </span> The leaders of the three parties – respectively Charles Haughey, Garret FitzGerald and Frank Cluskey – agreed although there was little consultation with any of their parties' <span class="highlighted">ordinary</span> members. </div>
+    
+
+        <div class="not_selected sentence" id="2ebefde2-170c-4d4b-bf6f-b5e1f2759471"><span class="badge"> </span> As a child, she had to deal with her birth name's ambiguous and unusual nature, which led to her being bullied and even to her pretending to have an <span class="highlighted">ordinary</span> name. </div>
+    
+
+        <div class="not_selected sentence" id="e8a09b91-1f54-48f1-934d-a14fc4b4215c"><span class="badge"> </span> Like the rest of the cluster, the island is of volcanic origin, with tuff, trachyte and obsidian among its <span class="highlighted">ordinary</span> rocks. </div>
+    
+
+        <div class="not_selected sentence" id="a9a0cff6-da19-437d-8fb7-e16d665f1a37"><span class="badge"> </span> In the example cited, the rubbery chains absorb energy when the substance is hit, so it is much less brittle than <span class="highlighted">ordinary</span> polystyrene. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

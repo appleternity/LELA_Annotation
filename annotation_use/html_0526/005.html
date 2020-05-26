@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">tiny</strong> and <strong class="highlighted">little</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">tiny</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">little</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>tiny</th>
+                                <th>little</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>The Free Baptist Church of Great Pond is a historic church building at 1231 Great Pond Road in Great Pond, Maine, a <span class="blank"></span> rural community in northern Hancock County.</td>
+            <td><input type="radio" name="c3de6237-2d9d-4797-9937-0c1859366e95" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="c3de6237-2d9d-4797-9937-0c1859366e95" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In the hourglass, fine sand pouring through a <span class="blank"></span> hole at a constant rate indicates an arbitrary, predetermined, passage of time.</td>
+            <td><input type="radio" name="34a18546-ec88-4182-906d-2486e347bcb0" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="34a18546-ec88-4182-906d-2486e347bcb0" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In septicemic plague, bacterial endotoxins cause disseminated intravascular coagulation (DIC), causing <span class="blank"></span> clots throughout the body and possibly ischemic necrosis (tissue death due to lack of circulation/perfusion to that tissue) from the clots.</td>
+            <td><input type="radio" name="fee7937d-8655-4a96-8209-01e5c9c308c9" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="fee7937d-8655-4a96-8209-01e5c9c308c9" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The corolla of the ray flower may have 2 <span class="blank"></span> teeth opposite the 3-lobed strap, or tongue, indicating evolution by fusion from an originally 5-part corolla.</td>
+            <td><input type="radio" name="a0543d6f-1c60-46a1-b5d8-d36f9eccaabd" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="a0543d6f-1c60-46a1-b5d8-d36f9eccaabd" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>As the agricultural focus grew other areas of treatment suffered, leading the state to conclude in 1945 that "there is <span class="blank"></span> or no occupational therapy in effect now.</td>
+            <td><input type="radio" name="fb18d394-0796-469b-9ee8-8eb8d3321b47" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="fb18d394-0796-469b-9ee8-8eb8d3321b47" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 1952, American astronomer Eugene Parker proposed that the solar corona might be heated by myriad <span class="blank"></span> 'nanoflares', miniature brightenings resembling solar flares that would occur all over the surface of the Sun.</td>
+            <td><input type="radio" name="ffe28a04-3c6b-495e-9ba3-ef48c2fa3f79" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="ffe28a04-3c6b-495e-9ba3-ef48c2fa3f79" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>But the LTTE fell back to gain time to re-group and was back in <span class="blank"></span> time more fierce than ever.</td>
+            <td><input type="radio" name="813fa740-5b23-47b0-9cbf-eaa8c48fbc51" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="813fa740-5b23-47b0-9cbf-eaa8c48fbc51" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Edward Daniels and Rachel Solando are anagrams of Andrew Laeddis and Dolores Chanal; furthermore, the <span class="blank"></span> girl from Laeddis' recurring dreams is his daughter Rachel.</td>
+            <td><input type="radio" name="719e8f6b-c1af-4154-95d9-bc942d9e024c" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="719e8f6b-c1af-4154-95d9-bc942d9e024c" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>When she finds out the truth, she makes a fateful decision to make the most of the <span class="blank"></span> time they have together.</td>
+            <td><input type="radio" name="4faf0ca8-992b-4b5c-9ea4-4833c8974b2d" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="4faf0ca8-992b-4b5c-9ea4-4833c8974b2d" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Crepidodera nana, the <span class="blank"></span> aspen flea beetle, is a species of flea beetle in the family Chrysomelidae.</td>
+            <td><input type="radio" name="78bd3f2d-c9a3-42c4-8b09-7afd5cd0a44c" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="78bd3f2d-c9a3-42c4-8b09-7afd5cd0a44c" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 2012-13, he wrote and directed "Behind in the Count"; a documentary about the 1965 Canadian champion <span class="blank"></span> league baseball team from CPAC in Winnipeg's north end.</td>
+            <td><input type="radio" name="015bf0a8-37ee-4f01-b1df-9d3d0550bc50" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="015bf0a8-37ee-4f01-b1df-9d3d0550bc50" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Little by <span class="blank"></span> over the next lap, Lambruschini was able to bridge the gap, with Mark Croghan running hard from a few places back to get up to fifth.</td>
+            <td><input type="radio" name="7d13c2b2-50f9-4184-a655-1a89885e9069" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="7d13c2b2-50f9-4184-a655-1a89885e9069" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>During the peace talks the president of the Free State of Fiume Riccardo Zanella tried to spearhead the cause of the <span class="blank"></span> state, this time supported also by the previous political rival Andrea Ossoinack.</td>
+            <td><input type="radio" name="89059487-0130-41d2-b3a5-37eb09d807e4" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="89059487-0130-41d2-b3a5-37eb09d807e4" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>To explain this, Rutherford proposed that the positive charge of the atom is concentrated in a <span class="blank"></span> nucleus at the center of the atom.</td>
+            <td><input type="radio" name="fd7ee897-2ca7-402b-932b-6dc112079620" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="fd7ee897-2ca7-402b-932b-6dc112079620" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>One view is that <span class="blank"></span> sparks are created in a switch when the circuit is closed, and this would constitute lighting a fire (category 37).</td>
+            <td><input type="radio" name="faa5dd86-1643-493b-ab53-1b99fa7eaa3a" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="faa5dd86-1643-493b-ab53-1b99fa7eaa3a" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After founding the Institute he had <span class="blank"></span> time for composing, and appears to have concentrated exclusively on teaching.</td>
+            <td><input type="radio" name="f5b841cd-6db3-400e-a5cf-380de6326ecc" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="f5b841cd-6db3-400e-a5cf-380de6326ecc" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Medlin itself comprised two <span class="blank"></span> stores built of rough planks and bearing no signs, a corn mill, and four dwellings.</td>
+            <td><input type="radio" name="354a3460-b9e9-46ea-9a96-2a305c416e3a" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="354a3460-b9e9-46ea-9a96-2a305c416e3a" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Zirconium wire can be sealed to glass with just <span class="blank"></span> treatment – rubbing with abrasive paper and short heating in flame.</td>
+            <td><input type="radio" name="702c111f-a193-4ce4-a37c-7cf56867692b" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="702c111f-a193-4ce4-a37c-7cf56867692b" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>A large area of strong convective rainbands persisted to its east, though due to increased upper-level wind shear, there was <span class="blank"></span> convection near the center.</td>
+            <td><input type="radio" name="11a19a2c-40a1-45e8-aeed-c6255c174284" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="11a19a2c-40a1-45e8-aeed-c6255c174284" value="little" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After his marriage his <span class="blank"></span> sculptures became larger, but the larger they grew, the thinner they became.</td>
+            <td><input type="radio" name="94b125fd-1afc-4bb5-96be-3cfeb0c3f6f5" value="tiny" class="form-radio" /></td>
+            <td><input type="radio" name="94b125fd-1afc-4bb5-96be-3cfeb0c3f6f5" value="little" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">tiny</strong> and <strong class="highlighted">little</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="a0543d6f-1c60-46a1-b5d8-d36f9eccaabd">
+            <td>The corolla of the ray flower may have 2 <span class="highlighted">tiny</span> teeth opposite the 3-lobed strap, or tongue, indicating evolution by fusion from an originally 5-part corolla.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c3de6237-2d9d-4797-9937-0c1859366e95">
+            <td>The Free Baptist Church of Great Pond is a historic church building at 1231 Great Pond Road in Great Pond, Maine, a <span class="highlighted">tiny</span> rural community in northern Hancock County.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="78bd3f2d-c9a3-42c4-8b09-7afd5cd0a44c">
+            <td>Crepidodera nana, the <span class="highlighted">tiny</span> aspen flea beetle, is a species of flea beetle in the family Chrysomelidae.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="ffe28a04-3c6b-495e-9ba3-ef48c2fa3f79">
+            <td>In 1952, American astronomer Eugene Parker proposed that the solar corona might be heated by myriad <span class="highlighted">tiny</span> 'nanoflares', miniature brightenings resembling solar flares that would occur all over the surface of the Sun.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="faa5dd86-1643-493b-ab53-1b99fa7eaa3a">
+            <td>One view is that <span class="highlighted">tiny</span> sparks are created in a switch when the circuit is closed, and this would constitute lighting a fire (category 37).</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="94b125fd-1afc-4bb5-96be-3cfeb0c3f6f5">
+            <td>After his marriage his <span class="highlighted">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="34a18546-ec88-4182-906d-2486e347bcb0">
+            <td>In the hourglass, fine sand pouring through a <span class="highlighted">tiny</span> hole at a constant rate indicates an arbitrary, predetermined, passage of time.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="89059487-0130-41d2-b3a5-37eb09d807e4">
+            <td>During the peace talks the president of the Free State of Fiume Riccardo Zanella tried to spearhead the cause of the <span class="highlighted">tiny</span> state, this time supported also by the previous political rival Andrea Ossoinack.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="fee7937d-8655-4a96-8209-01e5c9c308c9">
+            <td>In septicemic plague, bacterial endotoxins cause disseminated intravascular coagulation (DIC), causing <span class="highlighted">tiny</span> clots throughout the body and possibly ischemic necrosis (tissue death due to lack of circulation/perfusion to that tissue) from the clots.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="fd7ee897-2ca7-402b-932b-6dc112079620">
+            <td>To explain this, Rutherford proposed that the positive charge of the atom is concentrated in a <span class="highlighted">tiny</span> nucleus at the center of the atom.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f5b841cd-6db3-400e-a5cf-380de6326ecc">
+            <td>After founding the Institute he had <span class="highlighted">little</span> time for composing, and appears to have concentrated exclusively on teaching.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="4faf0ca8-992b-4b5c-9ea4-4833c8974b2d">
+            <td>When she finds out the truth, she makes a fateful decision to make the most of the <span class="highlighted">little</span> time they have together.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="015bf0a8-37ee-4f01-b1df-9d3d0550bc50">
+            <td>In 2012-13, he wrote and directed "Behind in the Count"; a documentary about the 1965 Canadian champion <span class="highlighted">little</span> league baseball team from CPAC in Winnipeg's north end.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="7d13c2b2-50f9-4184-a655-1a89885e9069">
+            <td>Little by <span class="highlighted">little</span> over the next lap, Lambruschini was able to bridge the gap, with Mark Croghan running hard from a few places back to get up to fifth.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="719e8f6b-c1af-4154-95d9-bc942d9e024c">
+            <td>Edward Daniels and Rachel Solando are anagrams of Andrew Laeddis and Dolores Chanal; furthermore, the <span class="highlighted">little</span> girl from Laeddis' recurring dreams is his daughter Rachel.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="fb18d394-0796-469b-9ee8-8eb8d3321b47">
+            <td>As the agricultural focus grew other areas of treatment suffered, leading the state to conclude in 1945 that "there is <span class="highlighted">little</span> or no occupational therapy in effect now.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="702c111f-a193-4ce4-a37c-7cf56867692b">
+            <td>Zirconium wire can be sealed to glass with just <span class="highlighted">little</span> treatment – rubbing with abrasive paper and short heating in flame.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="354a3460-b9e9-46ea-9a96-2a305c416e3a">
+            <td>Medlin itself comprised two <span class="highlighted">little</span> stores built of rough planks and bearing no signs, a corn mill, and four dwellings.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="11a19a2c-40a1-45e8-aeed-c6255c174284">
+            <td>A large area of strong convective rainbands persisted to its east, though due to increased upper-level wind shear, there was <span class="highlighted">little</span> convection near the center.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="813fa740-5b23-47b0-9cbf-eaa8c48fbc51">
+            <td>But the LTTE fell back to gain time to re-group and was back in <span class="highlighted">little</span> time more fierce than ever.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">tiny</strong> and <strong class="highlighted">little</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">tiny</strong> and <strong class="highlighted">little</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">tiny</strong> and 3 sentences for <strong class="highlighted">little</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">tiny - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="a0543d6f-1c60-46a1-b5d8-d36f9eccaabd"><span class="badge"> </span> The corolla of the ray flower may have 2 <span class="highlighted">tiny</span> teeth opposite the 3-lobed strap, or tongue, indicating evolution by fusion from an originally 5-part corolla. </div>
+    
+
+        <div class="not_selected sentence" id="c3de6237-2d9d-4797-9937-0c1859366e95"><span class="badge"> </span> The Free Baptist Church of Great Pond is a historic church building at 1231 Great Pond Road in Great Pond, Maine, a <span class="highlighted">tiny</span> rural community in northern Hancock County. </div>
+    
+
+        <div class="not_selected sentence" id="78bd3f2d-c9a3-42c4-8b09-7afd5cd0a44c"><span class="badge"> </span> Crepidodera nana, the <span class="highlighted">tiny</span> aspen flea beetle, is a species of flea beetle in the family Chrysomelidae. </div>
+    
+
+        <div class="not_selected sentence" id="ffe28a04-3c6b-495e-9ba3-ef48c2fa3f79"><span class="badge"> </span> In 1952, American astronomer Eugene Parker proposed that the solar corona might be heated by myriad <span class="highlighted">tiny</span> 'nanoflares', miniature brightenings resembling solar flares that would occur all over the surface of the Sun. </div>
+    
+
+        <div class="not_selected sentence" id="faa5dd86-1643-493b-ab53-1b99fa7eaa3a"><span class="badge"> </span> One view is that <span class="highlighted">tiny</span> sparks are created in a switch when the circuit is closed, and this would constitute lighting a fire (category 37). </div>
+    
+
+        <div class="not_selected sentence" id="94b125fd-1afc-4bb5-96be-3cfeb0c3f6f5"><span class="badge"> </span> After his marriage his <span class="highlighted">tiny</span> sculptures became larger, but the larger they grew, the thinner they became. </div>
+    
+
+        <div class="not_selected sentence" id="34a18546-ec88-4182-906d-2486e347bcb0"><span class="badge"> </span> In the hourglass, fine sand pouring through a <span class="highlighted">tiny</span> hole at a constant rate indicates an arbitrary, predetermined, passage of time. </div>
+    
+
+        <div class="not_selected sentence" id="89059487-0130-41d2-b3a5-37eb09d807e4"><span class="badge"> </span> During the peace talks the president of the Free State of Fiume Riccardo Zanella tried to spearhead the cause of the <span class="highlighted">tiny</span> state, this time supported also by the previous political rival Andrea Ossoinack. </div>
+    
+
+        <div class="not_selected sentence" id="fee7937d-8655-4a96-8209-01e5c9c308c9"><span class="badge"> </span> In septicemic plague, bacterial endotoxins cause disseminated intravascular coagulation (DIC), causing <span class="highlighted">tiny</span> clots throughout the body and possibly ischemic necrosis (tissue death due to lack of circulation/perfusion to that tissue) from the clots. </div>
+    
+
+        <div class="not_selected sentence" id="fd7ee897-2ca7-402b-932b-6dc112079620"><span class="badge"> </span> To explain this, Rutherford proposed that the positive charge of the atom is concentrated in a <span class="highlighted">tiny</span> nucleus at the center of the atom. </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">little  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="f5b841cd-6db3-400e-a5cf-380de6326ecc"><span class="badge"> </span> After founding the Institute he had <span class="highlighted">little</span> time for composing, and appears to have concentrated exclusively on teaching. </div>
+    
+
+        <div class="not_selected sentence" id="4faf0ca8-992b-4b5c-9ea4-4833c8974b2d"><span class="badge"> </span> When she finds out the truth, she makes a fateful decision to make the most of the <span class="highlighted">little</span> time they have together. </div>
+    
+
+        <div class="not_selected sentence" id="015bf0a8-37ee-4f01-b1df-9d3d0550bc50"><span class="badge"> </span> In 2012-13, he wrote and directed "Behind in the Count"; a documentary about the 1965 Canadian champion <span class="highlighted">little</span> league baseball team from CPAC in Winnipeg's north end. </div>
+    
+
+        <div class="not_selected sentence" id="7d13c2b2-50f9-4184-a655-1a89885e9069"><span class="badge"> </span> Little by <span class="highlighted">little</span> over the next lap, Lambruschini was able to bridge the gap, with Mark Croghan running hard from a few places back to get up to fifth. </div>
+    
+
+        <div class="not_selected sentence" id="719e8f6b-c1af-4154-95d9-bc942d9e024c"><span class="badge"> </span> Edward Daniels and Rachel Solando are anagrams of Andrew Laeddis and Dolores Chanal; furthermore, the <span class="highlighted">little</span> girl from Laeddis' recurring dreams is his daughter Rachel. </div>
+    
+
+        <div class="not_selected sentence" id="fb18d394-0796-469b-9ee8-8eb8d3321b47"><span class="badge"> </span> As the agricultural focus grew other areas of treatment suffered, leading the state to conclude in 1945 that "there is <span class="highlighted">little</span> or no occupational therapy in effect now. </div>
+    
+
+        <div class="not_selected sentence" id="702c111f-a193-4ce4-a37c-7cf56867692b"><span class="badge"> </span> Zirconium wire can be sealed to glass with just <span class="highlighted">little</span> treatment – rubbing with abrasive paper and short heating in flame. </div>
+    
+
+        <div class="not_selected sentence" id="354a3460-b9e9-46ea-9a96-2a305c416e3a"><span class="badge"> </span> Medlin itself comprised two <span class="highlighted">little</span> stores built of rough planks and bearing no signs, a corn mill, and four dwellings. </div>
+    
+
+        <div class="not_selected sentence" id="11a19a2c-40a1-45e8-aeed-c6255c174284"><span class="badge"> </span> A large area of strong convective rainbands persisted to its east, though due to increased upper-level wind shear, there was <span class="highlighted">little</span> convection near the center. </div>
+    
+
+        <div class="not_selected sentence" id="813fa740-5b23-47b0-9cbf-eaa8c48fbc51"><span class="badge"> </span> But the LTTE fell back to gain time to re-group and was back in <span class="highlighted">little</span> time more fierce than ever. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

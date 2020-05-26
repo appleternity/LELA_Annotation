@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">briefly</strong> and <strong class="highlighted">shortly</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">briefly</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">shortly</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>briefly</th>
+                                <th>shortly</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>However, by the time of his last budget <span class="blank"></span> before a general election there were early signs of a recovery, which Howe used to justify a cut in taxes.</td>
+            <td><input type="radio" name="a8f902a0-1a5b-49d6-b346-4f64287a713a" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="a8f902a0-1a5b-49d6-b346-4f64287a713a" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 1852, <span class="blank"></span> before his death, he did find a willing audience for his ideas: the occultist Eliphas Levi who met Wroński and was greatly impressed and "attracted by his religious and scientific utopianism."</td>
+            <td><input type="radio" name="33975cae-cfff-49f8-9f4d-d46558c9f3ee" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="33975cae-cfff-49f8-9f4d-d46558c9f3ee" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After a visit to North Korea in 1971, Ceaușescu was impressed by the "Juche" ideology of that country, and began a massive campaign <span class="blank"></span> afterwards.</td>
+            <td><input type="radio" name="23ee741a-333c-4315-84bb-177a9a849232" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="23ee741a-333c-4315-84bb-177a9a849232" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In early July 1992, <span class="blank"></span> after the New York City Pride March, Johnson's body was found floating in the Hudson River off the West Village Piers.</td>
+            <td><input type="radio" name="78bd0dbd-35aa-427a-87fa-170f45f95079" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="78bd0dbd-35aa-427a-87fa-170f45f95079" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Lubalin would <span class="blank"></span> land at Reiss Advertising, and then (in 1945) at Sudler & Hennessey, where he worked for 19 years.</td>
+            <td><input type="radio" name="3fd91d05-cd76-42a7-af14-79cabc8a90c1" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="3fd91d05-cd76-42a7-af14-79cabc8a90c1" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Between 2010 and 2014, PSYOP was renamed Military Information Support Operations (MISO), then <span class="blank"></span> renamed PSYOP in Aug 2014, only to return to MISO shortly thereafter in 2015.</td>
+            <td><input type="radio" name="b07cbdfd-5154-472a-8f59-a480e80bcd7c" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="b07cbdfd-5154-472a-8f59-a480e80bcd7c" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In the winter of 1477/78 Crimea was <span class="blank"></span> conquered by Janibeg, a nephew of Akhmed Khan of the Great Horde.</td>
+            <td><input type="radio" name="d9d1f79b-ff25-4dcf-a5b7-1d9e687a779a" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="d9d1f79b-ff25-4dcf-a5b7-1d9e687a779a" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He resumed sea duty on board in April 1895, and was <span class="blank"></span> afterwards transferred to on which he served during the Spanish–American War and participated in the Battle of Manila Bay.</td>
+            <td><input type="radio" name="6b1aed34-09f6-46e5-9167-b77e573d7651" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="6b1aed34-09f6-46e5-9167-b77e573d7651" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Fauna comes by <span class="blank"></span> to tell Hazel that she has run his "horror scope" and that he will one day be President.</td>
+            <td><input type="radio" name="c4e4d007-6d91-475b-ba6c-f35c30783538" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="c4e4d007-6d91-475b-ba6c-f35c30783538" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He <span class="blank"></span> coached collegiate basketball at Cleveland Chiropractic College (1937) in Kansas City, Missouri as well.</td>
+            <td><input type="radio" name="c8da027a-5248-4c2e-923a-44fc5135256a" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="c8da027a-5248-4c2e-923a-44fc5135256a" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Nixon was <span class="blank"></span> afterward faced with two new vacancies on the high bench due to the retirements of John Marshall Harlan and Hugo Black in 1971.</td>
+            <td><input type="radio" name="8563a40f-344e-4dbf-a707-7bce6e0f03ea" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="8563a40f-344e-4dbf-a707-7bce6e0f03ea" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The rebellion occurred anyway, and the rebels <span class="blank"></span> occupied Horikoshi Castle before receiving word of the defeat of the Western Army, and surrendering without a fight.</td>
+            <td><input type="radio" name="c15d3681-674f-4f47-954f-bc6af3d46bdd" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="c15d3681-674f-4f47-954f-bc6af3d46bdd" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Compared with the club's double-winning side of 1998, only Patrick Vieira and Dennis Bergkamp remained as first team players throughout the unbeaten run; Martin Keown and Ray Parlour featured <span class="blank"></span>.</td>
+            <td><input type="radio" name="eda39b34-6775-492f-8989-e674b8afd5e5" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="eda39b34-6775-492f-8989-e674b8afd5e5" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Some people are "wrongly" in love, others are "<span class="blank"></span>" in love, and so on.</td>
+            <td><input type="radio" name="9686622c-aaae-4623-8c41-17d334a45c7f" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="9686622c-aaae-4623-8c41-17d334a45c7f" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Directed by English music video and film director Nigel Dick, the special aired on Lifetime Television, and <span class="blank"></span> after was released on VHS and LaserDisc.</td>
+            <td><input type="radio" name="93bddadb-2dd0-4ee9-afb0-070d6904f2c0" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="93bddadb-2dd0-4ee9-afb0-070d6904f2c0" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After World War II, Chidsey <span class="blank"></span> served as assistant dean of students of the University of Chicago, with supervision over undergraduate activities.</td>
+            <td><input type="radio" name="c9cd52e1-7747-47f3-aa56-7ad95a75b4a0" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="c9cd52e1-7747-47f3-aa56-7ad95a75b4a0" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The single's lack of success resulted in the album being shelved and the reformed band broke up again <span class="blank"></span> afterwards.</td>
+            <td><input type="radio" name="e3e84257-6bab-4696-9da8-0384c7c25773" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="e3e84257-6bab-4696-9da8-0384c7c25773" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>A Thousand Leaves is the follow-up to Sonic Youth's 1995 album "Washing Machine", which was released <span class="blank"></span> after the band concluded their stint headlining the 1995 Lollapalooza music festival.</td>
+            <td><input type="radio" name="c7ec13ba-b3e3-4f2d-accf-36bc6f666723" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="c7ec13ba-b3e3-4f2d-accf-36bc6f666723" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Geffen <span class="blank"></span> after released her "The Wanderer" album, the lead single of which reached #3 on the "Billboard" Hot 100, and the album certified gold.</td>
+            <td><input type="radio" name="665387a3-5057-4c9b-8034-2405fdb03695" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="665387a3-5057-4c9b-8034-2405fdb03695" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After "Gia" wrapped, she <span class="blank"></span> gave up acting, because she felt that she had "nothing else to give."</td>
+            <td><input type="radio" name="787fb8ef-b20e-483d-8a63-36db4c50258c" value="briefly" class="form-radio" /></td>
+            <td><input type="radio" name="787fb8ef-b20e-483d-8a63-36db4c50258c" value="shortly" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">briefly</strong> and <strong class="highlighted">shortly</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="787fb8ef-b20e-483d-8a63-36db4c50258c">
+            <td>After "Gia" wrapped, she <span class="highlighted">briefly</span> gave up acting, because she felt that she had "nothing else to give."</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c9cd52e1-7747-47f3-aa56-7ad95a75b4a0">
+            <td>After World War II, Chidsey <span class="highlighted">briefly</span> served as assistant dean of students of the University of Chicago, with supervision over undergraduate activities.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b07cbdfd-5154-472a-8f59-a480e80bcd7c">
+            <td>Between 2010 and 2014, PSYOP was renamed Military Information Support Operations (MISO), then <span class="highlighted">briefly</span> renamed PSYOP in Aug 2014, only to return to MISO shortly thereafter in 2015.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="eda39b34-6775-492f-8989-e674b8afd5e5">
+            <td>Compared with the club's double-winning side of 1998, only Patrick Vieira and Dennis Bergkamp remained as first team players throughout the unbeaten run; Martin Keown and Ray Parlour featured <span class="highlighted">briefly</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c4e4d007-6d91-475b-ba6c-f35c30783538">
+            <td>Fauna comes by <span class="highlighted">briefly</span> to tell Hazel that she has run his "horror scope" and that he will one day be President.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c8da027a-5248-4c2e-923a-44fc5135256a">
+            <td>He <span class="highlighted">briefly</span> coached collegiate basketball at Cleveland Chiropractic College (1937) in Kansas City, Missouri as well.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d9d1f79b-ff25-4dcf-a5b7-1d9e687a779a">
+            <td>In the winter of 1477/78 Crimea was <span class="highlighted">briefly</span> conquered by Janibeg, a nephew of Akhmed Khan of the Great Horde.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="3fd91d05-cd76-42a7-af14-79cabc8a90c1">
+            <td>Lubalin would <span class="highlighted">briefly</span> land at Reiss Advertising, and then (in 1945) at Sudler & Hennessey, where he worked for 19 years.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="9686622c-aaae-4623-8c41-17d334a45c7f">
+            <td>Some people are "wrongly" in love, others are "<span class="highlighted">briefly</span>" in love, and so on.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c15d3681-674f-4f47-954f-bc6af3d46bdd">
+            <td>The rebellion occurred anyway, and the rebels <span class="highlighted">briefly</span> occupied Horikoshi Castle before receiving word of the defeat of the Western Army, and surrendering without a fight.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c7ec13ba-b3e3-4f2d-accf-36bc6f666723">
+            <td>A Thousand Leaves is the follow-up to Sonic Youth's 1995 album "Washing Machine", which was released <span class="highlighted">shortly</span> after the band concluded their stint headlining the 1995 Lollapalooza music festival.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="23ee741a-333c-4315-84bb-177a9a849232">
+            <td>After a visit to North Korea in 1971, Ceaușescu was impressed by the "Juche" ideology of that country, and began a massive campaign <span class="highlighted">shortly</span> afterwards.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="93bddadb-2dd0-4ee9-afb0-070d6904f2c0">
+            <td>Directed by English music video and film director Nigel Dick, the special aired on Lifetime Television, and <span class="highlighted">shortly</span> after was released on VHS and LaserDisc.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="665387a3-5057-4c9b-8034-2405fdb03695">
+            <td>Geffen <span class="highlighted">shortly</span> after released her "The Wanderer" album, the lead single of which reached #3 on the "Billboard" Hot 100, and the album certified gold.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="6b1aed34-09f6-46e5-9167-b77e573d7651">
+            <td>He resumed sea duty on board in April 1895, and was <span class="highlighted">shortly</span> afterwards transferred to on which he served during the Spanish–American War and participated in the Battle of Manila Bay.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="a8f902a0-1a5b-49d6-b346-4f64287a713a">
+            <td>However, by the time of his last budget <span class="highlighted">shortly</span> before a general election there were early signs of a recovery, which Howe used to justify a cut in taxes.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="33975cae-cfff-49f8-9f4d-d46558c9f3ee">
+            <td>In 1852, <span class="highlighted">shortly</span> before his death, he did find a willing audience for his ideas: the occultist Eliphas Levi who met Wroński and was greatly impressed and "attracted by his religious and scientific utopianism."</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="78bd0dbd-35aa-427a-87fa-170f45f95079">
+            <td>In early July 1992, <span class="highlighted">shortly</span> after the New York City Pride March, Johnson's body was found floating in the Hudson River off the West Village Piers.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="8563a40f-344e-4dbf-a707-7bce6e0f03ea">
+            <td>Nixon was <span class="highlighted">shortly</span> afterward faced with two new vacancies on the high bench due to the retirements of John Marshall Harlan and Hugo Black in 1971.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="e3e84257-6bab-4696-9da8-0384c7c25773">
+            <td>The single's lack of success resulted in the album being shelved and the reformed band broke up again <span class="highlighted">shortly</span> afterwards.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">briefly</strong> and <strong class="highlighted">shortly</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">briefly</strong> and <strong class="highlighted">shortly</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">briefly</strong> and 3 sentences for <strong class="highlighted">shortly</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">briefly - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="787fb8ef-b20e-483d-8a63-36db4c50258c"><span class="badge"> </span> After "Gia" wrapped, she <span class="highlighted">briefly</span> gave up acting, because she felt that she had "nothing else to give." </div>
+    
+
+        <div class="not_selected sentence" id="c9cd52e1-7747-47f3-aa56-7ad95a75b4a0"><span class="badge"> </span> After World War II, Chidsey <span class="highlighted">briefly</span> served as assistant dean of students of the University of Chicago, with supervision over undergraduate activities. </div>
+    
+
+        <div class="not_selected sentence" id="b07cbdfd-5154-472a-8f59-a480e80bcd7c"><span class="badge"> </span> Between 2010 and 2014, PSYOP was renamed Military Information Support Operations (MISO), then <span class="highlighted">briefly</span> renamed PSYOP in Aug 2014, only to return to MISO shortly thereafter in 2015. </div>
+    
+
+        <div class="not_selected sentence" id="eda39b34-6775-492f-8989-e674b8afd5e5"><span class="badge"> </span> Compared with the club's double-winning side of 1998, only Patrick Vieira and Dennis Bergkamp remained as first team players throughout the unbeaten run; Martin Keown and Ray Parlour featured <span class="highlighted">briefly</span>. </div>
+    
+
+        <div class="not_selected sentence" id="c4e4d007-6d91-475b-ba6c-f35c30783538"><span class="badge"> </span> Fauna comes by <span class="highlighted">briefly</span> to tell Hazel that she has run his "horror scope" and that he will one day be President. </div>
+    
+
+        <div class="not_selected sentence" id="c8da027a-5248-4c2e-923a-44fc5135256a"><span class="badge"> </span> He <span class="highlighted">briefly</span> coached collegiate basketball at Cleveland Chiropractic College (1937) in Kansas City, Missouri as well. </div>
+    
+
+        <div class="not_selected sentence" id="d9d1f79b-ff25-4dcf-a5b7-1d9e687a779a"><span class="badge"> </span> In the winter of 1477/78 Crimea was <span class="highlighted">briefly</span> conquered by Janibeg, a nephew of Akhmed Khan of the Great Horde. </div>
+    
+
+        <div class="not_selected sentence" id="3fd91d05-cd76-42a7-af14-79cabc8a90c1"><span class="badge"> </span> Lubalin would <span class="highlighted">briefly</span> land at Reiss Advertising, and then (in 1945) at Sudler & Hennessey, where he worked for 19 years. </div>
+    
+
+        <div class="not_selected sentence" id="9686622c-aaae-4623-8c41-17d334a45c7f"><span class="badge"> </span> Some people are "wrongly" in love, others are "<span class="highlighted">briefly</span>" in love, and so on. </div>
+    
+
+        <div class="not_selected sentence" id="c15d3681-674f-4f47-954f-bc6af3d46bdd"><span class="badge"> </span> The rebellion occurred anyway, and the rebels <span class="highlighted">briefly</span> occupied Horikoshi Castle before receiving word of the defeat of the Western Army, and surrendering without a fight. </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">shortly  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="c7ec13ba-b3e3-4f2d-accf-36bc6f666723"><span class="badge"> </span> A Thousand Leaves is the follow-up to Sonic Youth's 1995 album "Washing Machine", which was released <span class="highlighted">shortly</span> after the band concluded their stint headlining the 1995 Lollapalooza music festival. </div>
+    
+
+        <div class="not_selected sentence" id="23ee741a-333c-4315-84bb-177a9a849232"><span class="badge"> </span> After a visit to North Korea in 1971, Ceaușescu was impressed by the "Juche" ideology of that country, and began a massive campaign <span class="highlighted">shortly</span> afterwards. </div>
+    
+
+        <div class="not_selected sentence" id="93bddadb-2dd0-4ee9-afb0-070d6904f2c0"><span class="badge"> </span> Directed by English music video and film director Nigel Dick, the special aired on Lifetime Television, and <span class="highlighted">shortly</span> after was released on VHS and LaserDisc. </div>
+    
+
+        <div class="not_selected sentence" id="665387a3-5057-4c9b-8034-2405fdb03695"><span class="badge"> </span> Geffen <span class="highlighted">shortly</span> after released her "The Wanderer" album, the lead single of which reached #3 on the "Billboard" Hot 100, and the album certified gold. </div>
+    
+
+        <div class="not_selected sentence" id="6b1aed34-09f6-46e5-9167-b77e573d7651"><span class="badge"> </span> He resumed sea duty on board in April 1895, and was <span class="highlighted">shortly</span> afterwards transferred to on which he served during the Spanish–American War and participated in the Battle of Manila Bay. </div>
+    
+
+        <div class="not_selected sentence" id="a8f902a0-1a5b-49d6-b346-4f64287a713a"><span class="badge"> </span> However, by the time of his last budget <span class="highlighted">shortly</span> before a general election there were early signs of a recovery, which Howe used to justify a cut in taxes. </div>
+    
+
+        <div class="not_selected sentence" id="33975cae-cfff-49f8-9f4d-d46558c9f3ee"><span class="badge"> </span> In 1852, <span class="highlighted">shortly</span> before his death, he did find a willing audience for his ideas: the occultist Eliphas Levi who met Wroński and was greatly impressed and "attracted by his religious and scientific utopianism." </div>
+    
+
+        <div class="not_selected sentence" id="78bd0dbd-35aa-427a-87fa-170f45f95079"><span class="badge"> </span> In early July 1992, <span class="highlighted">shortly</span> after the New York City Pride March, Johnson's body was found floating in the Hudson River off the West Village Piers. </div>
+    
+
+        <div class="not_selected sentence" id="8563a40f-344e-4dbf-a707-7bce6e0f03ea"><span class="badge"> </span> Nixon was <span class="highlighted">shortly</span> afterward faced with two new vacancies on the high bench due to the retirements of John Marshall Harlan and Hugo Black in 1971. </div>
+    
+
+        <div class="not_selected sentence" id="e3e84257-6bab-4696-9da8-0384c7c25773"><span class="badge"> </span> The single's lack of success resulted in the album being shelved and the reformed band broke up again <span class="highlighted">shortly</span> afterwards. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">acknowledge</strong> and <strong class="highlighted">admit</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">acknowledge</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">admit</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>acknowledge</th>
+                                <th>admit</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>In 1956, he was elected Deputy Leader of the Liberal Party and became Leader of the House, and from this point on, he was generally <span class="blank"></span> as Menzies' heir apparent</td>
+            <td><input type="radio" name="4a7f8596-abdc-41bf-90b9-633f15623dd1" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="4a7f8596-abdc-41bf-90b9-633f15623dd1" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Other court cases have affirmed these rights like the Supreme Court of Belize's 2013 decision to uphold its ruling in 2010 that <span class="blank"></span> customary land titles as communal land for indigenous peoples.</td>
+            <td><input type="radio" name="d110378d-3e7c-4d3d-89a7-ee1a1b6c4030" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="d110378d-3e7c-4d3d-89a7-ee1a1b6c4030" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Jasper Tudor <span class="blank"></span> paternity of no illegitimate children during his lifetime and none are mentioned in his will.\n', 'target_word': '<span class="blank"></span>'}</td>
+            <td><input type="radio" name="d02e8f1e-22fa-4f3b-bea2-528c1497eebd" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="d02e8f1e-22fa-4f3b-bea2-528c1497eebd" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He would later <span class="blank"></span> that he used Human Growth Hormone (HGH), a legal substance, banned by Major League Baseball, in order to recover from his injury in the minor leagues.</td>
+            <td><input type="radio" name="069f6378-0394-4876-8b39-d6f32fe0f02c" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="069f6378-0394-4876-8b39-d6f32fe0f02c" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In this capacity, in November 2008 Darby faced criticism after <span class="blank"></span> carrying out BNP party political work from his office as Barnbrook's assistant at City Hall; Darby denied that he used GLA resources and said that he always made up any office hours spent on party activities.</td>
+            <td><input type="radio" name="12bad359-29c2-4410-8c37-50771baa0bce" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="12bad359-29c2-4410-8c37-50771baa0bce" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>However, pleasing his parents was important to Tom, although he did not <span class="blank"></span> that out loud.</td>
+            <td><input type="radio" name="5e01b261-2364-411d-935f-e9e96d9a32fd" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="5e01b261-2364-411d-935f-e9e96d9a32fd" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He stepped down from his role as governor and announced his retirement from public life after <span class="blank"></span> accusations that he sexually assaulted his aide Kim Ji-eun on multiple occasions.</td>
+            <td><input type="radio" name="118f40c4-5454-49f5-bb3c-1caaffef34ce" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="118f40c4-5454-49f5-bb3c-1caaffef34ce" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Technical publications, especially standards produced by the IETF and by the W3C, normally reflect a view outlined in a W3C Recommendation of 2001, which <span class="blank"></span> the precedence of the term URI rather than endorsing any formal subdivision into URL and URN</td>
+            <td><input type="radio" name="2cdecd9d-0181-487b-a0e8-038e9708dcbb" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="2cdecd9d-0181-487b-a0e8-038e9708dcbb" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Stephen <span class="blank"></span> to giving her aspirin, though did not realize she was getting sicker because of it, whilst Megan figures out that Daphne was electrocuted.</td>
+            <td><input type="radio" name="cc004b92-ecd0-4372-a824-f4db8a785ae4" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="cc004b92-ecd0-4372-a824-f4db8a785ae4" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>However, once a client <span class="blank"></span> taking help from Pluto, in order to keep their identity a secret, or even as punishment, hypnotism will be carried out on the client which makes them lose their sanity.</td>
+            <td><input type="radio" name="99e4443d-aac2-422f-8478-c8acc947c37f" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="99e4443d-aac2-422f-8478-c8acc947c37f" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Formally, the use of sound to create atmosphere, and of "symbols" (images that take on an expanded function within the poem), betray a move towards considering the poem as a self-referential object, an idea further developed by the Symbolists Verlaine and Mallarmé, who <span class="blank"></span> Baudelaire as a pioneer in this regard.</td>
+            <td><input type="radio" name="fb2e6b75-c973-4718-80d3-a30866921dd4" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="fb2e6b75-c973-4718-80d3-a30866921dd4" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Defence Minister Robert Hill <span class="blank"></span> that his office knew of allegations of abuse of Iraqi prisoners.</td>
+            <td><input type="radio" name="2f8bd875-da50-4d56-a5ad-d8084f723180" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="2f8bd875-da50-4d56-a5ad-d8084f723180" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He <span class="blank"></span> that he is the father but still does not want to marry Priya.</td>
+            <td><input type="radio" name="8ea7c200-0775-47cf-89cd-9004fce4a664" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="8ea7c200-0775-47cf-89cd-9004fce4a664" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Oscar later <span class="blank"></span> to hitting her leaving Tamara upset, she finds out she could become blind which results in her wanting to leave Summer Bay to be with her parents</td>
+            <td><input type="radio" name="f64f3712-2e6f-493a-88b9-2491e45bce73" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="f64f3712-2e6f-493a-88b9-2491e45bce73" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Randy and Sharon Marsh arrive and continue blatantly lying to Stan, insisting that more future selves must be coming back in time to the present, which finally causes Stan to snap and tell them that he knows all about Motivation Corp., and that he was trying to get them to <span class="blank"></span> they lied to him.</td>
+            <td><input type="radio" name="0062bb59-3c2b-485a-8d23-e474976fe9eb" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="0062bb59-3c2b-485a-8d23-e474976fe9eb" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Subsequently, "Philae" failed to respond to further commands, and by January 2016, controllers <span class="blank"></span> no further communications were likely</td>
+            <td><input type="radio" name="102bc5da-62d4-4669-9c09-fe18d667084f" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="102bc5da-62d4-4669-9c09-fe18d667084f" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>An additional award of $150,000 went to the second place team, JMCC WING, based in South Point, Hawaii, to <span class="blank"></span> the team's ingenuity in developing a unique technological approach.</td>
+            <td><input type="radio" name="1c362d16-3daa-45ad-8154-4920e2fca741" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="1c362d16-3daa-45ad-8154-4920e2fca741" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Despite this lack of charges or evidence, in response to the accusations Afra responded in a post to his personal Facebook account, <span class="blank"></span> behavior in which "I have veered away from what I knew was right and caused pain to those around me including family and friends," adding he was "saddened, shocked, and embarrassed...for the developments over the last several days</td>
+            <td><input type="radio" name="9d21fb87-cf99-4d1b-912c-a06920abcfaf" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="9d21fb87-cf99-4d1b-912c-a06920abcfaf" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Writing for "Noisey", Jason Schreurs called the record his longtime favorite SNFU album, although Schreurs <span class="blank"></span> that it was later eclipsed by their debut, "...And No One Else Wanted to Play"</td>
+            <td><input type="radio" name="3279816c-2c4e-4f35-924b-999cf401dabf" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="3279816c-2c4e-4f35-924b-999cf401dabf" value="admit" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Jadhav said that she admired Patil, but refused to <span class="blank"></span> that she had emulated her.</td>
+            <td><input type="radio" name="b11cb667-74de-4e58-8329-4bdf493e05df" value="acknowledge" class="form-radio" /></td>
+            <td><input type="radio" name="b11cb667-74de-4e58-8329-4bdf493e05df" value="admit" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">acknowledge</strong> and <strong class="highlighted">admit</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="4a7f8596-abdc-41bf-90b9-633f15623dd1">
+            <td>In 1956, he was elected Deputy Leader of the Liberal Party and became Leader of the House, and from this point on, he was generally <span class="highlighted">acknowledged</span> as Menzies' heir apparent</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="102bc5da-62d4-4669-9c09-fe18d667084f">
+            <td>Subsequently, "Philae" failed to respond to further commands, and by January 2016, controllers <span class="highlighted">acknowledged</span> no further communications were likely</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="fb2e6b75-c973-4718-80d3-a30866921dd4">
+            <td>Formally, the use of sound to create atmosphere, and of "symbols" (images that take on an expanded function within the poem), betray a move towards considering the poem as a self-referential object, an idea further developed by the Symbolists Verlaine and Mallarmé, who <span class="highlighted">acknowledge</span> Baudelaire as a pioneer in this regard.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="2cdecd9d-0181-487b-a0e8-038e9708dcbb">
+            <td>Technical publications, especially standards produced by the IETF and by the W3C, normally reflect a view outlined in a W3C Recommendation of 2001, which <span class="highlighted">acknowledges</span> the precedence of the term URI rather than endorsing any formal subdivision into URL and URN</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="118f40c4-5454-49f5-bb3c-1caaffef34ce">
+            <td>He stepped down from his role as governor and announced his retirement from public life after <span class="highlighted">acknowledging</span> accusations that he sexually assaulted his aide Kim Ji-eun on multiple occasions.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d02e8f1e-22fa-4f3b-bea2-528c1497eebd">
+            <td>Jasper Tudor <span class="highlighted">acknowledged</span> paternity of no illegitimate children during his lifetime and none are mentioned in his will.\n', 'target_word': '<span class="highlighted">acknowledged</span>'}</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d110378d-3e7c-4d3d-89a7-ee1a1b6c4030">
+            <td>Other court cases have affirmed these rights like the Supreme Court of Belize's 2013 decision to uphold its ruling in 2010 that <span class="highlighted">acknowledges</span> customary land titles as communal land for indigenous peoples.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="1c362d16-3daa-45ad-8154-4920e2fca741">
+            <td>An additional award of $150,000 went to the second place team, JMCC WING, based in South Point, Hawaii, to <span class="highlighted">acknowledge</span> the team's ingenuity in developing a unique technological approach.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="8ea7c200-0775-47cf-89cd-9004fce4a664">
+            <td>He <span class="highlighted">acknowledges</span> that he is the father but still does not want to marry Priya.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="9d21fb87-cf99-4d1b-912c-a06920abcfaf">
+            <td>Despite this lack of charges or evidence, in response to the accusations Afra responded in a post to his personal Facebook account, <span class="highlighted">acknowledging</span> behavior in which "I have veered away from what I knew was right and caused pain to those around me including family and friends," adding he was "saddened, shocked, and embarrassed...for the developments over the last several days</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="5e01b261-2364-411d-935f-e9e96d9a32fd">
+            <td>However, pleasing his parents was important to Tom, although he did not <span class="highlighted">admit</span> that out loud.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="069f6378-0394-4876-8b39-d6f32fe0f02c">
+            <td>He would later <span class="highlighted">admit</span> that he used Human Growth Hormone (HGH), a legal substance, banned by Major League Baseball, in order to recover from his injury in the minor leagues.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="99e4443d-aac2-422f-8478-c8acc947c37f">
+            <td>However, once a client <span class="highlighted">admits</span> taking help from Pluto, in order to keep their identity a secret, or even as punishment, hypnotism will be carried out on the client which makes them lose their sanity.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b11cb667-74de-4e58-8329-4bdf493e05df">
+            <td>Jadhav said that she admired Patil, but refused to <span class="highlighted">admit</span> that she had emulated her.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f64f3712-2e6f-493a-88b9-2491e45bce73">
+            <td>Oscar later <span class="highlighted">admits</span> to hitting her leaving Tamara upset, she finds out she could become blind which results in her wanting to leave Summer Bay to be with her parents</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="12bad359-29c2-4410-8c37-50771baa0bce">
+            <td>In this capacity, in November 2008 Darby faced criticism after <span class="highlighted">admitting</span> carrying out BNP party political work from his office as Barnbrook's assistant at City Hall; Darby denied that he used GLA resources and said that he always made up any office hours spent on party activities.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="2f8bd875-da50-4d56-a5ad-d8084f723180">
+            <td>Defence Minister Robert Hill <span class="highlighted">admits</span> that his office knew of allegations of abuse of Iraqi prisoners.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="3279816c-2c4e-4f35-924b-999cf401dabf">
+            <td>Writing for "Noisey", Jason Schreurs called the record his longtime favorite SNFU album, although Schreurs <span class="highlighted">admits</span> that it was later eclipsed by their debut, "...And No One Else Wanted to Play"</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="cc004b92-ecd0-4372-a824-f4db8a785ae4">
+            <td>Stephen <span class="highlighted">admits</span> to giving her aspirin, though did not realize she was getting sicker because of it, whilst Megan figures out that Daphne was electrocuted.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="0062bb59-3c2b-485a-8d23-e474976fe9eb">
+            <td>Randy and Sharon Marsh arrive and continue blatantly lying to Stan, insisting that more future selves must be coming back in time to the present, which finally causes Stan to snap and tell them that he knows all about Motivation Corp., and that he was trying to get them to <span class="highlighted">admit</span> they lied to him.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">acknowledge</strong> and <strong class="highlighted">admit</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">acknowledge</strong> and <strong class="highlighted">admit</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">acknowledge</strong> and 3 sentences for <strong class="highlighted">admit</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">acknowledge - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="4a7f8596-abdc-41bf-90b9-633f15623dd1"><span class="badge"> </span> In 1956, he was elected Deputy Leader of the Liberal Party and became Leader of the House, and from this point on, he was generally <span class="highlighted">acknowledged</span> as Menzies' heir apparent </div>
+    
+
+        <div class="not_selected sentence" id="102bc5da-62d4-4669-9c09-fe18d667084f"><span class="badge"> </span> Subsequently, "Philae" failed to respond to further commands, and by January 2016, controllers <span class="highlighted">acknowledged</span> no further communications were likely </div>
+    
+
+        <div class="not_selected sentence" id="fb2e6b75-c973-4718-80d3-a30866921dd4"><span class="badge"> </span> Formally, the use of sound to create atmosphere, and of "symbols" (images that take on an expanded function within the poem), betray a move towards considering the poem as a self-referential object, an idea further developed by the Symbolists Verlaine and Mallarmé, who <span class="highlighted">acknowledge</span> Baudelaire as a pioneer in this regard. </div>
+    
+
+        <div class="not_selected sentence" id="2cdecd9d-0181-487b-a0e8-038e9708dcbb"><span class="badge"> </span> Technical publications, especially standards produced by the IETF and by the W3C, normally reflect a view outlined in a W3C Recommendation of 2001, which <span class="highlighted">acknowledges</span> the precedence of the term URI rather than endorsing any formal subdivision into URL and URN </div>
+    
+
+        <div class="not_selected sentence" id="118f40c4-5454-49f5-bb3c-1caaffef34ce"><span class="badge"> </span> He stepped down from his role as governor and announced his retirement from public life after <span class="highlighted">acknowledging</span> accusations that he sexually assaulted his aide Kim Ji-eun on multiple occasions. </div>
+    
+
+        <div class="not_selected sentence" id="d02e8f1e-22fa-4f3b-bea2-528c1497eebd"><span class="badge"> </span> Jasper Tudor <span class="highlighted">acknowledged</span> paternity of no illegitimate children during his lifetime and none are mentioned in his will.\n', 'target_word': '<span class="highlighted">acknowledged</span>'} </div>
+    
+
+        <div class="not_selected sentence" id="d110378d-3e7c-4d3d-89a7-ee1a1b6c4030"><span class="badge"> </span> Other court cases have affirmed these rights like the Supreme Court of Belize's 2013 decision to uphold its ruling in 2010 that <span class="highlighted">acknowledges</span> customary land titles as communal land for indigenous peoples. </div>
+    
+
+        <div class="not_selected sentence" id="1c362d16-3daa-45ad-8154-4920e2fca741"><span class="badge"> </span> An additional award of $150,000 went to the second place team, JMCC WING, based in South Point, Hawaii, to <span class="highlighted">acknowledge</span> the team's ingenuity in developing a unique technological approach. </div>
+    
+
+        <div class="not_selected sentence" id="8ea7c200-0775-47cf-89cd-9004fce4a664"><span class="badge"> </span> He <span class="highlighted">acknowledges</span> that he is the father but still does not want to marry Priya. </div>
+    
+
+        <div class="not_selected sentence" id="9d21fb87-cf99-4d1b-912c-a06920abcfaf"><span class="badge"> </span> Despite this lack of charges or evidence, in response to the accusations Afra responded in a post to his personal Facebook account, <span class="highlighted">acknowledging</span> behavior in which "I have veered away from what I knew was right and caused pain to those around me including family and friends," adding he was "saddened, shocked, and embarrassed...for the developments over the last several days </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">admit  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="5e01b261-2364-411d-935f-e9e96d9a32fd"><span class="badge"> </span> However, pleasing his parents was important to Tom, although he did not <span class="highlighted">admit</span> that out loud. </div>
+    
+
+        <div class="not_selected sentence" id="069f6378-0394-4876-8b39-d6f32fe0f02c"><span class="badge"> </span> He would later <span class="highlighted">admit</span> that he used Human Growth Hormone (HGH), a legal substance, banned by Major League Baseball, in order to recover from his injury in the minor leagues. </div>
+    
+
+        <div class="not_selected sentence" id="99e4443d-aac2-422f-8478-c8acc947c37f"><span class="badge"> </span> However, once a client <span class="highlighted">admits</span> taking help from Pluto, in order to keep their identity a secret, or even as punishment, hypnotism will be carried out on the client which makes them lose their sanity. </div>
+    
+
+        <div class="not_selected sentence" id="b11cb667-74de-4e58-8329-4bdf493e05df"><span class="badge"> </span> Jadhav said that she admired Patil, but refused to <span class="highlighted">admit</span> that she had emulated her. </div>
+    
+
+        <div class="not_selected sentence" id="f64f3712-2e6f-493a-88b9-2491e45bce73"><span class="badge"> </span> Oscar later <span class="highlighted">admits</span> to hitting her leaving Tamara upset, she finds out she could become blind which results in her wanting to leave Summer Bay to be with her parents </div>
+    
+
+        <div class="not_selected sentence" id="12bad359-29c2-4410-8c37-50771baa0bce"><span class="badge"> </span> In this capacity, in November 2008 Darby faced criticism after <span class="highlighted">admitting</span> carrying out BNP party political work from his office as Barnbrook's assistant at City Hall; Darby denied that he used GLA resources and said that he always made up any office hours spent on party activities. </div>
+    
+
+        <div class="not_selected sentence" id="2f8bd875-da50-4d56-a5ad-d8084f723180"><span class="badge"> </span> Defence Minister Robert Hill <span class="highlighted">admits</span> that his office knew of allegations of abuse of Iraqi prisoners. </div>
+    
+
+        <div class="not_selected sentence" id="3279816c-2c4e-4f35-924b-999cf401dabf"><span class="badge"> </span> Writing for "Noisey", Jason Schreurs called the record his longtime favorite SNFU album, although Schreurs <span class="highlighted">admits</span> that it was later eclipsed by their debut, "...And No One Else Wanted to Play" </div>
+    
+
+        <div class="not_selected sentence" id="cc004b92-ecd0-4372-a824-f4db8a785ae4"><span class="badge"> </span> Stephen <span class="highlighted">admits</span> to giving her aspirin, though did not realize she was getting sicker because of it, whilst Megan figures out that Daphne was electrocuted. </div>
+    
+
+        <div class="not_selected sentence" id="0062bb59-3c2b-485a-8d23-e474976fe9eb"><span class="badge"> </span> Randy and Sharon Marsh arrive and continue blatantly lying to Stan, insisting that more future selves must be coming back in time to the present, which finally causes Stan to snap and tell them that he knows all about Motivation Corp., and that he was trying to get them to <span class="highlighted">admit</span> they lied to him. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

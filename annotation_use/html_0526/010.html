@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">special</strong> and <strong class="highlighted">specific</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">special</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">specific</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>special</th>
+                                <th>specific</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>The standard AIA (American Institute of Architects) and EJCDC (Engineering Joint Contract Documents Committee) states that the drawings and <span class="blank"></span> are complementary, together providing the information required for a complete facility.</td>
+            <td><input type="radio" name="d08fc72a-f5c2-448c-b837-53500d1559c1" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="d08fc72a-f5c2-448c-b837-53500d1559c1" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The study also found ad impressions that used owned content/CTA, generated a 0 35% increase over impressions without <span class="blank"></span> content CTA and two times above the industry benchmark of 0.08%.</td>
+            <td><input type="radio" name="cf8e3f2b-45a8-421c-bd77-c22c8b3001ee" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="cf8e3f2b-45a8-421c-bd77-c22c8b3001ee" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>This is not the same cover of "Space Oddity" that first appeared on the <span class="blank"></span> edition of the Star One album, "Space Metal", another project of Arjen's.</td>
+            <td><input type="radio" name="67ce6483-982d-4a9d-a207-77cb0d454cfd" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="67ce6483-982d-4a9d-a207-77cb0d454cfd" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The Pur-alpha inhibition of cancer cell proliferation occurs at <span class="blank"></span> points in the cell division cycle, primarily at checkpoints for transition to DNA replication or mitosis.</td>
+            <td><input type="radio" name="0477542d-42c8-4d2f-b630-9194674881c7" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="0477542d-42c8-4d2f-b630-9194674881c7" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Inside the tube the animal is segmented and regionally <span class="blank"></span>, with highly modified appendages on different segments for cutting the tunnel, feeding, or creating suction for the flow of water through the tube home.</td>
+            <td><input type="radio" name="38458c02-3745-477a-bfda-dc2e27459ba2" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="38458c02-3745-477a-bfda-dc2e27459ba2" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Failure of prosecution in a number of cases under the Criminal procedures act 1898 led to a <span class="blank"></span> act whereby crimes of nationalist violence were to be tried by a <span class="blank"></span> tribunal composed of three high-court judges.</td>
+            <td><input type="radio" name="913e24c9-5af7-4619-bc3e-89ed72e16e9e" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="913e24c9-5af7-4619-bc3e-89ed72e16e9e" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Management agencies sometimes rely on hunting to control <span class="blank"></span> animal populations , as has been the case with deer in North Americ</td>
+            <td><input type="radio" name="d839226f-7bcb-4cc3-8073-4f4cf01a56ff" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="d839226f-7bcb-4cc3-8073-4f4cf01a56ff" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Both of the domains for the three proteins can bind to tyrosine-phosphorylated proteins but they are different in their phosphopeptide-binding <span class="blank"></span>.</td>
+            <td><input type="radio" name="18817108-c0e0-46c2-849c-3b08e95a828f" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="18817108-c0e0-46c2-849c-3b08e95a828f" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The ESA <span class="blank"></span> is built around the current USB human interface device class <span class="blank"></span> and ESA was sent to the USB Implementers Forum HID subcommittee for discussion and approval in early 2007.</td>
+            <td><input type="radio" name="56c171f7-1e2b-41ff-a8f9-d989aaa5fbc6" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="56c171f7-1e2b-41ff-a8f9-d989aaa5fbc6" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>On January 1, 1989, the television <span class="blank"></span> "The Karen Carpenter Story" premiered on CBS, topping the ratings for that week.</td>
+            <td><input type="radio" name="6ad99e3b-fe98-4009-86e4-0b4deed412f7" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="6ad99e3b-fe98-4009-86e4-0b4deed412f7" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The <span class="blank"></span> issue "Tantalizing Stories Presents Frank in the River" won the award for Best Single Issue or Story in 1993, and Woodring was awarded Best Colorist for his work in that issue.</td>
+            <td><input type="radio" name="40080899-5e08-4f45-9fe3-ab5fd65059d9" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="40080899-5e08-4f45-9fe3-ab5fd65059d9" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The ESA USB <span class="blank"></span> was created by a joint venture between Microsoft, Nvidia, Logitech and several other companies.</td>
+            <td><input type="radio" name="320ae03c-65d3-42e4-bf93-f51ffc708a14" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="320ae03c-65d3-42e4-bf93-f51ffc708a14" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Different companies may offer different forms of consulting, ranging from providing a quick fix for <span class="blank"></span> problems, provide extensive explanations to the client or even running the whole analyses.</td>
+            <td><input type="radio" name="56894c71-462e-430e-9bec-bc455768e281" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="56894c71-462e-430e-9bec-bc455768e281" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Not only is the broad field of philosophy today far too vast to be embraced by one mind, something similar is true even of many highly <span class="blank"></span> subf     ields.\"</td>
+            <td><input type="radio" name="b81d6607-cbe6-438e-ad36-63ff2974de5e" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="b81d6607-cbe6-438e-ad36-63ff2974de5e" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Since 2002 he is the scientific Director of the bimonthly magazine "Qualenergia" and of the most visited Italian web site <span class="blank"></span> on energy efficiency and on renewable energies (www.qualenergia.it).</td>
+            <td><input type="radio" name="bd854be1-72c3-49d9-b3e3-e265c850c77d" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="bd854be1-72c3-49d9-b3e3-e265c850c77d" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>ArCHspec was created <span class="blank"></span> for use by Licensed Architects while designing SFR (Single Family Residential) architectural projects.</td>
+            <td><input type="radio" name="1efd6d44-d418-4b05-859a-0e9fb99ed3da" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="1efd6d44-d418-4b05-859a-0e9fb99ed3da" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The Southern African Special Administrative Region is a political concept proposing the creation of an autonomous self-governing region – or <span class="blank"></span> administrative region (SAR) – in southern Africa.</td>
+            <td><input type="radio" name="315dce84-86f8-4978-b244-2ff84b7a4a32" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="315dce84-86f8-4978-b244-2ff84b7a4a32" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He <span class="blank"></span> in mass spectrometry and utilized this method to determine isotope ratios needed for the radiometric dating of geologically and cosmologically relevant samples.</td>
+            <td><input type="radio" name="20a12d65-0274-4ada-bd0f-32f9fcf160e1" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="20a12d65-0274-4ada-bd0f-32f9fcf160e1" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After obtaining numerous <span class="blank"></span> permits, both from the state and the church, the remains were reburied in the churchyard of the Pinosava Monastery in Kusadak on 9 March 2018.</td>
+            <td><input type="radio" name="92dc4d45-88c9-4dd1-9bac-226998ea5cdb" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="92dc4d45-88c9-4dd1-9bac-226998ea5cdb" value="specific" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Specified Minimum Yield Strength (SMYS) means the specified minimum yield strength for steel pipe manufactured in accordance with a listed <span class="blank"></span>.</td>
+            <td><input type="radio" name="18749c5f-4b06-4f44-afd3-fc546a69be14" value="special" class="form-radio" /></td>
+            <td><input type="radio" name="18749c5f-4b06-4f44-afd3-fc546a69be14" value="specific" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">special</strong> and <strong class="highlighted">specific</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="6ad99e3b-fe98-4009-86e4-0b4deed412f7">
+            <td>On January 1, 1989, the television <span class="highlighted">special</span> "The Karen Carpenter Story" premiered on CBS, topping the ratings for that week.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="38458c02-3745-477a-bfda-dc2e27459ba2">
+            <td>Inside the tube the animal is segmented and regionally <span class="highlighted">specialized</span>, with highly modified appendages on different segments for cutting the tunnel, feeding, or creating suction for the flow of water through the tube home.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="67ce6483-982d-4a9d-a207-77cb0d454cfd">
+            <td>This is not the same cover of "Space Oddity" that first appeared on the <span class="highlighted">special</span> edition of the Star One album, "Space Metal", another project of Arjen's.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="92dc4d45-88c9-4dd1-9bac-226998ea5cdb">
+            <td>After obtaining numerous <span class="highlighted">special</span> permits, both from the state and the church, the remains were reburied in the churchyard of the Pinosava Monastery in Kusadak on 9 March 2018.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="20a12d65-0274-4ada-bd0f-32f9fcf160e1">
+            <td>He <span class="highlighted">specialized</span> in mass spectrometry and utilized this method to determine isotope ratios needed for the radiometric dating of geologically and cosmologically relevant samples.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="bd854be1-72c3-49d9-b3e3-e265c850c77d">
+            <td>Since 2002 he is the scientific Director of the bimonthly magazine "Qualenergia" and of the most visited Italian web site <span class="highlighted">specialized</span> on energy efficiency and on renewable energies (www.qualenergia.it).</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="315dce84-86f8-4978-b244-2ff84b7a4a32">
+            <td>The Southern African Special Administrative Region is a political concept proposing the creation of an autonomous self-governing region – or <span class="highlighted">special</span> administrative region (SAR) – in southern Africa.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="40080899-5e08-4f45-9fe3-ab5fd65059d9">
+            <td>The <span class="highlighted">special</span> issue "Tantalizing Stories Presents Frank in the River" won the award for Best Single Issue or Story in 1993, and Woodring was awarded Best Colorist for his work in that issue.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="913e24c9-5af7-4619-bc3e-89ed72e16e9e">
+            <td>Failure of prosecution in a number of cases under the Criminal procedures act 1898 led to a <span class="highlighted">special</span> act whereby crimes of nationalist violence were to be tried by a <span class="highlighted">special</span> tribunal composed of three high-court judges.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b81d6607-cbe6-438e-ad36-63ff2974de5e">
+            <td>Not only is the broad field of philosophy today far too vast to be embraced by one mind, something similar is true even of many highly <span class="highlighted">specialized</span> subf     ields.\"</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="320ae03c-65d3-42e4-bf93-f51ffc708a14">
+            <td>The ESA USB <span class="highlighted">specification</span> was created by a joint venture between Microsoft, Nvidia, Logitech and several other companies.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="56894c71-462e-430e-9bec-bc455768e281">
+            <td>Different companies may offer different forms of consulting, ranging from providing a quick fix for <span class="highlighted">specific</span> problems, provide extensive explanations to the client or even running the whole analyses.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="18749c5f-4b06-4f44-afd3-fc546a69be14">
+            <td>Specified Minimum Yield Strength (SMYS) means the specified minimum yield strength for steel pipe manufactured in accordance with a listed <span class="highlighted">specification</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d08fc72a-f5c2-448c-b837-53500d1559c1">
+            <td>The standard AIA (American Institute of Architects) and EJCDC (Engineering Joint Contract Documents Committee) states that the drawings and <span class="highlighted">specifications</span> are complementary, together providing the information required for a complete facility.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d839226f-7bcb-4cc3-8073-4f4cf01a56ff">
+            <td>Management agencies sometimes rely on hunting to control <span class="highlighted">specific</span> animal populations , as has been the case with deer in North Americ</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="56c171f7-1e2b-41ff-a8f9-d989aaa5fbc6">
+            <td>The ESA <span class="highlighted">specification</span> is built around the current USB human interface device class <span class="highlighted">specification</span> and ESA was sent to the USB Implementers Forum HID subcommittee for discussion and approval in early 2007.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="0477542d-42c8-4d2f-b630-9194674881c7">
+            <td>The Pur-alpha inhibition of cancer cell proliferation occurs at <span class="highlighted">specific</span> points in the cell division cycle, primarily at checkpoints for transition to DNA replication or mitosis.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="cf8e3f2b-45a8-421c-bd77-c22c8b3001ee">
+            <td>The study also found ad impressions that used owned content/CTA, generated a 0 35% increase over impressions without <span class="highlighted">specific</span> content CTA and two times above the industry benchmark of 0.08%.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="1efd6d44-d418-4b05-859a-0e9fb99ed3da">
+            <td>ArCHspec was created <span class="highlighted">specifically</span> for use by Licensed Architects while designing SFR (Single Family Residential) architectural projects.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="18817108-c0e0-46c2-849c-3b08e95a828f">
+            <td>Both of the domains for the three proteins can bind to tyrosine-phosphorylated proteins but they are different in their phosphopeptide-binding <span class="highlighted">specificities</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">special</strong> and <strong class="highlighted">specific</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">special</strong> and <strong class="highlighted">specific</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">special</strong> and 3 sentences for <strong class="highlighted">specific</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">special - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="6ad99e3b-fe98-4009-86e4-0b4deed412f7"><span class="badge"> </span> On January 1, 1989, the television <span class="highlighted">special</span> "The Karen Carpenter Story" premiered on CBS, topping the ratings for that week. </div>
+    
+
+        <div class="not_selected sentence" id="38458c02-3745-477a-bfda-dc2e27459ba2"><span class="badge"> </span> Inside the tube the animal is segmented and regionally <span class="highlighted">specialized</span>, with highly modified appendages on different segments for cutting the tunnel, feeding, or creating suction for the flow of water through the tube home. </div>
+    
+
+        <div class="not_selected sentence" id="67ce6483-982d-4a9d-a207-77cb0d454cfd"><span class="badge"> </span> This is not the same cover of "Space Oddity" that first appeared on the <span class="highlighted">special</span> edition of the Star One album, "Space Metal", another project of Arjen's. </div>
+    
+
+        <div class="not_selected sentence" id="92dc4d45-88c9-4dd1-9bac-226998ea5cdb"><span class="badge"> </span> After obtaining numerous <span class="highlighted">special</span> permits, both from the state and the church, the remains were reburied in the churchyard of the Pinosava Monastery in Kusadak on 9 March 2018. </div>
+    
+
+        <div class="not_selected sentence" id="20a12d65-0274-4ada-bd0f-32f9fcf160e1"><span class="badge"> </span> He <span class="highlighted">specialized</span> in mass spectrometry and utilized this method to determine isotope ratios needed for the radiometric dating of geologically and cosmologically relevant samples. </div>
+    
+
+        <div class="not_selected sentence" id="bd854be1-72c3-49d9-b3e3-e265c850c77d"><span class="badge"> </span> Since 2002 he is the scientific Director of the bimonthly magazine "Qualenergia" and of the most visited Italian web site <span class="highlighted">specialized</span> on energy efficiency and on renewable energies (www.qualenergia.it). </div>
+    
+
+        <div class="not_selected sentence" id="315dce84-86f8-4978-b244-2ff84b7a4a32"><span class="badge"> </span> The Southern African Special Administrative Region is a political concept proposing the creation of an autonomous self-governing region – or <span class="highlighted">special</span> administrative region (SAR) – in southern Africa. </div>
+    
+
+        <div class="not_selected sentence" id="40080899-5e08-4f45-9fe3-ab5fd65059d9"><span class="badge"> </span> The <span class="highlighted">special</span> issue "Tantalizing Stories Presents Frank in the River" won the award for Best Single Issue or Story in 1993, and Woodring was awarded Best Colorist for his work in that issue. </div>
+    
+
+        <div class="not_selected sentence" id="913e24c9-5af7-4619-bc3e-89ed72e16e9e"><span class="badge"> </span> Failure of prosecution in a number of cases under the Criminal procedures act 1898 led to a <span class="highlighted">special</span> act whereby crimes of nationalist violence were to be tried by a <span class="highlighted">special</span> tribunal composed of three high-court judges. </div>
+    
+
+        <div class="not_selected sentence" id="b81d6607-cbe6-438e-ad36-63ff2974de5e"><span class="badge"> </span> Not only is the broad field of philosophy today far too vast to be embraced by one mind, something similar is true even of many highly <span class="highlighted">specialized</span> subf     ields.\" </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">specific  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="320ae03c-65d3-42e4-bf93-f51ffc708a14"><span class="badge"> </span> The ESA USB <span class="highlighted">specification</span> was created by a joint venture between Microsoft, Nvidia, Logitech and several other companies. </div>
+    
+
+        <div class="not_selected sentence" id="56894c71-462e-430e-9bec-bc455768e281"><span class="badge"> </span> Different companies may offer different forms of consulting, ranging from providing a quick fix for <span class="highlighted">specific</span> problems, provide extensive explanations to the client or even running the whole analyses. </div>
+    
+
+        <div class="not_selected sentence" id="18749c5f-4b06-4f44-afd3-fc546a69be14"><span class="badge"> </span> Specified Minimum Yield Strength (SMYS) means the specified minimum yield strength for steel pipe manufactured in accordance with a listed <span class="highlighted">specification</span>. </div>
+    
+
+        <div class="not_selected sentence" id="d08fc72a-f5c2-448c-b837-53500d1559c1"><span class="badge"> </span> The standard AIA (American Institute of Architects) and EJCDC (Engineering Joint Contract Documents Committee) states that the drawings and <span class="highlighted">specifications</span> are complementary, together providing the information required for a complete facility. </div>
+    
+
+        <div class="not_selected sentence" id="d839226f-7bcb-4cc3-8073-4f4cf01a56ff"><span class="badge"> </span> Management agencies sometimes rely on hunting to control <span class="highlighted">specific</span> animal populations , as has been the case with deer in North Americ </div>
+    
+
+        <div class="not_selected sentence" id="56c171f7-1e2b-41ff-a8f9-d989aaa5fbc6"><span class="badge"> </span> The ESA <span class="highlighted">specification</span> is built around the current USB human interface device class <span class="highlighted">specification</span> and ESA was sent to the USB Implementers Forum HID subcommittee for discussion and approval in early 2007. </div>
+    
+
+        <div class="not_selected sentence" id="0477542d-42c8-4d2f-b630-9194674881c7"><span class="badge"> </span> The Pur-alpha inhibition of cancer cell proliferation occurs at <span class="highlighted">specific</span> points in the cell division cycle, primarily at checkpoints for transition to DNA replication or mitosis. </div>
+    
+
+        <div class="not_selected sentence" id="cf8e3f2b-45a8-421c-bd77-c22c8b3001ee"><span class="badge"> </span> The study also found ad impressions that used owned content/CTA, generated a 0 35% increase over impressions without <span class="highlighted">specific</span> content CTA and two times above the industry benchmark of 0.08%. </div>
+    
+
+        <div class="not_selected sentence" id="1efd6d44-d418-4b05-859a-0e9fb99ed3da"><span class="badge"> </span> ArCHspec was created <span class="highlighted">specifically</span> for use by Licensed Architects while designing SFR (Single Family Residential) architectural projects. </div>
+    
+
+        <div class="not_selected sentence" id="18817108-c0e0-46c2-849c-3b08e95a828f"><span class="badge"> </span> Both of the domains for the three proteins can bind to tyrosine-phosphorylated proteins but they are different in their phosphopeptide-binding <span class="highlighted">specificities</span>. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

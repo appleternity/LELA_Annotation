@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">responsibility</strong> and <strong class="highlighted">liability</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">responsibility</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">liability</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>responsibility</th>
+                                <th>liability</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>Most community service officers are specially or limited commissioned peace officers and some are non-sworn (civilian) positions without powers of arrest and most do not carry firearms due to <span class="blank"></span> issues.</td>
+            <td><input type="radio" name="38cd311b-d910-49f6-9e60-a0c2826a4243" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="38cd311b-d910-49f6-9e60-a0c2826a4243" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>This is a <span class="blank"></span> to lead teacher training, professional development, research and development, leadership, raising achievement and school to school support.</td>
+            <td><input type="radio" name="4d57a1a7-5e5a-4f87-8054-704859604f8c" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="4d57a1a7-5e5a-4f87-8054-704859604f8c" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In the case of a limited <span class="blank"></span> company, an executive officer is any member, manager, or officer.</td>
+            <td><input type="radio" name="61489962-519d-464e-b554-4dca8ca11fb1" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="61489962-519d-464e-b554-4dca8ca11fb1" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Most of these have illegible grave markers and maintenance of the sites are the <span class="blank"></span> of the township trustee.</td>
+            <td><input type="radio" name="502e9e37-feba-4124-be71-5e07f1002a00" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="502e9e37-feba-4124-be71-5e07f1002a00" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>All activities and interactions are meant to teach players about <span class="blank"></span>, nurture, and the importance of helping others.</td>
+            <td><input type="radio" name="d78d48c9-6c62-4a39-80b4-6ddd1018a983" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="d78d48c9-6c62-4a39-80b4-6ddd1018a983" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The only significant difference is that a violation of section 298A results in the commission of a criminal offence, while criminal <span class="blank"></span> attaches under the MRHA only when a restraining order has been breached.</td>
+            <td><input type="radio" name="35828a69-93b9-4cd0-b120-994068e5dab8" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="35828a69-93b9-4cd0-b120-994068e5dab8" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The next year, the government of Ghana divested its 21% share of the bank and it was converted to a public limited <span class="blank"></span> company and subsequently listed on the Ghana Stock Exchange.</td>
+            <td><input type="radio" name="930b64c2-0335-47b2-921a-fbddd03e5416" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="930b64c2-0335-47b2-921a-fbddd03e5416" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The failure by police professionals to act ethically could result in the loss of public trust, jeopardize investigations, or expose agencies or departments to <span class="blank"></span> issues.</td>
+            <td><input type="radio" name="1d825824-0982-40db-8355-b07da75e8629" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="1d825824-0982-40db-8355-b07da75e8629" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Article 3 stipulates that "It shall be the <span class="blank"></span> of religious institutions and personalities to promote the spiritual heritage of the country while also ensuring that religion remains separate from politics in Bhutan.</td>
+            <td><input type="radio" name="639e1b51-7d45-4cfc-8e9a-99fcb6448e90" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="639e1b51-7d45-4cfc-8e9a-99fcb6448e90" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The Division of Cavite, always alert and sensitive to innovation and changes, committed to the <span class="blank"></span> of providing the youth with education is truly relevant to the needs of a changing society.</td>
+            <td><input type="radio" name="f9520567-2f17-4d88-a8d1-7f0f575bb83e" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="f9520567-2f17-4d88-a8d1-7f0f575bb83e" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Even former president Jackson conceded that Johnson was a <span class="blank"></span> and insisted on former House Speaker James K. Polk of Tennessee as Van Buren's new running mate.</td>
+            <td><input type="radio" name="ac5bf5fd-4005-48bd-acda-d632acfca3f1" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="ac5bf5fd-4005-48bd-acda-d632acfca3f1" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="blank"></span> of Mossad, although military units will carry out specific counterterrorism actions.</td>
+            <td><input type="radio" name="2bc8bfec-d044-43a1-8955-c6f96e031039" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="2bc8bfec-d044-43a1-8955-c6f96e031039" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>She argued that CFAA prohibits only using authorized access to obtain the information that she was not entitled to obtain, but does not impose <span class="blank"></span> for the unlawful use of the information that she was authorized to access.</td>
+            <td><input type="radio" name="f6f52dad-cd77-4369-aeab-90c898d3ce7e" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="f6f52dad-cd77-4369-aeab-90c898d3ce7e" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After the February earthquake the New Zealand Government brought in a special act of Parliament, The Canterbury Earthquake Recovery Act, which essentially passed ultimate <span class="blank"></span> for the rebuilding of post-quake Christchurch to the Government.</td>
+            <td><input type="radio" name="b8631b5a-e7ed-4819-84be-47916d2c53cb" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="b8631b5a-e7ed-4819-84be-47916d2c53cb" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>However, the Central government may review the operator's <span class="blank"></span> from time to time and specify a higher amount.</td>
+            <td><input type="radio" name="11e4f071-d32b-4036-b59f-a2d909257bfa" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="11e4f071-d32b-4036-b59f-a2d909257bfa" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 1992, Palenik founded a limited <span class="blank"></span> company, Microtrace LLC, to provide microscopy, microchemistry, and forensic consulting services to a variety of clients including forensic laboratories and manufacturers.</td>
+            <td><input type="radio" name="23d888e9-58d8-469f-a678-da833d8b953e" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="23d888e9-58d8-469f-a678-da833d8b953e" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The school promoted social <span class="blank"></span>, respect for cultural diversity and appreciation for lifelong learning, and was founded by Chris Wendelyn in 1986.</td>
+            <td><input type="radio" name="4cd83b2e-d5a9-4dcd-96da-c052d2983d7e" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="4cd83b2e-d5a9-4dcd-96da-c052d2983d7e" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In some (usually small) companies commissioning editors are also responsible for overseeing the copy-editing, typesetting, proofreading, and design of books, although in other companies this <span class="blank"></span> is assumed by other staff e.g.</td>
+            <td><input type="radio" name="0e36d76a-88f1-4ee6-93d6-fbb1c248055b" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="0e36d76a-88f1-4ee6-93d6-fbb1c248055b" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>David Ashworth was appointed as manager, with the <span class="blank"></span> of selecting the team and coaching, and Wild was appointed as secretary, taking <span class="blank"></span> for administration.</td>
+            <td><input type="radio" name="5421e7e8-026a-44ba-ac27-948f30b23107" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="5421e7e8-026a-44ba-ac27-948f30b23107" value="liability" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>This was due in part to complex legal reasons as Royal Dutch Shell feared that there could be onerous <span class="blank"></span> problems if a closer control of Shell Oil's affairs was exercised by the "parent company".</td>
+            <td><input type="radio" name="928b05cc-70b0-4fa0-912f-df15abddc56c" value="responsibility" class="form-radio" /></td>
+            <td><input type="radio" name="928b05cc-70b0-4fa0-912f-df15abddc56c" value="liability" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">responsibility</strong> and <strong class="highlighted">liability</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="b8631b5a-e7ed-4819-84be-47916d2c53cb">
+            <td>After the February earthquake the New Zealand Government brought in a special act of Parliament, The Canterbury Earthquake Recovery Act, which essentially passed ultimate <span class="highlighted">responsibility</span> for the rebuilding of post-quake Christchurch to the Government.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d78d48c9-6c62-4a39-80b4-6ddd1018a983">
+            <td>All activities and interactions are meant to teach players about <span class="highlighted">responsibility</span>, nurture, and the importance of helping others.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="639e1b51-7d45-4cfc-8e9a-99fcb6448e90">
+            <td>Article 3 stipulates that "It shall be the <span class="highlighted">responsibility</span> of religious institutions and personalities to promote the spiritual heritage of the country while also ensuring that religion remains separate from politics in Bhutan.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="5421e7e8-026a-44ba-ac27-948f30b23107">
+            <td>David Ashworth was appointed as manager, with the <span class="highlighted">responsibility</span> of selecting the team and coaching, and Wild was appointed as secretary, taking <span class="highlighted">responsibility</span> for administration.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="2bc8bfec-d044-43a1-8955-c6f96e031039">
+            <td>External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="highlighted">responsibility</span> of Mossad, although military units will carry out specific counterterrorism actions.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="0e36d76a-88f1-4ee6-93d6-fbb1c248055b">
+            <td>In some (usually small) companies commissioning editors are also responsible for overseeing the copy-editing, typesetting, proofreading, and design of books, although in other companies this <span class="highlighted">responsibility</span> is assumed by other staff e.g.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="502e9e37-feba-4124-be71-5e07f1002a00">
+            <td>Most of these have illegible grave markers and maintenance of the sites are the <span class="highlighted">responsibility</span> of the township trustee.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f9520567-2f17-4d88-a8d1-7f0f575bb83e">
+            <td>The Division of Cavite, always alert and sensitive to innovation and changes, committed to the <span class="highlighted">responsibility</span> of providing the youth with education is truly relevant to the needs of a changing society.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="4cd83b2e-d5a9-4dcd-96da-c052d2983d7e">
+            <td>The school promoted social <span class="highlighted">responsibility</span>, respect for cultural diversity and appreciation for lifelong learning, and was founded by Chris Wendelyn in 1986.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="4d57a1a7-5e5a-4f87-8054-704859604f8c">
+            <td>This is a <span class="highlighted">responsibility</span> to lead teacher training, professional development, research and development, leadership, raising achievement and school to school support.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="ac5bf5fd-4005-48bd-acda-d632acfca3f1">
+            <td>Even former president Jackson conceded that Johnson was a <span class="highlighted">liability</span> and insisted on former House Speaker James K. Polk of Tennessee as Van Buren's new running mate.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="11e4f071-d32b-4036-b59f-a2d909257bfa">
+            <td>However, the Central government may review the operator's <span class="highlighted">liability</span> from time to time and specify a higher amount.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="23d888e9-58d8-469f-a678-da833d8b953e">
+            <td>In 1992, Palenik founded a limited <span class="highlighted">liability</span> company, Microtrace LLC, to provide microscopy, microchemistry, and forensic consulting services to a variety of clients including forensic laboratories and manufacturers.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="61489962-519d-464e-b554-4dca8ca11fb1">
+            <td>In the case of a limited <span class="highlighted">liability</span> company, an executive officer is any member, manager, or officer.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="38cd311b-d910-49f6-9e60-a0c2826a4243">
+            <td>Most community service officers are specially or limited commissioned peace officers and some are non-sworn (civilian) positions without powers of arrest and most do not carry firearms due to <span class="highlighted">liability</span> issues.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f6f52dad-cd77-4369-aeab-90c898d3ce7e">
+            <td>She argued that CFAA prohibits only using authorized access to obtain the information that she was not entitled to obtain, but does not impose <span class="highlighted">liability</span> for the unlawful use of the information that she was authorized to access.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="1d825824-0982-40db-8355-b07da75e8629">
+            <td>The failure by police professionals to act ethically could result in the loss of public trust, jeopardize investigations, or expose agencies or departments to <span class="highlighted">liability</span> issues.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="930b64c2-0335-47b2-921a-fbddd03e5416">
+            <td>The next year, the government of Ghana divested its 21% share of the bank and it was converted to a public limited <span class="highlighted">liability</span> company and subsequently listed on the Ghana Stock Exchange.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="35828a69-93b9-4cd0-b120-994068e5dab8">
+            <td>The only significant difference is that a violation of section 298A results in the commission of a criminal offence, while criminal <span class="highlighted">liability</span> attaches under the MRHA only when a restraining order has been breached.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="928b05cc-70b0-4fa0-912f-df15abddc56c">
+            <td>This was due in part to complex legal reasons as Royal Dutch Shell feared that there could be onerous <span class="highlighted">liability</span> problems if a closer control of Shell Oil's affairs was exercised by the "parent company".</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">responsibility</strong> and <strong class="highlighted">liability</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">responsibility</strong> and <strong class="highlighted">liability</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">responsibility</strong> and 3 sentences for <strong class="highlighted">liability</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">responsibility - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="b8631b5a-e7ed-4819-84be-47916d2c53cb"><span class="badge"> </span> After the February earthquake the New Zealand Government brought in a special act of Parliament, The Canterbury Earthquake Recovery Act, which essentially passed ultimate <span class="highlighted">responsibility</span> for the rebuilding of post-quake Christchurch to the Government. </div>
+    
+
+        <div class="not_selected sentence" id="d78d48c9-6c62-4a39-80b4-6ddd1018a983"><span class="badge"> </span> All activities and interactions are meant to teach players about <span class="highlighted">responsibility</span>, nurture, and the importance of helping others. </div>
+    
+
+        <div class="not_selected sentence" id="639e1b51-7d45-4cfc-8e9a-99fcb6448e90"><span class="badge"> </span> Article 3 stipulates that "It shall be the <span class="highlighted">responsibility</span> of religious institutions and personalities to promote the spiritual heritage of the country while also ensuring that religion remains separate from politics in Bhutan. </div>
+    
+
+        <div class="not_selected sentence" id="5421e7e8-026a-44ba-ac27-948f30b23107"><span class="badge"> </span> David Ashworth was appointed as manager, with the <span class="highlighted">responsibility</span> of selecting the team and coaching, and Wild was appointed as secretary, taking <span class="highlighted">responsibility</span> for administration. </div>
+    
+
+        <div class="not_selected sentence" id="2bc8bfec-d044-43a1-8955-c6f96e031039"><span class="badge"> </span> External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="highlighted">responsibility</span> of Mossad, although military units will carry out specific counterterrorism actions. </div>
+    
+
+        <div class="not_selected sentence" id="0e36d76a-88f1-4ee6-93d6-fbb1c248055b"><span class="badge"> </span> In some (usually small) companies commissioning editors are also responsible for overseeing the copy-editing, typesetting, proofreading, and design of books, although in other companies this <span class="highlighted">responsibility</span> is assumed by other staff e.g. </div>
+    
+
+        <div class="not_selected sentence" id="502e9e37-feba-4124-be71-5e07f1002a00"><span class="badge"> </span> Most of these have illegible grave markers and maintenance of the sites are the <span class="highlighted">responsibility</span> of the township trustee. </div>
+    
+
+        <div class="not_selected sentence" id="f9520567-2f17-4d88-a8d1-7f0f575bb83e"><span class="badge"> </span> The Division of Cavite, always alert and sensitive to innovation and changes, committed to the <span class="highlighted">responsibility</span> of providing the youth with education is truly relevant to the needs of a changing society. </div>
+    
+
+        <div class="not_selected sentence" id="4cd83b2e-d5a9-4dcd-96da-c052d2983d7e"><span class="badge"> </span> The school promoted social <span class="highlighted">responsibility</span>, respect for cultural diversity and appreciation for lifelong learning, and was founded by Chris Wendelyn in 1986. </div>
+    
+
+        <div class="not_selected sentence" id="4d57a1a7-5e5a-4f87-8054-704859604f8c"><span class="badge"> </span> This is a <span class="highlighted">responsibility</span> to lead teacher training, professional development, research and development, leadership, raising achievement and school to school support. </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">liability  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="ac5bf5fd-4005-48bd-acda-d632acfca3f1"><span class="badge"> </span> Even former president Jackson conceded that Johnson was a <span class="highlighted">liability</span> and insisted on former House Speaker James K. Polk of Tennessee as Van Buren's new running mate. </div>
+    
+
+        <div class="not_selected sentence" id="11e4f071-d32b-4036-b59f-a2d909257bfa"><span class="badge"> </span> However, the Central government may review the operator's <span class="highlighted">liability</span> from time to time and specify a higher amount. </div>
+    
+
+        <div class="not_selected sentence" id="23d888e9-58d8-469f-a678-da833d8b953e"><span class="badge"> </span> In 1992, Palenik founded a limited <span class="highlighted">liability</span> company, Microtrace LLC, to provide microscopy, microchemistry, and forensic consulting services to a variety of clients including forensic laboratories and manufacturers. </div>
+    
+
+        <div class="not_selected sentence" id="61489962-519d-464e-b554-4dca8ca11fb1"><span class="badge"> </span> In the case of a limited <span class="highlighted">liability</span> company, an executive officer is any member, manager, or officer. </div>
+    
+
+        <div class="not_selected sentence" id="38cd311b-d910-49f6-9e60-a0c2826a4243"><span class="badge"> </span> Most community service officers are specially or limited commissioned peace officers and some are non-sworn (civilian) positions without powers of arrest and most do not carry firearms due to <span class="highlighted">liability</span> issues. </div>
+    
+
+        <div class="not_selected sentence" id="f6f52dad-cd77-4369-aeab-90c898d3ce7e"><span class="badge"> </span> She argued that CFAA prohibits only using authorized access to obtain the information that she was not entitled to obtain, but does not impose <span class="highlighted">liability</span> for the unlawful use of the information that she was authorized to access. </div>
+    
+
+        <div class="not_selected sentence" id="1d825824-0982-40db-8355-b07da75e8629"><span class="badge"> </span> The failure by police professionals to act ethically could result in the loss of public trust, jeopardize investigations, or expose agencies or departments to <span class="highlighted">liability</span> issues. </div>
+    
+
+        <div class="not_selected sentence" id="930b64c2-0335-47b2-921a-fbddd03e5416"><span class="badge"> </span> The next year, the government of Ghana divested its 21% share of the bank and it was converted to a public limited <span class="highlighted">liability</span> company and subsequently listed on the Ghana Stock Exchange. </div>
+    
+
+        <div class="not_selected sentence" id="35828a69-93b9-4cd0-b120-994068e5dab8"><span class="badge"> </span> The only significant difference is that a violation of section 298A results in the commission of a criminal offence, while criminal <span class="highlighted">liability</span> attaches under the MRHA only when a restraining order has been breached. </div>
+    
+
+        <div class="not_selected sentence" id="928b05cc-70b0-4fa0-912f-df15abddc56c"><span class="badge"> </span> This was due in part to complex legal reasons as Royal Dutch Shell feared that there could be onerous <span class="highlighted">liability</span> problems if a closer control of Shell Oil's affairs was exercised by the "parent company". </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

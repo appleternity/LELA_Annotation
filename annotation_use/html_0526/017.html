@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">senior</strong> and <strong class="highlighted">elderly</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">senior</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">elderly</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>senior</th>
+                                <th>elderly</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>Key features include rocks, cliffs, flowing water, a bridge, a mountain path, an <span class="blank"></span> scholar climbing, vast expanses of water and sky with mountains soaring in the distance.</td>
+            <td><input type="radio" name="05188ba5-7eae-4e44-ab02-a009a7b5ac4b" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="05188ba5-7eae-4e44-ab02-a009a7b5ac4b" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>On 8 June 2015 in Winnipeg, Canada, Oshoala opened her <span class="blank"></span> FIFA Women's World Cup account by scoring Nigeria's second goal in a 3–3 draw with Sweden.</td>
+            <td><input type="radio" name="f11171c2-88b1-4f13-9183-c1bfb520afae" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="f11171c2-88b1-4f13-9183-c1bfb520afae" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He recorded 92 tackles, five interceptions, one sack and two forced fumbles his <span class="blank"></span> season, earning First team All-Big Ten as well as Academic All-Big Ten honors.</td>
+            <td><input type="radio" name="c7906eeb-7c09-4cfb-bcb6-2c1b6eccf371" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="c7906eeb-7c09-4cfb-bcb6-2c1b6eccf371" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>It was also reported that the <span class="blank"></span> and other non-wanted slaves were separated from the captured prisoners and burned alive so that they would not burden the caravans.</td>
+            <td><input type="radio" name="0ec708ec-6c87-4e71-a154-99d9f727e089" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="0ec708ec-6c87-4e71-a154-99d9f727e089" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Many once large and international communities have been reduced to a single convent or monastery with memberships of <span class="blank"></span> men or women.</td>
+            <td><input type="radio" name="15b082a7-a0a9-41b2-9183-4f652425238a" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="15b082a7-a0a9-41b2-9183-4f652425238a" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He was allowed to visit his wife, who had been placed in a home for the <span class="blank"></span>, several times a month.</td>
+            <td><input type="radio" name="8bea21e4-5f75-4c4c-b07e-527b6bf6ed2c" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="8bea21e4-5f75-4c4c-b07e-527b6bf6ed2c" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Born in Alicante, Valencian Community, Candela graduated with Villarreal CF's youth setup, and made his <span class="blank"></span> debuts with the C-team in the 2011–12 campaign, in Tercera División.</td>
+            <td><input type="radio" name="b179a325-107f-4c90-adb0-8f6af5e78e87" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="b179a325-107f-4c90-adb0-8f6af5e78e87" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Thomas Clancy (born 13 February 1992) is an Irish Gaelic footballer who plays as a centre-back for the Cork <span class="blank"></span> team.</td>
+            <td><input type="radio" name="ed40e629-94c0-4e06-bf58-28c8d8d27bd3" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="ed40e629-94c0-4e06-bf58-28c8d8d27bd3" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Many once large and international communities have been reduced to a single convent or monastery with memberships of <span class="blank"></span> men or women.</td>
+            <td><input type="radio" name="34fd920e-8a62-4446-8eb8-ea2eec588281" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="34fd920e-8a62-4446-8eb8-ea2eec588281" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>A <span class="blank"></span> official with the Salem division says if the revival of an old line can bring about so many benefits, it can be considered.</td>
+            <td><input type="radio" name="e04bd798-0bfa-4465-97a5-34a841ea4336" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="e04bd798-0bfa-4465-97a5-34a841ea4336" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The only civilians who remained in Safed were "about" 100 Muslims, "average age 80" and "34-36 <span class="blank"></span> Christian Arabs".</td>
+            <td><input type="radio" name="47cba35d-7ffb-42be-9c1e-1077fce1de6d" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="47cba35d-7ffb-42be-9c1e-1077fce1de6d" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>St. David's Hospital, the city's newest hospital, built behind the former building, is located in Canton and provides services for the <span class="blank"></span> and children.</td>
+            <td><input type="radio" name="57589b7c-5330-4d5b-8d76-7c7712bf82ab" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="57589b7c-5330-4d5b-8d76-7c7712bf82ab" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Although the woman's maiden name is not revealed, details throughout the story strongly imply that this character is the <span class="blank"></span> Susan Pevensie.</td>
+            <td><input type="radio" name="d63d51fd-8ec5-4393-a643-6743c766a544" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="d63d51fd-8ec5-4393-a643-6743c766a544" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Brigadier Thomas Henry Scott Galletly DSO&bar MC (23 August 1905 - 5 April 1972) was a <span class="blank"></span> officer in the British Army during World War II.</td>
+            <td><input type="radio" name="ea27d3c1-36e1-427e-b7eb-7e77a9e054a4" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="ea27d3c1-36e1-427e-b7eb-7e77a9e054a4" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He was married to "Time" <span class="blank"></span> editor Charlotte Greensit, whom he met while stationed in London.</td>
+            <td><input type="radio" name="abcfb205-fe36-4789-a62b-b084122be0b8" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="abcfb205-fe36-4789-a62b-b084122be0b8" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Patrick Elliott, <span class="blank"></span> curator at the Scottish National Gallery of Modern Art, described the purchase in 2013 of some of Lucas's works of this period as follows:</td>
+            <td><input type="radio" name="946fe82e-b4a4-45b2-8a57-ba0245ea8385" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="946fe82e-b4a4-45b2-8a57-ba0245ea8385" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The food is then distributed to charities caring for indigent <span class="blank"></span>, to day care centers, halfway houses, and shelters, at no cost to them.</td>
+            <td><input type="radio" name="01192c65-b4a4-425b-80aa-efa9c2fc0ce7" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="01192c65-b4a4-425b-80aa-efa9c2fc0ce7" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 2015, Ana Luiza made her <span class="blank"></span> international debut competing at the 2015 Moscow Grand Prix finishing 23rd in the all-around.</td>
+            <td><input type="radio" name="7d0ef6f1-5b6c-4749-b10b-742b2cfef365" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="7d0ef6f1-5b6c-4749-b10b-742b2cfef365" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 2006, Topić was proposed as a candidate for a <span class="blank"></span> management position at the World Intellectual Property Organization (WIPO).</td>
+            <td><input type="radio" name="1194b2ea-c920-4523-af87-d3daa38b3c83" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="1194b2ea-c920-4523-af87-d3daa38b3c83" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Dogs that are physically fit and vigorous in their youth through middle age are more vigorous and healthy as <span class="blank"></span> dogs, all other factors being equal.</td>
+            <td><input type="radio" name="c86ed9b4-4815-4e65-98c8-bfdeff2d0090" value="senior" class="form-radio" /></td>
+            <td><input type="radio" name="c86ed9b4-4815-4e65-98c8-bfdeff2d0090" value="elderly" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">senior</strong> and <strong class="highlighted">elderly</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="e04bd798-0bfa-4465-97a5-34a841ea4336">
+            <td>A <span class="highlighted">senior</span> official with the Salem division says if the revival of an old line can bring about so many benefits, it can be considered.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b179a325-107f-4c90-adb0-8f6af5e78e87">
+            <td>Born in Alicante, Valencian Community, Candela graduated with Villarreal CF's youth setup, and made his <span class="highlighted">senior</span> debuts with the C-team in the 2011–12 campaign, in Tercera División.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="ea27d3c1-36e1-427e-b7eb-7e77a9e054a4">
+            <td>Brigadier Thomas Henry Scott Galletly DSO&bar MC (23 August 1905 - 5 April 1972) was a <span class="highlighted">senior</span> officer in the British Army during World War II.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c7906eeb-7c09-4cfb-bcb6-2c1b6eccf371">
+            <td>He recorded 92 tackles, five interceptions, one sack and two forced fumbles his <span class="highlighted">senior</span> season, earning First team All-Big Ten as well as Academic All-Big Ten honors.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="abcfb205-fe36-4789-a62b-b084122be0b8">
+            <td>He was married to "Time" <span class="highlighted">senior</span> editor Charlotte Greensit, whom he met while stationed in London.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="1194b2ea-c920-4523-af87-d3daa38b3c83">
+            <td>In 2006, Topić was proposed as a candidate for a <span class="highlighted">senior</span> management position at the World Intellectual Property Organization (WIPO).</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="7d0ef6f1-5b6c-4749-b10b-742b2cfef365">
+            <td>In 2015, Ana Luiza made her <span class="highlighted">senior</span> international debut competing at the 2015 Moscow Grand Prix finishing 23rd in the all-around.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f11171c2-88b1-4f13-9183-c1bfb520afae">
+            <td>On 8 June 2015 in Winnipeg, Canada, Oshoala opened her <span class="highlighted">senior</span> FIFA Women's World Cup account by scoring Nigeria's second goal in a 3–3 draw with Sweden.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="946fe82e-b4a4-45b2-8a57-ba0245ea8385">
+            <td>Patrick Elliott, <span class="highlighted">senior</span> curator at the Scottish National Gallery of Modern Art, described the purchase in 2013 of some of Lucas's works of this period as follows:</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="ed40e629-94c0-4e06-bf58-28c8d8d27bd3">
+            <td>Thomas Clancy (born 13 February 1992) is an Irish Gaelic footballer who plays as a centre-back for the Cork <span class="highlighted">senior</span> team.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d63d51fd-8ec5-4393-a643-6743c766a544">
+            <td>Although the woman's maiden name is not revealed, details throughout the story strongly imply that this character is the <span class="highlighted">elderly</span> Susan Pevensie.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="c86ed9b4-4815-4e65-98c8-bfdeff2d0090">
+            <td>Dogs that are physically fit and vigorous in their youth through middle age are more vigorous and healthy as <span class="highlighted">elderly</span> dogs, all other factors being equal.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="8bea21e4-5f75-4c4c-b07e-527b6bf6ed2c">
+            <td>He was allowed to visit his wife, who had been placed in a home for the <span class="highlighted">elderly</span>, several times a month.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="0ec708ec-6c87-4e71-a154-99d9f727e089">
+            <td>It was also reported that the <span class="highlighted">elderly</span> and other non-wanted slaves were separated from the captured prisoners and burned alive so that they would not burden the caravans.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="05188ba5-7eae-4e44-ab02-a009a7b5ac4b">
+            <td>Key features include rocks, cliffs, flowing water, a bridge, a mountain path, an <span class="highlighted">elderly</span> scholar climbing, vast expanses of water and sky with mountains soaring in the distance.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="34fd920e-8a62-4446-8eb8-ea2eec588281">
+            <td>Many once large and international communities have been reduced to a single convent or monastery with memberships of <span class="highlighted">elderly</span> men or women.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="15b082a7-a0a9-41b2-9183-4f652425238a">
+            <td>Many once large and international communities have been reduced to a single convent or monastery with memberships of <span class="highlighted">elderly</span> men or women.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="57589b7c-5330-4d5b-8d76-7c7712bf82ab">
+            <td>St. David's Hospital, the city's newest hospital, built behind the former building, is located in Canton and provides services for the <span class="highlighted">elderly</span> and children.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="01192c65-b4a4-425b-80aa-efa9c2fc0ce7">
+            <td>The food is then distributed to charities caring for indigent <span class="highlighted">elderly</span>, to day care centers, halfway houses, and shelters, at no cost to them.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="47cba35d-7ffb-42be-9c1e-1077fce1de6d">
+            <td>The only civilians who remained in Safed were "about" 100 Muslims, "average age 80" and "34-36 <span class="highlighted">elderly</span> Christian Arabs".</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">senior</strong> and <strong class="highlighted">elderly</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">senior</strong> and <strong class="highlighted">elderly</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">senior</strong> and 3 sentences for <strong class="highlighted">elderly</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">senior - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="e04bd798-0bfa-4465-97a5-34a841ea4336"><span class="badge"> </span> A <span class="highlighted">senior</span> official with the Salem division says if the revival of an old line can bring about so many benefits, it can be considered. </div>
+    
+
+        <div class="not_selected sentence" id="b179a325-107f-4c90-adb0-8f6af5e78e87"><span class="badge"> </span> Born in Alicante, Valencian Community, Candela graduated with Villarreal CF's youth setup, and made his <span class="highlighted">senior</span> debuts with the C-team in the 2011–12 campaign, in Tercera División. </div>
+    
+
+        <div class="not_selected sentence" id="ea27d3c1-36e1-427e-b7eb-7e77a9e054a4"><span class="badge"> </span> Brigadier Thomas Henry Scott Galletly DSO&bar MC (23 August 1905 - 5 April 1972) was a <span class="highlighted">senior</span> officer in the British Army during World War II. </div>
+    
+
+        <div class="not_selected sentence" id="c7906eeb-7c09-4cfb-bcb6-2c1b6eccf371"><span class="badge"> </span> He recorded 92 tackles, five interceptions, one sack and two forced fumbles his <span class="highlighted">senior</span> season, earning First team All-Big Ten as well as Academic All-Big Ten honors. </div>
+    
+
+        <div class="not_selected sentence" id="abcfb205-fe36-4789-a62b-b084122be0b8"><span class="badge"> </span> He was married to "Time" <span class="highlighted">senior</span> editor Charlotte Greensit, whom he met while stationed in London. </div>
+    
+
+        <div class="not_selected sentence" id="1194b2ea-c920-4523-af87-d3daa38b3c83"><span class="badge"> </span> In 2006, Topić was proposed as a candidate for a <span class="highlighted">senior</span> management position at the World Intellectual Property Organization (WIPO). </div>
+    
+
+        <div class="not_selected sentence" id="7d0ef6f1-5b6c-4749-b10b-742b2cfef365"><span class="badge"> </span> In 2015, Ana Luiza made her <span class="highlighted">senior</span> international debut competing at the 2015 Moscow Grand Prix finishing 23rd in the all-around. </div>
+    
+
+        <div class="not_selected sentence" id="f11171c2-88b1-4f13-9183-c1bfb520afae"><span class="badge"> </span> On 8 June 2015 in Winnipeg, Canada, Oshoala opened her <span class="highlighted">senior</span> FIFA Women's World Cup account by scoring Nigeria's second goal in a 3–3 draw with Sweden. </div>
+    
+
+        <div class="not_selected sentence" id="946fe82e-b4a4-45b2-8a57-ba0245ea8385"><span class="badge"> </span> Patrick Elliott, <span class="highlighted">senior</span> curator at the Scottish National Gallery of Modern Art, described the purchase in 2013 of some of Lucas's works of this period as follows: </div>
+    
+
+        <div class="not_selected sentence" id="ed40e629-94c0-4e06-bf58-28c8d8d27bd3"><span class="badge"> </span> Thomas Clancy (born 13 February 1992) is an Irish Gaelic footballer who plays as a centre-back for the Cork <span class="highlighted">senior</span> team. </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">elderly  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="d63d51fd-8ec5-4393-a643-6743c766a544"><span class="badge"> </span> Although the woman's maiden name is not revealed, details throughout the story strongly imply that this character is the <span class="highlighted">elderly</span> Susan Pevensie. </div>
+    
+
+        <div class="not_selected sentence" id="c86ed9b4-4815-4e65-98c8-bfdeff2d0090"><span class="badge"> </span> Dogs that are physically fit and vigorous in their youth through middle age are more vigorous and healthy as <span class="highlighted">elderly</span> dogs, all other factors being equal. </div>
+    
+
+        <div class="not_selected sentence" id="8bea21e4-5f75-4c4c-b07e-527b6bf6ed2c"><span class="badge"> </span> He was allowed to visit his wife, who had been placed in a home for the <span class="highlighted">elderly</span>, several times a month. </div>
+    
+
+        <div class="not_selected sentence" id="0ec708ec-6c87-4e71-a154-99d9f727e089"><span class="badge"> </span> It was also reported that the <span class="highlighted">elderly</span> and other non-wanted slaves were separated from the captured prisoners and burned alive so that they would not burden the caravans. </div>
+    
+
+        <div class="not_selected sentence" id="05188ba5-7eae-4e44-ab02-a009a7b5ac4b"><span class="badge"> </span> Key features include rocks, cliffs, flowing water, a bridge, a mountain path, an <span class="highlighted">elderly</span> scholar climbing, vast expanses of water and sky with mountains soaring in the distance. </div>
+    
+
+        <div class="not_selected sentence" id="34fd920e-8a62-4446-8eb8-ea2eec588281"><span class="badge"> </span> Many once large and international communities have been reduced to a single convent or monastery with memberships of <span class="highlighted">elderly</span> men or women. </div>
+    
+
+        <div class="not_selected sentence" id="15b082a7-a0a9-41b2-9183-4f652425238a"><span class="badge"> </span> Many once large and international communities have been reduced to a single convent or monastery with memberships of <span class="highlighted">elderly</span> men or women. </div>
+    
+
+        <div class="not_selected sentence" id="57589b7c-5330-4d5b-8d76-7c7712bf82ab"><span class="badge"> </span> St. David's Hospital, the city's newest hospital, built behind the former building, is located in Canton and provides services for the <span class="highlighted">elderly</span> and children. </div>
+    
+
+        <div class="not_selected sentence" id="01192c65-b4a4-425b-80aa-efa9c2fc0ce7"><span class="badge"> </span> The food is then distributed to charities caring for indigent <span class="highlighted">elderly</span>, to day care centers, halfway houses, and shelters, at no cost to them. </div>
+    
+
+        <div class="not_selected sentence" id="47cba35d-7ffb-42be-9c1e-1077fce1de6d"><span class="badge"> </span> The only civilians who remained in Safed were "about" 100 Muslims, "average age 80" and "34-36 <span class="highlighted">elderly</span> Christian Arabs". </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

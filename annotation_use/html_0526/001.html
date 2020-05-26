@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">task</strong> and <strong class="highlighted">job</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">task</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">job</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>task</th>
+                                <th>job</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>Joan is asked by God to perform <span class="blank"></span> that often appear to be trivial or contrary, but always end up positively improving a larger situation.</td>
+            <td><input type="radio" name="d86a2d57-e579-4f6a-906e-cd9d9c7647fc" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="d86a2d57-e579-4f6a-906e-cd9d9c7647fc" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Dubbed "The Karenskys", the multi-camera comedy would revolve around a daughter's return to the fold of her large, eccentric, ethnic family after her husband takes a <span class="blank"></span> in her hometown.</td>
+            <td><input type="radio" name="da9742ad-f644-46f8-b195-4474a935866f" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="da9742ad-f644-46f8-b195-4474a935866f" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The politics of the kingdom were violent, and there were later episodes of pagan rule, while spreading understanding of Christianity through the kingdom was a <span class="blank"></span> that lasted throughout Cuthbert's lifetime.</td>
+            <td><input type="radio" name="afafc64e-89e6-48e4-bd3b-2d91f99e3d09" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="afafc64e-89e6-48e4-bd3b-2d91f99e3d09" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The learning environment needs to provide ill-defined activities which have real-world relevance, and which present a single complex <span class="blank"></span> to be completed over a sustained period of time, rather than a series of shorter disconnected examples.</td>
+            <td><input type="radio" name="df53bc98-ddaf-49a6-9056-56af94aa1fd1" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="df53bc98-ddaf-49a6-9056-56af94aa1fd1" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Many women take on the largest portion of the domestic obligations of the home, even when they are working full-time <span class="blank"></span>.</td>
+            <td><input type="radio" name="2dcb4ac4-ca1b-434c-b358-57f618dc12d7" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="2dcb4ac4-ca1b-434c-b358-57f618dc12d7" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Sinagra claimed at the Maxi Trial that it was invariably his <span class="blank"></span> to hold the feet of those who died in the Room of Death while Marchese strangled them with a length of rope.</td>
+            <td><input type="radio" name="58a816d6-7adf-448f-9b69-732fde1196f5" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="58a816d6-7adf-448f-9b69-732fde1196f5" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After nine months without a <span class="blank"></span> Fach was named on 25 January 2010 as the new head coach of the Kazakhstani vice-champion Lokomotiv Astana.</td>
+            <td><input type="radio" name="136340a5-02cc-4f7c-9c53-3f581fe2dbc3" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="136340a5-02cc-4f7c-9c53-3f581fe2dbc3" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Lu Xun's brilliant strategies, when combined with Sun Quan's recognition of his talent, resulted in the accomplishment of a great <span class="blank"></span>.</td>
+            <td><input type="radio" name="5480042e-75c3-4788-a832-ba465fadf0d4" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="5480042e-75c3-4788-a832-ba465fadf0d4" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Ten Cents a Dance is a popular song in which a taxi dancer laments the hardships of her <span class="blank"></span>.</td>
+            <td><input type="radio" name="84d3807f-8835-4c86-a73e-152466539721" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="84d3807f-8835-4c86-a73e-152466539721" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Elisabeth considers leaving Korsbæk for Copenhagen - but through Doctor Hansen's and Ingeborg Skjern's intervention, she's given the <span class="blank"></span> as church organist by Mads Skjern, chairman of the parish council.</td>
+            <td><input type="radio" name="360e16ce-34b0-461e-b5a8-82cdba04fc11" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="360e16ce-34b0-461e-b5a8-82cdba04fc11" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>He lost his starting <span class="blank"></span> to Jamaal Jackson before the 2006 season and was subsequently traded to the Cleveland Browns.</td>
+            <td><input type="radio" name="7bfdb619-7d05-46be-9081-af89c5a9524f" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="7bfdb619-7d05-46be-9081-af89c5a9524f" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Fry inquires at what his <span class="blank"></span> is, and learns that he will be traveling into space and throughout the universe ... as a delivery boy.</td>
+            <td><input type="radio" name="5d7f1b81-a3bc-4262-97e3-38159eed5be1" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="5d7f1b81-a3bc-4262-97e3-38159eed5be1" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Fighting <span class="blank"></span> discrimination was a constant battle for African Americans in Chicago, as foremen in various companies restricted the advancement of black workers, which often kept them from earning higher wages.</td>
+            <td><input type="radio" name="7bf10d74-25c1-47c8-8c08-a202fd7de513" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="7bf10d74-25c1-47c8-8c08-a202fd7de513" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>After being liberated, he left Cuba and headed to Costa Rica, where he dedicated his time to pedagogical <span class="blank"></span>, and to his activities as leader of the PRD.</td>
+            <td><input type="radio" name="7ea9fa9e-a7f9-4636-a19e-e0825f0b12a6" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="7ea9fa9e-a7f9-4636-a19e-e0825f0b12a6" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Before the official opening of the Pennine Way the British Army was invited to test the whole route, a <span class="blank"></span> which they accomplished in one day.</td>
+            <td><input type="radio" name="4153d334-0200-4e00-b90b-81ad9ae834d8" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="4153d334-0200-4e00-b90b-81ad9ae834d8" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>During World War II these were organized operationally into <span class="blank"></span> forces known as combat commands A, B and R (Reserve).</td>
+            <td><input type="radio" name="56995016-ff27-4489-a0ab-4f871472f632" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="56995016-ff27-4489-a0ab-4f871472f632" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Down on their luck after a botched smuggling run, Han Solo and Chewbacca resort to accepting a <span class="blank"></span> offer from an anonymous employer.</td>
+            <td><input type="radio" name="4da10581-2a0d-4eb6-a44d-afa2d797033f" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="4da10581-2a0d-4eb6-a44d-afa2d797033f" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>A <span class="blank"></span> force was assigned and came back with the proposal that the question should be up to the discretion of the presbyteries.</td>
+            <td><input type="radio" name="5156f822-1be8-4fed-a0a6-f6a0710b7e04" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="5156f822-1be8-4fed-a0a6-f6a0710b7e04" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>On the national question, the Officials saw the struggle against religious sectarianism and bigotry as their primary <span class="blank"></span>.</td>
+            <td><input type="radio" name="1abbb517-abe3-4642-a38a-2520638eb2b1" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="1abbb517-abe3-4642-a38a-2520638eb2b1" value="job" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>William Mandella is a physics student conscripted for an elite <span class="blank"></span> force in the United Nations Exploratory Force being assembled for a war against the Taurans, an alien species discovered when they apparently attacked human colonists' ships.</td>
+            <td><input type="radio" name="e9c13074-be21-4590-8751-4aae0989e891" value="task" class="form-radio" /></td>
+            <td><input type="radio" name="e9c13074-be21-4590-8751-4aae0989e891" value="job" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">task</strong> and <strong class="highlighted">job</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="afafc64e-89e6-48e4-bd3b-2d91f99e3d09">
+            <td>The politics of the kingdom were violent, and there were later episodes of pagan rule, while spreading understanding of Christianity through the kingdom was a <span class="highlighted">task</span> that lasted throughout Cuthbert's lifetime.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="5480042e-75c3-4788-a832-ba465fadf0d4">
+            <td>Lu Xun's brilliant strategies, when combined with Sun Quan's recognition of his talent, resulted in the accomplishment of a great <span class="highlighted">task</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="7ea9fa9e-a7f9-4636-a19e-e0825f0b12a6">
+            <td>After being liberated, he left Cuba and headed to Costa Rica, where he dedicated his time to pedagogical <span class="highlighted">tasks</span>, and to his activities as leader of the PRD.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="df53bc98-ddaf-49a6-9056-56af94aa1fd1">
+            <td>The learning environment needs to provide ill-defined activities which have real-world relevance, and which present a single complex <span class="highlighted">task</span> to be completed over a sustained period of time, rather than a series of shorter disconnected examples.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="5156f822-1be8-4fed-a0a6-f6a0710b7e04">
+            <td>A <span class="highlighted">task</span> force was assigned and came back with the proposal that the question should be up to the discretion of the presbyteries.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="4153d334-0200-4e00-b90b-81ad9ae834d8">
+            <td>Before the official opening of the Pennine Way the British Army was invited to test the whole route, a <span class="highlighted">task</span> which they accomplished in one day.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="1abbb517-abe3-4642-a38a-2520638eb2b1">
+            <td>On the national question, the Officials saw the struggle against religious sectarianism and bigotry as their primary <span class="highlighted">task</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="e9c13074-be21-4590-8751-4aae0989e891">
+            <td>William Mandella is a physics student conscripted for an elite <span class="highlighted">task</span> force in the United Nations Exploratory Force being assembled for a war against the Taurans, an alien species discovered when they apparently attacked human colonists' ships.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="56995016-ff27-4489-a0ab-4f871472f632">
+            <td>During World War II these were organized operationally into <span class="highlighted">task</span> forces known as combat commands A, B and R (Reserve).</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d86a2d57-e579-4f6a-906e-cd9d9c7647fc">
+            <td>Joan is asked by God to perform <span class="highlighted">tasks</span> that often appear to be trivial or contrary, but always end up positively improving a larger situation.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="2dcb4ac4-ca1b-434c-b358-57f618dc12d7">
+            <td>Many women take on the largest portion of the domestic obligations of the home, even when they are working full-time <span class="highlighted">jobs</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="5d7f1b81-a3bc-4262-97e3-38159eed5be1">
+            <td>Fry inquires at what his <span class="highlighted">job</span> is, and learns that he will be traveling into space and throughout the universe ... as a delivery boy.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="da9742ad-f644-46f8-b195-4474a935866f">
+            <td>Dubbed "The Karenskys", the multi-camera comedy would revolve around a daughter's return to the fold of her large, eccentric, ethnic family after her husband takes a <span class="highlighted">job</span> in her hometown.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="4da10581-2a0d-4eb6-a44d-afa2d797033f">
+            <td>Down on their luck after a botched smuggling run, Han Solo and Chewbacca resort to accepting a <span class="highlighted">job</span> offer from an anonymous employer.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="7bfdb619-7d05-46be-9081-af89c5a9524f">
+            <td>He lost his starting <span class="highlighted">job</span> to Jamaal Jackson before the 2006 season and was subsequently traded to the Cleveland Browns.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="7bf10d74-25c1-47c8-8c08-a202fd7de513">
+            <td>Fighting <span class="highlighted">job</span> discrimination was a constant battle for African Americans in Chicago, as foremen in various companies restricted the advancement of black workers, which often kept them from earning higher wages.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="360e16ce-34b0-461e-b5a8-82cdba04fc11">
+            <td>Elisabeth considers leaving Korsbæk for Copenhagen - but through Doctor Hansen's and Ingeborg Skjern's intervention, she's given the <span class="highlighted">job</span> as church organist by Mads Skjern, chairman of the parish council.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="58a816d6-7adf-448f-9b69-732fde1196f5">
+            <td>Sinagra claimed at the Maxi Trial that it was invariably his <span class="highlighted">job</span> to hold the feet of those who died in the Room of Death while Marchese strangled them with a length of rope.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="84d3807f-8835-4c86-a73e-152466539721">
+            <td>Ten Cents a Dance is a popular song in which a taxi dancer laments the hardships of her <span class="highlighted">job</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="136340a5-02cc-4f7c-9c53-3f581fe2dbc3">
+            <td>After nine months without a <span class="highlighted">job</span> Fach was named on 25 January 2010 as the new head coach of the Kazakhstani vice-champion Lokomotiv Astana.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">task</strong> and <strong class="highlighted">job</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">task</strong> and <strong class="highlighted">job</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">task</strong> and 3 sentences for <strong class="highlighted">job</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">task - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="afafc64e-89e6-48e4-bd3b-2d91f99e3d09"><span class="badge"> </span> The politics of the kingdom were violent, and there were later episodes of pagan rule, while spreading understanding of Christianity through the kingdom was a <span class="highlighted">task</span> that lasted throughout Cuthbert's lifetime. </div>
+    
+
+        <div class="not_selected sentence" id="5480042e-75c3-4788-a832-ba465fadf0d4"><span class="badge"> </span> Lu Xun's brilliant strategies, when combined with Sun Quan's recognition of his talent, resulted in the accomplishment of a great <span class="highlighted">task</span>. </div>
+    
+
+        <div class="not_selected sentence" id="7ea9fa9e-a7f9-4636-a19e-e0825f0b12a6"><span class="badge"> </span> After being liberated, he left Cuba and headed to Costa Rica, where he dedicated his time to pedagogical <span class="highlighted">tasks</span>, and to his activities as leader of the PRD. </div>
+    
+
+        <div class="not_selected sentence" id="df53bc98-ddaf-49a6-9056-56af94aa1fd1"><span class="badge"> </span> The learning environment needs to provide ill-defined activities which have real-world relevance, and which present a single complex <span class="highlighted">task</span> to be completed over a sustained period of time, rather than a series of shorter disconnected examples. </div>
+    
+
+        <div class="not_selected sentence" id="5156f822-1be8-4fed-a0a6-f6a0710b7e04"><span class="badge"> </span> A <span class="highlighted">task</span> force was assigned and came back with the proposal that the question should be up to the discretion of the presbyteries. </div>
+    
+
+        <div class="not_selected sentence" id="4153d334-0200-4e00-b90b-81ad9ae834d8"><span class="badge"> </span> Before the official opening of the Pennine Way the British Army was invited to test the whole route, a <span class="highlighted">task</span> which they accomplished in one day. </div>
+    
+
+        <div class="not_selected sentence" id="1abbb517-abe3-4642-a38a-2520638eb2b1"><span class="badge"> </span> On the national question, the Officials saw the struggle against religious sectarianism and bigotry as their primary <span class="highlighted">task</span>. </div>
+    
+
+        <div class="not_selected sentence" id="e9c13074-be21-4590-8751-4aae0989e891"><span class="badge"> </span> William Mandella is a physics student conscripted for an elite <span class="highlighted">task</span> force in the United Nations Exploratory Force being assembled for a war against the Taurans, an alien species discovered when they apparently attacked human colonists' ships. </div>
+    
+
+        <div class="not_selected sentence" id="56995016-ff27-4489-a0ab-4f871472f632"><span class="badge"> </span> During World War II these were organized operationally into <span class="highlighted">task</span> forces known as combat commands A, B and R (Reserve). </div>
+    
+
+        <div class="not_selected sentence" id="d86a2d57-e579-4f6a-906e-cd9d9c7647fc"><span class="badge"> </span> Joan is asked by God to perform <span class="highlighted">tasks</span> that often appear to be trivial or contrary, but always end up positively improving a larger situation. </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">job  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="2dcb4ac4-ca1b-434c-b358-57f618dc12d7"><span class="badge"> </span> Many women take on the largest portion of the domestic obligations of the home, even when they are working full-time <span class="highlighted">jobs</span>. </div>
+    
+
+        <div class="not_selected sentence" id="5d7f1b81-a3bc-4262-97e3-38159eed5be1"><span class="badge"> </span> Fry inquires at what his <span class="highlighted">job</span> is, and learns that he will be traveling into space and throughout the universe ... as a delivery boy. </div>
+    
+
+        <div class="not_selected sentence" id="da9742ad-f644-46f8-b195-4474a935866f"><span class="badge"> </span> Dubbed "The Karenskys", the multi-camera comedy would revolve around a daughter's return to the fold of her large, eccentric, ethnic family after her husband takes a <span class="highlighted">job</span> in her hometown. </div>
+    
+
+        <div class="not_selected sentence" id="4da10581-2a0d-4eb6-a44d-afa2d797033f"><span class="badge"> </span> Down on their luck after a botched smuggling run, Han Solo and Chewbacca resort to accepting a <span class="highlighted">job</span> offer from an anonymous employer. </div>
+    
+
+        <div class="not_selected sentence" id="7bfdb619-7d05-46be-9081-af89c5a9524f"><span class="badge"> </span> He lost his starting <span class="highlighted">job</span> to Jamaal Jackson before the 2006 season and was subsequently traded to the Cleveland Browns. </div>
+    
+
+        <div class="not_selected sentence" id="7bf10d74-25c1-47c8-8c08-a202fd7de513"><span class="badge"> </span> Fighting <span class="highlighted">job</span> discrimination was a constant battle for African Americans in Chicago, as foremen in various companies restricted the advancement of black workers, which often kept them from earning higher wages. </div>
+    
+
+        <div class="not_selected sentence" id="360e16ce-34b0-461e-b5a8-82cdba04fc11"><span class="badge"> </span> Elisabeth considers leaving Korsbæk for Copenhagen - but through Doctor Hansen's and Ingeborg Skjern's intervention, she's given the <span class="highlighted">job</span> as church organist by Mads Skjern, chairman of the parish council. </div>
+    
+
+        <div class="not_selected sentence" id="58a816d6-7adf-448f-9b69-732fde1196f5"><span class="badge"> </span> Sinagra claimed at the Maxi Trial that it was invariably his <span class="highlighted">job</span> to hold the feet of those who died in the Room of Death while Marchese strangled them with a length of rope. </div>
+    
+
+        <div class="not_selected sentence" id="84d3807f-8835-4c86-a73e-152466539721"><span class="badge"> </span> Ten Cents a Dance is a popular song in which a taxi dancer laments the hardships of her <span class="highlighted">job</span>. </div>
+    
+
+        <div class="not_selected sentence" id="136340a5-02cc-4f7c-9c53-3f581fe2dbc3"><span class="badge"> </span> After nine months without a <span class="highlighted">job</span> Fach was named on 25 January 2010 as the new head coach of the Kazakhstani vice-champion Lokomotiv Astana. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

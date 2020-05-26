@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Usefulness Annotation</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="mturk.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h1 id="title"> Usefulness Annotation </h1>
+
+                <div class="row" id="first_stage">
+                    <div id="instruction_1">
+                        <ul>
+                            <li>We are examining how well can you differentiate this confusing word pair.</li>
+                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>The question is about two confusing words <strong class="highlighted">decoration</strong> and <strong class="highlighted">ornament</strong>.</li>
+                            <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
+                            <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">decoration</strong>. </li>
+                            <li>Click <span id="second_box"></span> if you think the answer is <strong class="highlighted">ornament</strong>. </li>
+                        </ul>
+                    </div>
+
+                    <table class="table table-striped table-hover" id="question_table">
+                        <thead>
+                            <tr>
+                                <th>Question</th>
+                                <th>decoration</th>
+                                <th>ornament</th>
+                            </tr>
+                        </thead>
+                            
+        <tr>
+            <td>I am interested in the ordinariness and the normality of conventional china cabinet and mantelpiece decorative art ceramic <span class="blank"></span> and then pushing these to extremes or the straightforwardly bizarre.</td>
+            <td><input type="radio" name="f7945861-5c97-437e-948b-4cf7304e9886" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="f7945861-5c97-437e-948b-4cf7304e9886" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Along with his son Pietro and Tommaso Juglaris, he worked on the fresco <span class="blank"></span> of the parish church of Castelnuovo d’Asti (Castelnuovo don Bosco).</td>
+            <td><input type="radio" name="a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>This stylistic development is evident in the interior <span class="blank"></span> he made for the new City Hall of Amsterdam, which he executed in collaboration with his brother Artus.</td>
+            <td><input type="radio" name="26cbd084-1af3-47d4-a01e-b74d1d75c9ab" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="26cbd084-1af3-47d4-a01e-b74d1d75c9ab" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>This is a list of awards, <span class="blank"></span>, honours, orders and titles belonging to Mary of Teck, queen consort of the United Kingdom.</td>
+            <td><input type="radio" name="ea8d6658-18fd-41a2-99de-fca52a3e7bd2" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="ea8d6658-18fd-41a2-99de-fca52a3e7bd2" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The right portal is decorated with classically inspired foliage, while the arch on the left one features an <span class="blank"></span> of the Sicilian-Norman style.</td>
+            <td><input type="radio" name="8859d291-a874-4d8e-8677-b57c13e94c50" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="8859d291-a874-4d8e-8677-b57c13e94c50" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Apart from his work with horticulture and economic botany, he was responsible in the introduction of many <span class="blank"></span> plants and flowering trees and was involved in the choice of avenue trees for Bangalore.</td>
+            <td><input type="radio" name="b64d3910-c824-4c1e-abde-0da3738f9d61" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="b64d3910-c824-4c1e-abde-0da3738f9d61" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>From the earliest days of the <span class="blank"></span>, the Austrian Emperor also reserved the right to make awards of the Military Merit Cross with Diamonds.</td>
+            <td><input type="radio" name="4f1a5979-998b-4b52-affb-1ecf7a6b54eb" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="4f1a5979-998b-4b52-affb-1ecf7a6b54eb" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Close to the junction is a grade II listed house, built in 1802 of red brick, with doric column <span class="blank"></span> around the central doorway.</td>
+            <td><input type="radio" name="d7cb9118-4fec-4859-88c9-243436718fce" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="d7cb9118-4fec-4859-88c9-243436718fce" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The <span class="blank"></span> of the tomb focused on Menna's position within the Egyptian administration, and on his transition from a living person in this world, to an effective and powerful ancestor in the next.</td>
+            <td><input type="radio" name="cbe71848-49bd-406f-a9ea-b2f280528f5f" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="cbe71848-49bd-406f-a9ea-b2f280528f5f" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Hence, its <span class="blank"></span> program started late in the final years of Amenhotep III and the earliest phase of the Akhenaten's reign.</td>
+            <td><input type="radio" name="b1a2f12c-4c78-446b-8299-e513167c1000" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="b1a2f12c-4c78-446b-8299-e513167c1000" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The figurehead was a finely carved and gilded flying eagle, and the stern was <span class="blank"></span> with the arms of New York.</td>
+            <td><input type="radio" name="3e9fdb82-35cc-4d81-a725-202872f5e175" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="3e9fdb82-35cc-4d81-a725-202872f5e175" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Many of them have monumental and richly decorated matzevot headstones, but there are also matzevot without <span class="blank"></span>, which are evidence of modesty.</td>
+            <td><input type="radio" name="207f3a0a-2980-4837-8659-af8a682035fe" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="207f3a0a-2980-4837-8659-af8a682035fe" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The <span class="blank"></span> in the broad hall of TT 69 focuses on the life of the tomb owner, Menna.</td>
+            <td><input type="radio" name="e4fc58f0-9bd1-4407-a7c5-11222a1cf747" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="e4fc58f0-9bd1-4407-a7c5-11222a1cf747" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The local potters make images of various body parts like her arms, legs, face decked with <span class="blank"></span> and weapons.</td>
+            <td><input type="radio" name="015f42a9-b4cd-461d-a451-e026b5c0554b" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="015f42a9-b4cd-461d-a451-e026b5c0554b" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>In 1868, frescos on the tower vault consisting of circular <span class="blank"></span> patterns surrounded by small rosettes were restored in black, russet and grey colouring.</td>
+            <td><input type="radio" name="8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>That Christmas Julie tells Maggie that she will always be a member of the Horton family, and extends an <span class="blank"></span> to Victor, Daniel, and Melanie, despite their not being biological Hortons.</td>
+            <td><input type="radio" name="007c7513-9537-4257-be4e-26c56051d49e" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="007c7513-9537-4257-be4e-26c56051d49e" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The tomb is entered by a steep tunnel, which opens into a low chamber covered with painted <span class="blank"></span>.</td>
+            <td><input type="radio" name="a9661179-42ca-49b1-9792-ea2a126a5a1d" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="a9661179-42ca-49b1-9792-ea2a126a5a1d" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>The <span class="blank"></span> of Tasso's work began in 1640, and continued until Finoglia's death in Conversano in 1645.</td>
+            <td><input type="radio" name="8e725deb-7b8e-4541-b936-8aee5fc3c8d6" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="8e725deb-7b8e-4541-b936-8aee5fc3c8d6" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Excavations at Great Wakering have recently uncovered a site of Middle Saxon occupation including a fragment of <span class="blank"></span> stone-sculpture, which may derive from the place named in the legend.</td>
+            <td><input type="radio" name="a16037b5-cec9-498f-b755-c66989f24e1a" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="a16037b5-cec9-498f-b755-c66989f24e1a" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+
+        <tr>
+            <td>Only a small remnant of the late medieval room <span class="blank"></span> are preserved, namely the wall painting fragments from the 14th century in the form of leaf tendrils in red and black color.</td>
+            <td><input type="radio" name="b369d747-a282-4a53-bb34-f52070de9119" value="decoration" class="form-radio" /></td>
+            <td><input type="radio" name="b369d747-a282-4a53-bb34-f52070de9119" value="ornament" class="form-radio" /></td>
+        </tr>
+    
+                        </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+                <div class="row" id="second_instruction">
+                    <div>
+                        <ul>
+                            <li> Please read the annotation guideline carefully. </li>
+                            <li> In the following stage, you will need to annotate if the sentences meet the rules.</li>
+                            <li>
+                                The guideline helps to classify an example sentence that is not "good" for the language learners.
+                                <span style="text-decoration: underline; background:yellow;"> If a sentence <span style="color:red; font-weight:900;">contains</span> any of the following characteristics, then it is <span style="color:red; font-weight:900;">not an acceptable</span> example sentence for English learners. </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 1: Suitability</h3>
+                        
+                        <div class="rule"> 1. The blank can be filled with either word in the word set while the sentence is still logical. </div>
+                        <div class="case">
+                            Key wordpair: <span class="case_strong">accessible / available</span>
+                            <br>
+                            They are attempting to make operate _____ <span class="case_strong">(accessible / available)</span> to a wider audience.
+                        </div>
+
+                        <div class="rule"> 2. The blank can with multiple possible candidates not limited to the word set. </div>
+                        <div class="case">
+                            Key wordpair:  <span class="case_strong">abrupt / harsh</span>
+                            <br>
+                            I was poorly received and the general tone of the person assisting me was rude and _____ <span class="case_strong">(harsh / unpleasant / ......)</span>.
+                        </div>
+
+                        <div class="rule"> 3. Rare usage or secondary meaning. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong"> becoming </span>
+                            <br>
+                            Her dress was <span class="case_strong">becoming</span> and made her look even more beautiful.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">tiny</span>
+                            <br>
+                            After his marriage his <span class="case_strong">tiny</span> sculptures became larger, but the larger they grew, the thinner they became.
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 2: Informative</h3>
+
+                        <div class="rule">1. Lacks the information to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">skilled</span>
+                            <br>
+                            It and its English derivative "s" thus describe people who are <span class="case_strong">skilled</span> at dining, particularly the refined conversation expected to accompany Greek symposia.
+                            <br>
+                            <br>
+                            <span style="font-weight:900; text-decoration: underline;">Sentence with useful information that helps to predict the meaning of the keyword:</span>
+                            <br>
+                            In the sourcebooks, they are often referred to as cunning shapeshifters, <span class="case_strong">skilled</span> fighters, and capable generals. 
+                        </div>
+
+                        <div class="rule">2. Long and does not add any useful information to help to guess the meaning of the keyword.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">accountability</span>
+                            <br>
+                            Security issues have been categorised into sensitive data access, data segregation, privacy, bug exploitation, recovery, <span class="case_strong">accountability</span>, malicious insiders, management console security, account control, and multi-tenancy issues.
+                        </div>
+
+                        <div class="rule">3.  Requires background knowledge to understand the sentence.</div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">responsibility</span>
+                            <br>
+                            External and offensive counter-intelligence, counter-terrorism, and some direct action is the general <span class="case_strong">responsibility</span> of <span style="color:red; html"><i>Mossad</i></span>, although military units will carry out specific counterterrorism actions.
+                            <br>
+                            <br>
+                            Keyword: <span class="case_strong">achievement</span>
+                            <br>
+                            Article 56 requires members to "take joint and separate action in cooperation with the Organization for the <span class="case_strong">achievement</span> of the purposes set forth in <span style="color:red; html"><i>Article 55</i></span>."
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 3: Diversity</h3>
+                        When classifying acceptable/ unacceptable example sentences, please consider diversity and phrase usage. <br><br>
+
+                        <div class="rule">1. Similar word usage should only appear once. Only choose one when there are multiple sentences with the similar word usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong">little</span> <br>
+                            After founding the Institute he had <span class="red"><span class="case_strong">little</span> time</span> for composing, and appears to have concentrated exclusively on teaching. <br>
+                            <br>
+                            When she finds out the truth, she makes a fateful decision to make the most of the <span class="red"><span class="case_strong">little</span> time</span> they have together. <br>
+
+                        </div>
+
+                        <div class="rule">2. Similar phrase usage should only appear once. Only choose one when there are multiple sentences with the similar phrase usage.</div>
+                        <div class="case">
+                            keyword: <span class="case_strong"> real</span> <br>
+                            The normal distribution is symmetric about its mean, and is non-zero over the entire <span class="red"><span class="case_strong">real</span> line</span>. <br>
+                            <br>
+                            For example, consider formula_32 and formula_33, the infinite direct product and direct sum of the <span class="red"><span class="case_strong">real</span> numbers</span>. <br>
+                        </div>
+
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 4: Sentence Complexity</h3>
+
+                        <div class="rule">1. Contains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</div>
+                        <div class="case">
+                            The methods <span class="red case_strong">that a community devises to perpetuate itself</span> come into being to preserve aspects of cultural legacy <span class="red case_strong">that the community perceives as essential</span>. 
+                        </div>
+
+                        <div class="rule">2. Complex appositive. </div>
+                        <div class="case">
+                            Moreover, I can feel strong emotion in response to objects of art <span class="red case_strong">that are interpretations, rather than representations, or reality</span>. 
+                        </div>
+                    </div>
+
+                    <div class="condition col-lg-12">
+                        <h3>Condition 5: Lexical Complexity</h3>
+
+                        <div class="rule">1. Wrong part of speech.</div>
+                        <div class="case">
+                            key wordpair: <span class="case_strong"> elder/ elderly </span> -> adj pair<br>
+                            The Rumbia's leaves can be woven into a roof, the women are trained by their <span class="red"><span class="case_strong">elders</span></span> (women) to inherit the rumbia-weaving skill.<br>
+                        </div>
+
+                        <div class="rule">2. Too many acronyms. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">briefly</span><br>
+                            Between 2010 and 2014, <span class="red">PSYOP</span> was renamed Military Information Support Operations (MISO), then <span class="case_strong">briefly</span> renamed <span class="red">PSYOP</span> in Aug 2014, only to return to <span class="red">MISO</span> shortly thereafter in 2015.<br>
+                        </div>
+
+                        <div class="rule">3. Too many proper nouns. </div>
+                        <div class="case">
+                            Keyword: <span class="case_strong">former</span><br>
+                            It was inspired by <span class="red">BBI's original "Mystery Science Theater 3000"</span> TV series, and was directed by <span class="case_strong">former</span> Executive Producer Jim Mallon. <br>
+                            * Avoid proper noun that changes the meaning of the keyword. <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="second_stage">
+                    <div id="instruction_2">
+                        <ul>
+                            <li>
+                                Please read the annotation guideline carefully.<br>
+                                If needed, please go back to check the guideline example here.
+                                <button class="btn btn-info btn-sm btn-block" id="go_guideline_btn">Check Guideline Detail.</button> 
+                            </li>
+                            <li>
+                                For each sentence, please determine if the sentence is <span style="text-decoration: underline;"> acceptable or not </span> according to the guideline.
+                            </li>
+                            <li>
+                                For each non-acceptable sentence, please <span style="text-decoration: underline;"> select one condition </span> causing the sentence to be ineffective.
+                            </li>
+                            <li>
+                                Here are the guideline summary.
+                                
+                                <table class="table thead-dark table-striped table-sm">
+                                    <tr>
+                                        <th>Condition</th>
+                                        <th>Rules</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Suitability</td>
+                                        <td>
+                                            <ul>
+                                                <li>The blank can be filled with either word in the word set while the sentence is still logical.</li>
+                                                <li>The blank can with multiple possible candidates not limited to the word set.</li>
+                                                <li>Rare usage or secondary meaning.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Informative</td>
+                                        <td>
+                                            <ul>
+                                                <li>Lacks the information to guess the meaning of the keyword.</li>
+                                                <li>Long and does not add any useful information to help to guess the meaning of the keyword.</li>
+                                                <li>Requires background knowledge to understand the sentence.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Diversity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Similar word usage should only appear once.</li>
+                                                <li>Similar phrase usage should only appear once.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sentence Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>ontains more than two complex modifiers, such as clauses, prepositional phrases, Infinitive phrases, Participle phrases, etc.</li>
+                                                <li>Complex appositive.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lexical Complexity</td>
+                                        <td>
+                                            <ul>
+                                                <li>Wrong part of speech.</li>
+                                                <li>Too many acronyms.</li>
+                                                <li>Too many proper nouns.</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </li>
+                        </ul>
+                        <!--div
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">decoration</strong> and <strong class="highlighted">ornament</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                        -->
+                    </div>
+                    <table class="table table-striped table-hover" id="reason_table">
+                        <thead>
+                            <th>Example Sentence</th>
+                            <th>Acceptance</th>
+                            <th>Condition</th>
+                        </thead>
+                        
+        <tr sent_id="a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402">
+            <td>Along with his son Pietro and Tommaso Juglaris, he worked on the fresco <span class="highlighted">decoration</span> of the parish church of Castelnuovo d’Asti (Castelnuovo don Bosco).</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="d7cb9118-4fec-4859-88c9-243436718fce">
+            <td>Close to the junction is a grade II listed house, built in 1802 of red brick, with doric column <span class="highlighted">decoration</span> around the central doorway.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="4f1a5979-998b-4b52-affb-1ecf7a6b54eb">
+            <td>From the earliest days of the <span class="highlighted">decoration</span>, the Austrian Emperor also reserved the right to make awards of the Military Merit Cross with Diamonds.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b1a2f12c-4c78-446b-8299-e513167c1000">
+            <td>Hence, its <span class="highlighted">decoration</span> program started late in the final years of Amenhotep III and the earliest phase of the Akhenaten's reign.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="e4fc58f0-9bd1-4407-a7c5-11222a1cf747">
+            <td>The <span class="highlighted">decoration</span> in the broad hall of TT 69 focuses on the life of the tomb owner, Menna.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="8e725deb-7b8e-4541-b936-8aee5fc3c8d6">
+            <td>The <span class="highlighted">decoration</span> of Tasso's work began in 1640, and continued until Finoglia's death in Conversano in 1645.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="cbe71848-49bd-406f-a9ea-b2f280528f5f">
+            <td>The <span class="highlighted">decoration</span> of the tomb focused on Menna's position within the Egyptian administration, and on his transition from a living person in this world, to an effective and powerful ancestor in the next.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="a9661179-42ca-49b1-9792-ea2a126a5a1d">
+            <td>The tomb is entered by a steep tunnel, which opens into a low chamber covered with painted <span class="highlighted">decoration</span>.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="ea8d6658-18fd-41a2-99de-fca52a3e7bd2">
+            <td>This is a list of awards, <span class="highlighted">decorations</span>, honours, orders and titles belonging to Mary of Teck, queen consort of the United Kingdom.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="26cbd084-1af3-47d4-a01e-b74d1d75c9ab">
+            <td>This stylistic development is evident in the interior <span class="highlighted">decorations</span> he made for the new City Hall of Amsterdam, which he executed in collaboration with his brother Artus.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="f7945861-5c97-437e-948b-4cf7304e9886">
+            <td>I am interested in the ordinariness and the normality of conventional china cabinet and mantelpiece decorative art ceramic <span class="highlighted">ornaments</span> and then pushing these to extremes or the straightforwardly bizarre.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b64d3910-c824-4c1e-abde-0da3738f9d61">
+            <td>Apart from his work with horticulture and economic botany, he was responsible in the introduction of many <span class="highlighted">ornamental</span> plants and flowering trees and was involved in the choice of avenue trees for Bangalore.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="a16037b5-cec9-498f-b755-c66989f24e1a">
+            <td>Excavations at Great Wakering have recently uncovered a site of Middle Saxon occupation including a fragment of <span class="highlighted">ornamented</span> stone-sculpture, which may derive from the place named in the legend.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b">
+            <td>In 1868, frescos on the tower vault consisting of circular <span class="highlighted">ornamental</span> patterns surrounded by small rosettes were restored in black, russet and grey colouring.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="207f3a0a-2980-4837-8659-af8a682035fe">
+            <td>Many of them have monumental and richly decorated matzevot headstones, but there are also matzevot without <span class="highlighted">ornaments</span>, which are evidence of modesty.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="b369d747-a282-4a53-bb34-f52070de9119">
+            <td>Only a small remnant of the late medieval room <span class="highlighted">ornaments</span> are preserved, namely the wall painting fragments from the 14th century in the form of leaf tendrils in red and black color.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="007c7513-9537-4257-be4e-26c56051d49e">
+            <td>That Christmas Julie tells Maggie that she will always be a member of the Horton family, and extends an <span class="highlighted">ornament</span> to Victor, Daniel, and Melanie, despite their not being biological Hortons.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="3e9fdb82-35cc-4d81-a725-202872f5e175">
+            <td>The figurehead was a finely carved and gilded flying eagle, and the stern was <span class="highlighted">ornamented</span> with the arms of New York.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="015f42a9-b4cd-461d-a451-e026b5c0554b">
+            <td>The local potters make images of various body parts like her arms, legs, face decked with <span class="highlighted">ornaments</span> and weapons.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    
+
+        <tr sent_id="8859d291-a874-4d8e-8677-b57c13e94c50">
+            <td>The right portal is decorated with classically inspired foliage, while the arch on the left one features an <span class="highlighted">ornament</span> of the Sicilian-Norman style.</td>
+            <td><input type="checkbox" class="form-radio" /></td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-danger btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Select a Condition
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" value="suitability">Suitability</span>
+                        <span class="dropdown-item" value="informative">Informative</span>
+                        <span class="dropdown-item" value="diversity">Diversity</span>
+                        <span class="dropdown-item" value="sentence_complexity">Sentence Complexity</span>
+                        <span class="dropdown-item" value="lexical_complexity">Lexical Complexity</span>
+                    </div>
+                </div>
+            </td>
+        </tr>
+                            
+                    </table>
+                </div>
+
+                <!-------------------------------------------------------------------------------------------->
+
+                <div class="row" id="third_stage">
+                    <div id="instruction_3">
+                        <ul>
+                            <!--li>
+                                According to the fill-in-the-blank questions above, which sentences do you think is helpful 
+                                for learner to differentiate <strong class="highlighted">decoration</strong> and <strong class="highlighted">ornament</strong>. 
+                                Or let's say, if we provide these sentences as cues, they can help you answer the questions above. 
+                            </li-->
+                            <li>
+                                Please determine whether the sentence is good for learner to differentiate <strong class="highlighted">decoration</strong> and <strong class="highlighted">ornament</strong>.
+                            </li>
+                            <li>
+                                Select 3 sentences for <strong class="highlighted">decoration</strong> and 3 sentences for <strong class="highlighted">ornament</strong>
+                                according to the annotated condition [<strong style="color:#28a745;">Accept</strong> / <strong style="color:red">Suitability</strong> / <strong style="color:red">Informative</strong> / <strong style="color:red">Diversity</strong> /<strong style="color:red"> Sentence Complexity</strong> / <strong style="color:red">Lexical Complexity</strong>].
+                            </li>
+                            <li>
+                                The <strong style="color:#28a745">Accept</strong> sentence should be better for learners.
+                            </li>
+                            <li>
+                                If there are <strong class="highlighted"> more than 3 </strong> acceptable sentences, please consider the usefulness for language learners.
+                            </li>
+                            <li>
+                                You can relax the condition if there are <strong class="highlighted"> less than 3 acceptable sentences</strong>. 
+                                But please follow the order <strong style="text-decoration:underline;">[Lexical Complexity] -> [Sentence Complexity] -> [Diversity] -> [Informative] -> [Suitability]</strong>.
+                            </li>
+                            <li>
+                                For example, if there are <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Lexical Complexity] as an acceptable condition.
+                                By doing so, if there are still <strong class="highlighted"> less than 3 </strong> acceptable sentences, treat [Sentence Complexity] as an acceptable condition.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 sentence_panel" id="sentence_panel_1">
+                        <div class="word">decoration - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402"><span class="badge"> </span> Along with his son Pietro and Tommaso Juglaris, he worked on the fresco <span class="highlighted">decoration</span> of the parish church of Castelnuovo d’Asti (Castelnuovo don Bosco). </div>
+    
+
+        <div class="not_selected sentence" id="d7cb9118-4fec-4859-88c9-243436718fce"><span class="badge"> </span> Close to the junction is a grade II listed house, built in 1802 of red brick, with doric column <span class="highlighted">decoration</span> around the central doorway. </div>
+    
+
+        <div class="not_selected sentence" id="4f1a5979-998b-4b52-affb-1ecf7a6b54eb"><span class="badge"> </span> From the earliest days of the <span class="highlighted">decoration</span>, the Austrian Emperor also reserved the right to make awards of the Military Merit Cross with Diamonds. </div>
+    
+
+        <div class="not_selected sentence" id="b1a2f12c-4c78-446b-8299-e513167c1000"><span class="badge"> </span> Hence, its <span class="highlighted">decoration</span> program started late in the final years of Amenhotep III and the earliest phase of the Akhenaten's reign. </div>
+    
+
+        <div class="not_selected sentence" id="e4fc58f0-9bd1-4407-a7c5-11222a1cf747"><span class="badge"> </span> The <span class="highlighted">decoration</span> in the broad hall of TT 69 focuses on the life of the tomb owner, Menna. </div>
+    
+
+        <div class="not_selected sentence" id="8e725deb-7b8e-4541-b936-8aee5fc3c8d6"><span class="badge"> </span> The <span class="highlighted">decoration</span> of Tasso's work began in 1640, and continued until Finoglia's death in Conversano in 1645. </div>
+    
+
+        <div class="not_selected sentence" id="cbe71848-49bd-406f-a9ea-b2f280528f5f"><span class="badge"> </span> The <span class="highlighted">decoration</span> of the tomb focused on Menna's position within the Egyptian administration, and on his transition from a living person in this world, to an effective and powerful ancestor in the next. </div>
+    
+
+        <div class="not_selected sentence" id="a9661179-42ca-49b1-9792-ea2a126a5a1d"><span class="badge"> </span> The tomb is entered by a steep tunnel, which opens into a low chamber covered with painted <span class="highlighted">decoration</span>. </div>
+    
+
+        <div class="not_selected sentence" id="ea8d6658-18fd-41a2-99de-fca52a3e7bd2"><span class="badge"> </span> This is a list of awards, <span class="highlighted">decorations</span>, honours, orders and titles belonging to Mary of Teck, queen consort of the United Kingdom. </div>
+    
+
+        <div class="not_selected sentence" id="26cbd084-1af3-47d4-a01e-b74d1d75c9ab"><span class="badge"> </span> This stylistic development is evident in the interior <span class="highlighted">decorations</span> he made for the new City Hall of Amsterdam, which he executed in collaboration with his brother Artus. </div>
+    
+                    </div>
+                    <div class="col-12 sentence_panel" id="sentence_panel_2">
+                        <div class="word">ornament  - <span class="num">( 0 )</span></div>
+                        
+        <div class="not_selected sentence" id="f7945861-5c97-437e-948b-4cf7304e9886"><span class="badge"> </span> I am interested in the ordinariness and the normality of conventional china cabinet and mantelpiece decorative art ceramic <span class="highlighted">ornaments</span> and then pushing these to extremes or the straightforwardly bizarre. </div>
+    
+
+        <div class="not_selected sentence" id="b64d3910-c824-4c1e-abde-0da3738f9d61"><span class="badge"> </span> Apart from his work with horticulture and economic botany, he was responsible in the introduction of many <span class="highlighted">ornamental</span> plants and flowering trees and was involved in the choice of avenue trees for Bangalore. </div>
+    
+
+        <div class="not_selected sentence" id="a16037b5-cec9-498f-b755-c66989f24e1a"><span class="badge"> </span> Excavations at Great Wakering have recently uncovered a site of Middle Saxon occupation including a fragment of <span class="highlighted">ornamented</span> stone-sculpture, which may derive from the place named in the legend. </div>
+    
+
+        <div class="not_selected sentence" id="8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b"><span class="badge"> </span> In 1868, frescos on the tower vault consisting of circular <span class="highlighted">ornamental</span> patterns surrounded by small rosettes were restored in black, russet and grey colouring. </div>
+    
+
+        <div class="not_selected sentence" id="207f3a0a-2980-4837-8659-af8a682035fe"><span class="badge"> </span> Many of them have monumental and richly decorated matzevot headstones, but there are also matzevot without <span class="highlighted">ornaments</span>, which are evidence of modesty. </div>
+    
+
+        <div class="not_selected sentence" id="b369d747-a282-4a53-bb34-f52070de9119"><span class="badge"> </span> Only a small remnant of the late medieval room <span class="highlighted">ornaments</span> are preserved, namely the wall painting fragments from the 14th century in the form of leaf tendrils in red and black color. </div>
+    
+
+        <div class="not_selected sentence" id="007c7513-9537-4257-be4e-26c56051d49e"><span class="badge"> </span> That Christmas Julie tells Maggie that she will always be a member of the Horton family, and extends an <span class="highlighted">ornament</span> to Victor, Daniel, and Melanie, despite their not being biological Hortons. </div>
+    
+
+        <div class="not_selected sentence" id="3e9fdb82-35cc-4d81-a725-202872f5e175"><span class="badge"> </span> The figurehead was a finely carved and gilded flying eagle, and the stern was <span class="highlighted">ornamented</span> with the arms of New York. </div>
+    
+
+        <div class="not_selected sentence" id="015f42a9-b4cd-461d-a451-e026b5c0554b"><span class="badge"> </span> The local potters make images of various body parts like her arms, legs, face decked with <span class="highlighted">ornaments</span> and weapons. </div>
+    
+
+        <div class="not_selected sentence" id="8859d291-a874-4d8e-8677-b57c13e94c50"><span class="badge"> </span> The right portal is decorated with classically inspired foliage, while the arch on the left one features an <span class="highlighted">ornament</span> of the Sicilian-Norman style. </div>
+    
+                    </div>
+                </div>
+                
+                <div id="submit_panel">
+                    <div id="warning"></div>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="next_btn" stage="1" disabled>Next</button>
+                    <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
+                </div>
+
+                <form id="mturk_form">
+                    <input type="hidden" name="index" value="{{index}}">
+                    <input type="hidden" name="fib_answer" id="fib_answer">
+                    <input type="hidden" name="reason_answer" id="reason_answer">
+                    <input type="hidden" name="answer" id="answer">
+                </form>
+
+            </div>
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
