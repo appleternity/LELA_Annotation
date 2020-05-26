@@ -55,14 +55,14 @@ def create_hit(client, url, reward, worker_id_list=None, num_assignment=5):
                 ],
                 'ActionsGuarded': 'Accept'
             },
-            {
-                "QualificationTypeId": "00000000000000000040",
-                "Comparator": "GreaterThanOrEqualTo",
-                "IntegerValues": [
-                    3000
-                ],
-                "ActionsGuarded": "Accept"
-            },
+            #{
+            #    "QualificationTypeId": "00000000000000000040",
+            #    "Comparator": "GreaterThanOrEqualTo",
+            #    "IntegerValues": [
+            #        3000
+            #    ],
+            #    "ActionsGuarded": "Accept"
+            #},
             #{
             #    "QualificationTypeId": qual_id,
             #    "Comparator": "DoesNotExist",
@@ -74,7 +74,7 @@ def create_hit(client, url, reward, worker_id_list=None, num_assignment=5):
     return response
 
 def create_hit_batch(client):
-    for i in range(0, 5):
+    for i in range(4, 5):
         url = "https://appleternity.github.io/LELA_Annotation/annotation_use/html_0526/{:0>3}.html".format(i)
         print("creating hit {} / 30".format(i+1))
         print(url)
@@ -96,6 +96,13 @@ def get_result(client, hit_id):
     result.extend(res)
     return result
 
+def get_result_batch(client, hit_id_list):
+    final_result = {} 
+    for hit_id in hit_id_list:
+        result = get_result(client, hit_id)
+        final_result[hit_id] = result
+    return final_result
+
 def get_hit_and_approve(client):
     hit = list_hit(client, 1)
     result = []
@@ -111,15 +118,26 @@ def get_hit_and_approve(client):
         json.dump(result, infile, indent=4)
 
 def lela_annotation():
-    #client = get_client(mode="production")
-    client = get_client()
+    client = get_client(mode="production")
+    #client = get_client()
 
-    create_hit_batch(client) 
+    #create_hit_batch(client) 
+
+    #HITID: 3MDWE879UIBWP6WIX9RUDD0NFFHB9I (small/little) without handling duplicated sentences
 
     #res = get_result(client, "3R16PJFTS40WL3U0MR8X946USZ5K4K")
-    #res = get_result(client, "3KLL7H3EGEA4DQC7026N52QFD2YHVP")
-    #with open("test_result.json", 'w', encoding='utf-8') as outfile:
-    #    json.dump(res, outfile, indent=4)
+    #res = get_result(client, "3Y40HMYLL2R1M1NM0GE4C2CQNMVUXV")
+
+    hit_id_list = [
+        "3A520CCNWO981SI7Z67KAGHSOUCEA0",
+        "3MDWE879UIBWP6WIX9RUDD0NFFHB9I", # questioned
+        "307FVKVSYSO8QONG3XJNR33BAXC74W",
+        "38B7Q9C28HEQJUFN1IAM2XEV1E696V",
+        "3YKP7CX6G3OSBN8PICTAZH9HKPTB76",
+    ]
+    res = get_result_batch(client, hit_id_list)
+    with open("test_result.json", 'w', encoding='utf-8') as outfile:
+        json.dump(res, outfile, indent=4)
 
 def main():
 
