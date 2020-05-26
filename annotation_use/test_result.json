@@ -1,0 +1,211 @@
+[
+    {
+        "AcceptTime": "2020-05-26 05:52:38-04:00",
+        "SubmitTime": "2020-05-26 05:55:04-04:00",
+        "parsed_answer": {
+            "answer": {
+                "w2": [
+                    "3e9fdb82-35cc-4d81-a725-202872f5e175",
+                    "015f42a9-b4cd-461d-a451-e026b5c0554b",
+                    "8859d291-a874-4d8e-8677-b57c13e94c50"
+                ],
+                "w1": [
+                    "a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402",
+                    "d7cb9118-4fec-4859-88c9-243436718fce",
+                    "4f1a5979-998b-4b52-affb-1ecf7a6b54eb"
+                ]
+            },
+            "fib_answer": [
+                {
+                    "id": "b369d747-a282-4a53-bb34-f52070de9119",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "e4fc58f0-9bd1-4407-a7c5-11222a1cf747",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "f7945861-5c97-437e-948b-4cf7304e9886",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "26cbd084-1af3-47d4-a01e-b74d1d75c9ab",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "4f1a5979-998b-4b52-affb-1ecf7a6b54eb",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "207f3a0a-2980-4837-8659-af8a682035fe",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "8e725deb-7b8e-4541-b936-8aee5fc3c8d6",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "8859d291-a874-4d8e-8677-b57c13e94c50",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "ea8d6658-18fd-41a2-99de-fca52a3e7bd2",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "b1a2f12c-4c78-446b-8299-e513167c1000",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "a16037b5-cec9-498f-b755-c66989f24e1a",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "015f42a9-b4cd-461d-a451-e026b5c0554b",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "007c7513-9537-4257-be4e-26c56051d49e",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "cbe71848-49bd-406f-a9ea-b2f280528f5f",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "d7cb9118-4fec-4859-88c9-243436718fce",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "a9661179-42ca-49b1-9792-ea2a126a5a1d",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b",
+                    "ans": "ornament"
+                },
+                {
+                    "id": "b64d3910-c824-4c1e-abde-0da3738f9d61",
+                    "ans": "decoration"
+                },
+                {
+                    "id": "3e9fdb82-35cc-4d81-a725-202872f5e175",
+                    "ans": "decoration"
+                }
+            ],
+            "index": "22",
+            "reason_answer": [
+                {
+                    "id": "a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "d7cb9118-4fec-4859-88c9-243436718fce",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "4f1a5979-998b-4b52-affb-1ecf7a6b54eb",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "b1a2f12c-4c78-446b-8299-e513167c1000",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "e4fc58f0-9bd1-4407-a7c5-11222a1cf747",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "8e725deb-7b8e-4541-b936-8aee5fc3c8d6",
+                    "reason": "Suitability",
+                    "accept": false
+                },
+                {
+                    "id": "cbe71848-49bd-406f-a9ea-b2f280528f5f",
+                    "reason": "Informative",
+                    "accept": false
+                },
+                {
+                    "id": "a9661179-42ca-49b1-9792-ea2a126a5a1d",
+                    "reason": "Diversity",
+                    "accept": false
+                },
+                {
+                    "id": "ea8d6658-18fd-41a2-99de-fca52a3e7bd2",
+                    "reason": "Sentence Complexity",
+                    "accept": false
+                },
+                {
+                    "id": "26cbd084-1af3-47d4-a01e-b74d1d75c9ab",
+                    "reason": "Lexical Complexity",
+                    "accept": false
+                },
+                {
+                    "id": "f7945861-5c97-437e-948b-4cf7304e9886",
+                    "reason": "Suitability",
+                    "accept": false
+                },
+                {
+                    "id": "b64d3910-c824-4c1e-abde-0da3738f9d61",
+                    "reason": "Informative",
+                    "accept": false
+                },
+                {
+                    "id": "a16037b5-cec9-498f-b755-c66989f24e1a",
+                    "reason": "Diversity",
+                    "accept": false
+                },
+                {
+                    "id": "8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b",
+                    "reason": "Sentence Complexity",
+                    "accept": false
+                },
+                {
+                    "id": "207f3a0a-2980-4837-8659-af8a682035fe",
+                    "reason": "Lexical Complexity",
+                    "accept": false
+                },
+                {
+                    "id": "b369d747-a282-4a53-bb34-f52070de9119",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "007c7513-9537-4257-be4e-26c56051d49e",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "3e9fdb82-35cc-4d81-a725-202872f5e175",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "015f42a9-b4cd-461d-a451-e026b5c0554b",
+                    "reason": "Select a Condition",
+                    "accept": true
+                },
+                {
+                    "id": "8859d291-a874-4d8e-8677-b57c13e94c50",
+                    "reason": "Select a Condition",
+                    "accept": true
+                }
+            ]
+        },
+        "Answer": "<?xml version=\"1.0\" encoding=\"ASCII\"?><QuestionFormAnswers xmlns=\"http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2005-10-01/QuestionFormAnswers.xsd\"><Answer><QuestionIdentifier>index</QuestionIdentifier><FreeText>22</FreeText></Answer><Answer><QuestionIdentifier>fib_answer</QuestionIdentifier><FreeText>[{\"id\":\"b369d747-a282-4a53-bb34-f52070de9119\",\"ans\":\"decoration\"},{\"id\":\"e4fc58f0-9bd1-4407-a7c5-11222a1cf747\",\"ans\":\"decoration\"},{\"id\":\"f7945861-5c97-437e-948b-4cf7304e9886\",\"ans\":\"decoration\"},{\"id\":\"26cbd084-1af3-47d4-a01e-b74d1d75c9ab\",\"ans\":\"ornament\"},{\"id\":\"4f1a5979-998b-4b52-affb-1ecf7a6b54eb\",\"ans\":\"ornament\"},{\"id\":\"207f3a0a-2980-4837-8659-af8a682035fe\",\"ans\":\"ornament\"},{\"id\":\"8e725deb-7b8e-4541-b936-8aee5fc3c8d6\",\"ans\":\"decoration\"},{\"id\":\"8859d291-a874-4d8e-8677-b57c13e94c50\",\"ans\":\"decoration\"},{\"id\":\"ea8d6658-18fd-41a2-99de-fca52a3e7bd2\",\"ans\":\"decoration\"},{\"id\":\"b1a2f12c-4c78-446b-8299-e513167c1000\",\"ans\":\"ornament\"},{\"id\":\"a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402\",\"ans\":\"ornament\"},{\"id\":\"a16037b5-cec9-498f-b755-c66989f24e1a\",\"ans\":\"ornament\"},{\"id\":\"015f42a9-b4cd-461d-a451-e026b5c0554b\",\"ans\":\"decoration\"},{\"id\":\"007c7513-9537-4257-be4e-26c56051d49e\",\"ans\":\"decoration\"},{\"id\":\"cbe71848-49bd-406f-a9ea-b2f280528f5f\",\"ans\":\"decoration\"},{\"id\":\"d7cb9118-4fec-4859-88c9-243436718fce\",\"ans\":\"ornament\"},{\"id\":\"a9661179-42ca-49b1-9792-ea2a126a5a1d\",\"ans\":\"ornament\"},{\"id\":\"8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b\",\"ans\":\"ornament\"},{\"id\":\"b64d3910-c824-4c1e-abde-0da3738f9d61\",\"ans\":\"decoration\"},{\"id\":\"3e9fdb82-35cc-4d81-a725-202872f5e175\",\"ans\":\"decoration\"}]</FreeText></Answer><Answer><QuestionIdentifier>reason_answer</QuestionIdentifier><FreeText>[{\"id\":\"a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"d7cb9118-4fec-4859-88c9-243436718fce\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"4f1a5979-998b-4b52-affb-1ecf7a6b54eb\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"b1a2f12c-4c78-446b-8299-e513167c1000\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"e4fc58f0-9bd1-4407-a7c5-11222a1cf747\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"8e725deb-7b8e-4541-b936-8aee5fc3c8d6\",\"accept\":false,\"reason\":\"Suitability\"},{\"id\":\"cbe71848-49bd-406f-a9ea-b2f280528f5f\",\"accept\":false,\"reason\":\"Informative\"},{\"id\":\"a9661179-42ca-49b1-9792-ea2a126a5a1d\",\"accept\":false,\"reason\":\"Diversity\"},{\"id\":\"ea8d6658-18fd-41a2-99de-fca52a3e7bd2\",\"accept\":false,\"reason\":\"Sentence Complexity\"},{\"id\":\"26cbd084-1af3-47d4-a01e-b74d1d75c9ab\",\"accept\":false,\"reason\":\"Lexical Complexity\"},{\"id\":\"f7945861-5c97-437e-948b-4cf7304e9886\",\"accept\":false,\"reason\":\"Suitability\"},{\"id\":\"b64d3910-c824-4c1e-abde-0da3738f9d61\",\"accept\":false,\"reason\":\"Informative\"},{\"id\":\"a16037b5-cec9-498f-b755-c66989f24e1a\",\"accept\":false,\"reason\":\"Diversity\"},{\"id\":\"8ffa7e8e-5b8c-4a9d-992b-2fcc5c9ea87b\",\"accept\":false,\"reason\":\"Sentence Complexity\"},{\"id\":\"207f3a0a-2980-4837-8659-af8a682035fe\",\"accept\":false,\"reason\":\"Lexical Complexity\"},{\"id\":\"b369d747-a282-4a53-bb34-f52070de9119\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"007c7513-9537-4257-be4e-26c56051d49e\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"3e9fdb82-35cc-4d81-a725-202872f5e175\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"015f42a9-b4cd-461d-a451-e026b5c0554b\",\"accept\":true,\"reason\":\"Select a Condition\"},{\"id\":\"8859d291-a874-4d8e-8677-b57c13e94c50\",\"accept\":true,\"reason\":\"Select a Condition\"}]</FreeText></Answer><Answer><QuestionIdentifier>answer</QuestionIdentifier><FreeText>{\"w1\":[\"a1c2c2c1-e9df-45ad-ae0c-fb40d55d9402\",\"d7cb9118-4fec-4859-88c9-243436718fce\",\"4f1a5979-998b-4b52-affb-1ecf7a6b54eb\"],\"w2\":[\"3e9fdb82-35cc-4d81-a725-202872f5e175\",\"015f42a9-b4cd-461d-a451-e026b5c0554b\",\"8859d291-a874-4d8e-8677-b57c13e94c50\"]}</FreeText></Answer></QuestionFormAnswers>",
+        "AssignmentId": "3N2BF7Y2VS3OANGSCDAY6Q2IPBKMHN",
+        "AutoApprovalTime": "2020-06-25 05:55:04-04:00",
+        "WorkerId": "A2JUTFKDJYFU67",
+        "AssignmentStatus": "Submitted",
+        "HITId": "3KLL7H3EGEA4DQC7026N52QFD2YHVP"
+    }
+]

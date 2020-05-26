@@ -135,6 +135,23 @@ def load_data():
     with open("data.json", 'w', encoding='utf-8') as outfile:
         json.dump(data, outfile, indent=4)
 
+def check_repeat():
+    with open("data_with_id.json", 'r', encoding='utf-8') as infile:
+        data = json.load(infile)
+    
+    for info in data:
+        print()
+        print(info["wordpair"], info["index"])
+
+        set1 = set(sent["display_sent"] for sent in info["w1_sent"])
+        if len(set1) != 10:
+            print("***", info["w1"], len(set1))
+        
+        set2 = set(sent["display_sent"] for sent in info["w2_sent"])
+        if len(set2) != 10:
+            print(info["w2"], len(set2))
+        
+
 def check_data():
     with open("data.json", 'r', encoding='utf-8') as infile:
         data = json.load(infile)
@@ -177,6 +194,23 @@ def turn_highlight(sent):
 def render_html(template, info):
     w1 = info["w1"]
     w2 = info["w2"]
+
+    # remove duplicated
+    new_sent = []
+    sent_set = set()
+    for sent in info["w1_sent"]:
+        if sent["display_sent"] not in sent_set:
+            new_sent.append(sent)
+            sent_set.update([sent["display_sent"]])
+    info["w1_sent"] = new_sent
+
+    new_sent = []
+    sent_set = set()
+    for sent in info["w2_sent"]:
+        if sent["display_sent"] not in sent_set:
+            new_sent.append(sent)
+            sent_set.update([sent["display_sent"]])
+    info["w2_sent"] = new_sent
 
     # stage 1
     question_template = """
@@ -242,6 +276,7 @@ def render_html(template, info):
     # fill in all data
     html = template.replace("{{w1}}", w1).replace("{{w2}}", w2).replace("{{stage_one_content}}", stage_one_content).replace("{{stage_two_content}}", stage_two_content)
     html = html.replace("{{choose_content_1}}", choose_content_1).replace("{{choose_content_2}}", choose_content_2)
+    html = html.replace("{{index}}", str(info["index"])).replace("{{sent_num}}", str(len(info["w2_sent"])+len(info["w1_sent"])))
 
     return html
 
@@ -252,7 +287,7 @@ def render_batch():
     with open("useful_template.html", 'r', encoding='utf-8') as infile:
         template = infile.read()
 
-    for i, info in enumerate(data):
+    for i, info in enumerate(data[:]):
         html = render_html(template, info)
 
         with open("html_0526/{:0>3}.html".format(i), 'w', encoding='utf-8') as outfile:
@@ -261,6 +296,7 @@ def render_batch():
 def main():
     #load_data()
     #check_data()
+    #check_repeat()
     render_batch()
 
 if __name__ == "__main__":

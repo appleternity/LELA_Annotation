@@ -6,6 +6,7 @@ $(document).ready(function() {
     var third_stage_lock = 31;
     var lock_id = null;
     var time = first_stage_lock;
+    var sent_num = parseInt($("#sent_num").val());
 
     var next_count_down = function() {
         time -= 1;
@@ -77,14 +78,14 @@ $(document).ready(function() {
             
             // Add information to the stage 3
             var sent_id = target.parents("tr").attr("sent_id");
-            $("#"+sent_id+" .badge").addClass("accept");
+            $("#"+sent_id+" .badge").removeClass().addClass("badge").addClass("accept");
 
         } else { 
             target.parents("tr").find("button").removeClass("btn-secondary").addClass("btn-danger").attr("disabled", false);
             
             // Add information to the stage 3
             var sent_id = target.parents("tr").attr("sent_id");
-            $("#"+sent_id+" .badge").removeClass("accept");
+            $("#"+sent_id+" .badge").removeClass().addClass("badge");
         }
     });
 
@@ -115,6 +116,11 @@ $(document).ready(function() {
         $("#second_instruction").show();
         $("#next_btn").attr("stage", "2");
         $(document).scrollTop(0);
+
+        // deal with time lock
+        clearInterval(lock_id);
+        $("#next_btn").text("Next");
+        $("#next_btn").attr("disabled", false);
     });
 
     $(document).on("click", "#next_btn", function(evt) {
@@ -125,8 +131,8 @@ $(document).ready(function() {
         if (stage == 1) {
             // check number of answers
             var answers = $("#question_table .form-radio:checked");
-            if (answers.length != 20) {
-                $("#warning").text("Please finish all the questions! ("+ (20 - answers.length) +" left)");
+            if (answers.length != sent_num) {
+                $("#warning").text("Please finish all the questions! ("+ (sent_num - answers.length) +" left)");
                 return;
             }
 

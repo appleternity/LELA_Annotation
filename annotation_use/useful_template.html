@@ -23,7 +23,7 @@
                     <div id="instruction_1">
                         <ul>
                             <li>We are examining how well can you differentiate this confusing word pair.</li>
-                            <li>In the first stage, there are <strong>20 fill-in-the-blank questions</strong> in total.</li>
+                            <li>In the first stage, there are <strong>{{sent_num}} fill-in-the-blank questions</strong> in total.</li>
                             <li>The question is about two confusing words <strong class="highlighted">{{w1}}</strong> and <strong class="highlighted">{{w2}}</strong>.</li>
                             <li>Please <span style="text-decoration: underline;">consider the difference carefully</span> and finish all the questions by clicking on the right answer box. </li>
                             <li>Click <span id="first_box"></span> if you think the answer is <strong class="highlighted">{{w1}}</strong>. </li>
@@ -323,6 +323,7 @@
                     <button type="button" class="btn btn-block btn-outline-primary" id="submit_btn" disabled>Submit</button>
                 </div>
 
+                <input type="hidden" name="sent_num" id="sent_num" value="{{sent_num}}">
                 <form id="mturk_form">
                     <input type="hidden" name="index" value="{{index}}">
                     <input type="hidden" name="fib_answer" id="fib_answer">

@@ -6,6 +6,7 @@ $(document).ready(function() {
     var third_stage_lock = 31;
     var lock_id = null;
     var time = first_stage_lock;
+    var sent_num = parseInt($("#sent_num").val());
 
     var next_count_down = function() {
         time -= 1;
@@ -130,8 +131,8 @@ $(document).ready(function() {
         if (stage == 1) {
             // check number of answers
             var answers = $("#question_table .form-radio:checked");
-            if (answers.length != 20) {
-                $("#warning").text("Please finish all the questions! ("+ (20 - answers.length) +" left)");
+            if (answers.length != sent_num) {
+                $("#warning").text("Please finish all the questions! ("+ (sent_num - answers.length) +" left)");
                 return;
             }
 
