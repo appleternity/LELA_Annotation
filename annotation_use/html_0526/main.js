@@ -115,6 +115,11 @@ $(document).ready(function() {
         $("#second_instruction").show();
         $("#next_btn").attr("stage", "2");
         $(document).scrollTop(0);
+
+        // deal with time lock
+        clearInterval(lock_id);
+        $("#next_btn").text("Next");
+        $("#next_btn").attr("disabled", false);
     });
 
     $(document).on("click", "#next_btn", function(evt) {
